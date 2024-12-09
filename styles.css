@@ -1,0 +1,124 @@
+/* 全体のスタイル */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #333); /* グラデーション背景 */
+  color: #f4f4f4;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.header {
+  background: #e60012;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.navigation a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+main {
+  padding: 20px;
+}
+
+/* スポーツ特徴文 */
+.sport-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+  text-align: justify;
+  opacity: 0.9; /* 文字の透明度調整 */
+}
+
+/* 選手のリスト */
+.player-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.player {
+  text-align: center;
+  width: 150px;
+}
+
+.player img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.player img:hover {
+  transform: scale(1.1);
+}
+
+.player p {
+  font-size: 1rem;
+  margin: 0;
+  color: #f4f4f4;
+}
+
+/* タブの選択状態 */
+.sport-tab {
+  display: none;
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sport-tab.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.footer {
+  background: #1a1a1a;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
