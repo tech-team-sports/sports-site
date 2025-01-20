@@ -2,7 +2,7 @@
 </script>
 
 <template>
-<div class="a">s</div>
+<div class="a">sss</div>
 </template>
 
 
