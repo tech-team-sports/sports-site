@@ -688,6 +688,8 @@ const _inlineRuntimeConfig = {
       }
     ],
     "sitemap": [
+      "/sitemap.xml",
+      "/sitemap.xml",
       "/sitemap.xml"
     ],
     "header": true,
@@ -714,6 +716,8 @@ const _inlineRuntimeConfig = {
       }
     ],
     "sitemap": [
+      "/sitemap.xml",
+      "/sitemap.xml",
       "/sitemap.xml"
     ],
     "header": true,
@@ -3328,6 +3332,12 @@ const sources$1 = [
         },
         "urls": [
             {
+                "loc": "/badminton"
+            },
+            {
+                "loc": "/baseball"
+            },
+            {
                 "loc": "/chicken"
             },
             {
@@ -3344,6 +3354,9 @@ const sources$1 = [
             },
             {
                 "loc": "/"
+            },
+            {
+                "loc": "/soccer"
             },
             {
                 "loc": "/sports"
