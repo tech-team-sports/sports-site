@@ -2,7 +2,8 @@
 import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
-      'BlocksKeyBenefits': typeof import("../components/blocks/key-benefits.vue")['default']
+      'Button': typeof import("../components/Button/index.vue")['default']
+    'BlocksKeyBenefits': typeof import("../components/blocks/key-benefits.vue")['default']
     'ColumnsOurServiceHighlights': typeof import("../components/columns/our-service-highlights.vue")['default']
     'ColumnsOurService': typeof import("../components/columns/our-service.vue")['default']
     'ColumnsServiceStats': typeof import("../components/columns/service-stats.vue")['default']
@@ -58,6 +59,7 @@ interface _GlobalComponents {
     'FixtureVueuse': typeof import("../components/fixture/vueuse.vue")['default']
     'HeroHeadingsDescription': typeof import("../components/hero/headings-description.vue")['default']
     'HeroLandingVb': typeof import("../components/hero/landing-vb.vue")['default']
+    'Link': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']
     'ShareFooter': typeof import("../components/share/footer.vue")['default']
     'ShareHeaderDocs': typeof import("../components/share/header-docs.vue")['default']
     'ShareHeaderLanding': typeof import("../components/share/header-landing.vue")['default']
@@ -384,7 +386,6 @@ interface _GlobalComponents {
     'FullTextFilter': typeof import("../node_modules/usebootstrap/dist/runtime/components/integration/fullTextFilter")['default']
     'NuxtPage': typeof import("../node_modules/nuxt/dist/pages/runtime/page")['default']
     'NoScript': typeof import("../node_modules/nuxt/dist/head/runtime/components")['NoScript']
-    'Link': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']
     'Base': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Base']
     'Title': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Title']
     'Meta': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Meta']
@@ -394,7 +395,8 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-      'LazyBlocksKeyBenefits': typeof import("../components/blocks/key-benefits.vue")['default']
+      'LazyButton': typeof import("../components/Button/index.vue")['default']
+    'LazyBlocksKeyBenefits': typeof import("../components/blocks/key-benefits.vue")['default']
     'LazyColumnsOurServiceHighlights': typeof import("../components/columns/our-service-highlights.vue")['default']
     'LazyColumnsOurService': typeof import("../components/columns/our-service.vue")['default']
     'LazyColumnsServiceStats': typeof import("../components/columns/service-stats.vue")['default']
@@ -450,6 +452,7 @@ interface _GlobalComponents {
     'LazyFixtureVueuse': typeof import("../components/fixture/vueuse.vue")['default']
     'LazyHeroHeadingsDescription': typeof import("../components/hero/headings-description.vue")['default']
     'LazyHeroLandingVb': typeof import("../components/hero/landing-vb.vue")['default']
+    'LazyLink': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']
     'LazyShareFooter': typeof import("../components/share/footer.vue")['default']
     'LazyShareHeaderDocs': typeof import("../components/share/header-docs.vue")['default']
     'LazyShareHeaderLanding': typeof import("../components/share/header-landing.vue")['default']
@@ -776,7 +779,6 @@ interface _GlobalComponents {
     'LazyFullTextFilter': typeof import("../node_modules/usebootstrap/dist/runtime/components/integration/fullTextFilter")['default']
     'LazyNuxtPage': typeof import("../node_modules/nuxt/dist/pages/runtime/page")['default']
     'LazyNoScript': typeof import("../node_modules/nuxt/dist/head/runtime/components")['NoScript']
-    'LazyLink': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']
     'LazyBase': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Base']
     'LazyTitle': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Title']
     'LazyMeta': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Meta']
@@ -792,6 +794,7 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const Button: typeof import("../components/Button/index.vue")['default']
 export const BlocksKeyBenefits: typeof import("../components/blocks/key-benefits.vue")['default']
 export const ColumnsOurServiceHighlights: typeof import("../components/columns/our-service-highlights.vue")['default']
 export const ColumnsOurService: typeof import("../components/columns/our-service.vue")['default']
@@ -848,6 +851,7 @@ export const FixtureTypography: typeof import("../components/fixture/typography.
 export const FixtureVueuse: typeof import("../components/fixture/vueuse.vue")['default']
 export const HeroHeadingsDescription: typeof import("../components/hero/headings-description.vue")['default']
 export const HeroLandingVb: typeof import("../components/hero/landing-vb.vue")['default']
+export const Link: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']
 export const ShareFooter: typeof import("../components/share/footer.vue")['default']
 export const ShareHeaderDocs: typeof import("../components/share/header-docs.vue")['default']
 export const ShareHeaderLanding: typeof import("../components/share/header-landing.vue")['default']
@@ -1174,7 +1178,6 @@ export const DataTable: typeof import("../node_modules/usebootstrap/dist/runtime
 export const FullTextFilter: typeof import("../node_modules/usebootstrap/dist/runtime/components/integration/fullTextFilter")['default']
 export const NuxtPage: typeof import("../node_modules/nuxt/dist/pages/runtime/page")['default']
 export const NoScript: typeof import("../node_modules/nuxt/dist/head/runtime/components")['NoScript']
-export const Link: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']
 export const Base: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Base']
 export const Title: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Title']
 export const Meta: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Meta']
@@ -1184,6 +1187,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
+export const LazyButton: typeof import("../components/Button/index.vue")['default']
 export const LazyBlocksKeyBenefits: typeof import("../components/blocks/key-benefits.vue")['default']
 export const LazyColumnsOurServiceHighlights: typeof import("../components/columns/our-service-highlights.vue")['default']
 export const LazyColumnsOurService: typeof import("../components/columns/our-service.vue")['default']
@@ -1240,6 +1244,7 @@ export const LazyFixtureTypography: typeof import("../components/fixture/typogra
 export const LazyFixtureVueuse: typeof import("../components/fixture/vueuse.vue")['default']
 export const LazyHeroHeadingsDescription: typeof import("../components/hero/headings-description.vue")['default']
 export const LazyHeroLandingVb: typeof import("../components/hero/landing-vb.vue")['default']
+export const LazyLink: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']
 export const LazyShareFooter: typeof import("../components/share/footer.vue")['default']
 export const LazyShareHeaderDocs: typeof import("../components/share/header-docs.vue")['default']
 export const LazyShareHeaderLanding: typeof import("../components/share/header-landing.vue")['default']
@@ -1566,7 +1571,6 @@ export const LazyDataTable: typeof import("../node_modules/usebootstrap/dist/run
 export const LazyFullTextFilter: typeof import("../node_modules/usebootstrap/dist/runtime/components/integration/fullTextFilter")['default']
 export const LazyNuxtPage: typeof import("../node_modules/nuxt/dist/pages/runtime/page")['default']
 export const LazyNoScript: typeof import("../node_modules/nuxt/dist/head/runtime/components")['NoScript']
-export const LazyLink: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Link']
 export const LazyBase: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Base']
 export const LazyTitle: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Title']
 export const LazyMeta: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Meta']
