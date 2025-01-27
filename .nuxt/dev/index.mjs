@@ -3344,6 +3344,9 @@ const sources$1 = [
             },
             {
                 "loc": "/"
+            },
+            {
+                "loc": "/sports"
             }
         ],
         "sourceType": "app"
