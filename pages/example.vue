@@ -4,7 +4,9 @@ const greeting = ref('Hello World!')
 </script>
 
 <template>
-  <p class="greeting">{{ greeting }}</p>
+  <div>
+    <img src="/assets/img/ami.png">
+  </div>
 </template>
 
 <style>

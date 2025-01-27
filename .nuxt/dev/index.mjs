@@ -3,36 +3,36 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHost, getRequestProtocol, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery as getQuery$1, getRequestHeaders, getRequestURL, setHeader, getHeader, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, readBody, getResponseStatusText } from 'file://D:/sports-site/node_modules/h3/dist/index.mjs';
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://D:/sports-site/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { stringify, uneval } from 'file://D:/sports-site/node_modules/devalue/index.js';
-import destr from 'file://D:/sports-site/node_modules/destr/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, hasProtocol, withHttps, withoutProtocol, withLeadingSlash, withoutTrailingSlash, withBase, joinRelativeURL, parsePath, parseQuery, stringifyQuery, encodePath, stringifyParsedURL } from 'file://D:/sports-site/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://D:/sports-site/node_modules/vue/server-renderer/index.mjs';
-import { propsToString, renderSSRHead } from 'file://D:/sports-site/node_modules/@unhead/ssr/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://D:/sports-site/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file://D:/sports-site/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file://D:/sports-site/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file://D:/sports-site/node_modules/klona/dist/index.mjs';
-import { snakeCase } from 'file://D:/sports-site/node_modules/scule/dist/index.mjs';
-import defu, { defuFn, defu as defu$1, createDefu } from 'file://D:/sports-site/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file://D:/sports-site/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://D:/sports-site/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://D:/sports-site/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file://D:/sports-site/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHost, getRequestProtocol, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery as getQuery$1, getRequestHeaders, getRequestURL, setHeader, getHeader, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, readBody, getResponseStatusText } from 'file://D:/webdev/projects/sports-site/node_modules/h3/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://D:/webdev/projects/sports-site/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file://D:/webdev/projects/sports-site/node_modules/devalue/index.js';
+import destr from 'file://D:/webdev/projects/sports-site/node_modules/destr/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, hasProtocol, withHttps, withoutProtocol, withLeadingSlash, withoutTrailingSlash, withBase, joinRelativeURL, parsePath, parseQuery, stringifyQuery, encodePath, stringifyParsedURL } from 'file://D:/webdev/projects/sports-site/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://D:/webdev/projects/sports-site/node_modules/vue/server-renderer/index.mjs';
+import { propsToString, renderSSRHead } from 'file://D:/webdev/projects/sports-site/node_modules/@unhead/ssr/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://D:/webdev/projects/sports-site/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file://D:/webdev/projects/sports-site/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file://D:/webdev/projects/sports-site/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file://D:/webdev/projects/sports-site/node_modules/klona/dist/index.mjs';
+import { snakeCase } from 'file://D:/webdev/projects/sports-site/node_modules/scule/dist/index.mjs';
+import defu, { defuFn, defu as defu$1, createDefu } from 'file://D:/webdev/projects/sports-site/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file://D:/webdev/projects/sports-site/node_modules/ohash/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://D:/webdev/projects/sports-site/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://D:/webdev/projects/sports-site/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file://D:/webdev/projects/sports-site/node_modules/radix3/dist/index.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { consola, createConsola } from 'file://D:/sports-site/node_modules/consola/dist/index.mjs';
-import { getContext } from 'file://D:/sports-site/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/sports-site/node_modules/errx/dist/index.js';
-import { isVNode, toValue, version, unref } from 'file://D:/sports-site/node_modules/vue/index.mjs';
-import devalue from 'file://D:/sports-site/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { basename, isAbsolute } from 'file://D:/sports-site/node_modules/pathe/dist/index.mjs';
-import { getIcons } from 'file://D:/sports-site/node_modules/@iconify/utils/lib/index.mjs';
-import { collections } from 'file://D:/sports-site/.nuxt/nuxt-icon-server-bundle.mjs';
+import { consola, createConsola } from 'file://D:/webdev/projects/sports-site/node_modules/consola/dist/index.mjs';
+import { getContext } from 'file://D:/webdev/projects/sports-site/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/webdev/projects/sports-site/node_modules/errx/dist/index.js';
+import { isVNode, toValue, version, unref } from 'file://D:/webdev/projects/sports-site/node_modules/vue/index.mjs';
+import devalue from 'file://D:/webdev/projects/sports-site/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { basename, isAbsolute } from 'file://D:/webdev/projects/sports-site/node_modules/pathe/dist/index.mjs';
+import { getIcons } from 'file://D:/webdev/projects/sports-site/node_modules/@iconify/utils/lib/index.mjs';
+import { collections } from 'file://D:/webdev/projects/sports-site/.nuxt/nuxt-icon-server-bundle.mjs';
 import { fileURLToPath } from 'node:url';
-import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file://D:/sports-site/node_modules/ipx/dist/index.mjs';
-import { createServerHead as createServerHead$1, CapoPlugin } from 'file://D:/sports-site/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file://D:/sports-site/node_modules/@unhead/shared/dist/index.mjs';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file://D:/webdev/projects/sports-site/node_modules/ipx/dist/index.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file://D:/webdev/projects/sports-site/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file://D:/webdev/projects/sports-site/node_modules/@unhead/shared/dist/index.mjs';
 
 const r=Object.create(null),E=e=>globalThis.process?.env||globalThis._importMeta_.env||globalThis.Deno?.env.toObject()||globalThis.__env__||(e?r:globalThis),s=new Proxy(r,{get(e,o){return E()[o]??r[o]},has(e,o){const i=E();return o in i||o in r},set(e,o,i){const g=E(!0);return g[o]=i,!0},deleteProperty(e,o){if(!o)return !1;const i=E(!0);return delete i[o],!0},ownKeys(){const e=E(!0);return Object.keys(e)}}),t=typeof process<"u"&&process.env&&"development"||"",p=[["APPVEYOR"],["AWS_AMPLIFY","AWS_APP_ID",{ci:!0}],["AZURE_PIPELINES","SYSTEM_TEAMFOUNDATIONCOLLECTIONURI"],["AZURE_STATIC","INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN"],["APPCIRCLE","AC_APPCIRCLE"],["BAMBOO","bamboo_planKey"],["BITBUCKET","BITBUCKET_COMMIT"],["BITRISE","BITRISE_IO"],["BUDDY","BUDDY_WORKSPACE_ID"],["BUILDKITE"],["CIRCLE","CIRCLECI"],["CIRRUS","CIRRUS_CI"],["CLOUDFLARE_PAGES","CF_PAGES",{ci:!0}],["CODEBUILD","CODEBUILD_BUILD_ARN"],["CODEFRESH","CF_BUILD_ID"],["DRONE"],["DRONE","DRONE_BUILD_EVENT"],["DSARI"],["GITHUB_ACTIONS"],["GITLAB","GITLAB_CI"],["GITLAB","CI_MERGE_REQUEST_ID"],["GOCD","GO_PIPELINE_LABEL"],["LAYERCI"],["HUDSON","HUDSON_URL"],["JENKINS","JENKINS_URL"],["MAGNUM"],["NETLIFY"],["NETLIFY","NETLIFY_LOCAL",{ci:!1}],["NEVERCODE"],["RENDER"],["SAIL","SAILCI"],["SEMAPHORE"],["SCREWDRIVER"],["SHIPPABLE"],["SOLANO","TDDIUM"],["STRIDER"],["TEAMCITY","TEAMCITY_VERSION"],["TRAVIS"],["VERCEL","NOW_BUILDER"],["VERCEL","VERCEL",{ci:!1}],["VERCEL","VERCEL_ENV",{ci:!1}],["APPCENTER","APPCENTER_BUILD_ID"],["CODESANDBOX","CODESANDBOX_SSE",{ci:!1}],["STACKBLITZ"],["STORMKIT"],["CLEAVR"],["ZEABUR"],["CODESPHERE","CODESPHERE_APP_ID",{ci:!0}],["RAILWAY","RAILWAY_PROJECT_ID"],["RAILWAY","RAILWAY_SERVICE_ID"]];function B(){if(globalThis.process?.env)for(const e of p){const o=e[1]||e[0];if(globalThis.process?.env[o])return {name:e[0].toLowerCase(),...e[2]}}return globalThis.process?.env?.SHELL==="/bin/jsh"&&globalThis.process?.versions?.webcontainer?{name:"stackblitz",ci:!1}:{name:"",ci:!1}}const l=B(),d=l.name;function n(e){return e?e!=="false":!1}const I=globalThis.process?.platform||"",T=n(s.CI)||l.ci!==!1,R=n(globalThis.process?.stdout&&globalThis.process?.stdout.isTTY);n(s.DEBUG);const C=t==="test"||n(s.TEST);n(s.MINIMAL)||T||C||!R;const a=/^win/i.test(I);!n(s.NO_COLOR)&&(n(s.FORCE_COLOR)||(R||a)&&s.TERM!=="dumb"||T);const _=(globalThis.process?.versions?.node||"").replace(/^v/,"")||null;Number(_?.split(".")[0])||null;const W=globalThis.process||Object.create(null),c={versions:{}};new Proxy(W,{get(e,o){if(o==="env")return s;if(o in e)return e[o];if(o in c)return c[o]}});const A=globalThis.process?.release?.name==="node",L=!!globalThis.Bun||!!globalThis.process?.versions?.bun,D=!!globalThis.Deno,O=!!globalThis.fastly,S=!!globalThis.Netlify,N=!!globalThis.EdgeRuntime,u=globalThis.navigator?.userAgent==="Cloudflare-Workers",b=!!globalThis.__lagon__,F=[[S,"netlify"],[N,"edge-light"],[u,"workerd"],[O,"fastly"],[D,"deno"],[L,"bun"],[A,"node"],[b,"lagon"]];function G(){const e=F.find(o=>o[0]);if(e)return {name:e[1]}}const P=G();P?.name||"";
 
@@ -726,7 +726,7 @@ const _inlineRuntimeConfig = {
     "alias": {},
     "fs": {
       "dir": [
-        "D:/sports-site/public"
+        "D:/webdev/projects/sports-site/public"
       ]
     },
     "http": {
@@ -789,7 +789,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"D:/sports-site/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"D:/webdev/projects/sports-site/server/assets"}];
 
 const assets = createStorage();
 
@@ -801,11 +801,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\sports-site","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\sports-site\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\sports-site\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\sports-site\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:\\sports-site\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\webdev\\projects\\sports-site","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\webdev\\projects\\sports-site\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\webdev\\projects\\sports-site\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\webdev\\projects\\sports-site\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:\\webdev\\projects\\sports-site\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1244,7 +1244,7 @@ function getRouteRulesForPath(path) {
   return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
 }
 
-const rootDir = "D:/sports-site";
+const rootDir = "D:/webdev/projects/sports-site";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -1263,7 +1263,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _YnbRFbeV2x = (nitroApp) => {
+const _A6nF6o4XJH = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -1811,7 +1811,7 @@ function publicAssetsURL(...path) {
   return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
 }
 
-const _n6uZz1lVFy = defineNitroPlugin(async (nitroApp) => {
+const _cpS4L3zm9m = defineNitroPlugin(async (nitroApp) => {
   nitroApp.hooks.hook("render:html", async (ctx, { event }) => {
     const routeOptions = getRouteRules(event);
     const isIsland = process.env.NUXT_COMPONENT_ISLANDS && event.path.startsWith("/__nuxt_island");
@@ -1842,7 +1842,7 @@ async function resolveRobotsTxtContext(e, nitro = useNitroApp()) {
   return generateRobotsTxtCtx;
 }
 
-const _feWVsJtj1e = defineNitroPlugin(async (nitroApp) => {
+const _nC7vc1bsOM = defineNitroPlugin(async (nitroApp) => {
   const { usingNuxtContent, robotsDisabledValue } = useRuntimeConfig()["nuxt-robots"];
   nitroApp._robots = {};
   await resolveRobotsTxtContext(void 0, nitroApp);
@@ -1862,9 +1862,9 @@ const _feWVsJtj1e = defineNitroPlugin(async (nitroApp) => {
 });
 
 const plugins = [
-  _YnbRFbeV2x,
-_n6uZz1lVFy,
-_feWVsJtj1e
+  _A6nF6o4XJH,
+_cpS4L3zm9m,
+_nC7vc1bsOM
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -1929,7 +1929,7 @@ const errorHandler = (async function errorhandler(error, event) {
 
 const warnOnceSet = /* @__PURE__ */ new Set();
 const DEFAULT_ENDPOINT = "https://api.iconify.design";
-const _MTCx7r = defineCachedEventHandler(async (event) => {
+const _cB3NO1 = defineCachedEventHandler(async (event) => {
   const url = getRequestURL(event);
   if (!url)
     return createError({ status: 400, message: "Invalid icon request" });
@@ -1987,7 +1987,7 @@ const _MTCx7r = defineCachedEventHandler(async (event) => {
   // 1 week
 });
 
-const _kIDhDD = defineEventHandler(async (e) => {
+const _MzDarY = defineEventHandler(async (e) => {
   if (e.context.siteConfig)
     return;
   const runtimeConfig = useRuntimeConfig(e);
@@ -2035,7 +2035,7 @@ const _kIDhDD = defineEventHandler(async (e) => {
   e.context.siteConfig = ctx.siteConfig;
 });
 
-const _0hXVmK = defineEventHandler(async (e) => {
+const _AGZgVN = defineEventHandler(async (e) => {
   const siteConfig = useSiteConfig(e);
   const nitroOrigin = useNitroOrigin(e);
   const runtimeConfig = useRuntimeConfig(e);
@@ -2221,7 +2221,7 @@ async function resolveSitemapSources(sources, event) {
   )).flat();
 }
 
-const _m19RiH = defineEventHandler(async (e) => {
+const _Jak9jV = defineEventHandler(async (e) => {
   const _runtimeConfig = useSimpleSitemapRuntimeConfig();
   const { sitemaps: _sitemaps } = _runtimeConfig;
   const runtimeConfig = { ..._runtimeConfig };
@@ -2243,7 +2243,7 @@ const _m19RiH = defineEventHandler(async (e) => {
   };
 });
 
-const _FUG4wI = defineEventHandler(async (e) => {
+const _QK2F5N = defineEventHandler(async (e) => {
   const fixPath = createSitePathResolver(e, { absolute: false, withBase: true });
   const { sitemapName: fallbackSitemapName, cacheMaxAgeSeconds, version, xslColumns, xslTips } = useSimpleSitemapRuntimeConfig();
   setHeader(e, "Content-Type", "application/xslt+xml");
@@ -2977,7 +2977,7 @@ async function createSitemap(event, definition, runtimeConfig) {
   return ctx.sitemap;
 }
 
-const _mrrW9K = defineEventHandler(async (e) => {
+const _ERXJgh = defineEventHandler(async (e) => {
   const runtimeConfig = useSimpleSitemapRuntimeConfig();
   const { sitemaps } = runtimeConfig;
   if ("index" in sitemaps) {
@@ -2986,7 +2986,7 @@ const _mrrW9K = defineEventHandler(async (e) => {
   return createSitemap(e, Object.values(sitemaps)[0], runtimeConfig);
 });
 
-const _7MVBCQ = defineEventHandler(async (e) => {
+const _sfH2YQ = defineEventHandler(async (e) => {
   const nitro = useNitroApp();
   const { indexable, hints } = getSiteRobotConfig(e);
   const { credits, usingNuxtContent, cacheControl } = useRuntimeConfig(e)["nuxt-robots"];
@@ -3042,7 +3042,7 @@ const _7MVBCQ = defineEventHandler(async (e) => {
   return hookCtx.robotsTxt;
 });
 
-const _ztaVUC = defineEventHandler(async (e) => {
+const _a8NotX = defineEventHandler(async (e) => {
   if (e.path === "/robots.txt" || e.path.startsWith("/__") || e.path.startsWith("/api") || e.path.startsWith("/_nuxt"))
     return;
   const robotConfig = getPathRobotConfig(e);
@@ -3053,7 +3053,7 @@ const _ztaVUC = defineEventHandler(async (e) => {
   e.context.robots = robotConfig;
 });
 
-const _7RpfNw = defineEventHandler(async (e) => {
+const _1c1Mcr = defineEventHandler(async (e) => {
   const runtimeConfig = useRuntimeConfig(e)["nuxt-robots"];
   const { indexable, hints } = await getSiteRobotConfig(e);
   const siteConfig = useSiteConfig(e);
@@ -3073,14 +3073,14 @@ const _7RpfNw = defineEventHandler(async (e) => {
   };
 });
 
-const _Z1HYut = defineEventHandler(async (e) => {
+const _TZKGUE = defineEventHandler(async (e) => {
   const path = getQuery$1(e).path;
   return getPathRobotConfig(e, {
     path
   });
 });
 
-const _4UIiCc = lazyEventHandler(() => {
+const _t8qolB = lazyEventHandler(() => {
   const opts = useRuntimeConfig().ipx || {};
   const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
   const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
@@ -3098,23 +3098,23 @@ const _4UIiCc = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
-const _lazy_ew3LMk = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_6HqfOs = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_ew3LMk, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_nuxt_icon/:collection', handler: _MTCx7r, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _kIDhDD, lazy: false, middleware: true, method: undefined },
-  { route: '/__site-config__/debug.json', handler: _0hXVmK, lazy: false, middleware: false, method: undefined },
-  { route: '/__sitemap__/debug.json', handler: _m19RiH, lazy: false, middleware: false, method: undefined },
-  { route: '/__sitemap__/style.xsl', handler: _FUG4wI, lazy: false, middleware: false, method: undefined },
-  { route: '/sitemap.xml', handler: _mrrW9K, lazy: false, middleware: false, method: undefined },
-  { route: '/robots.txt', handler: _7MVBCQ, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _ztaVUC, lazy: false, middleware: false, method: undefined },
-  { route: '/__robots__/debug.json', handler: _7RpfNw, lazy: false, middleware: false, method: undefined },
-  { route: '/__robots__/debug-path.json', handler: _Z1HYut, lazy: false, middleware: false, method: undefined },
-  { route: '/_ipx/**', handler: _4UIiCc, lazy: false, middleware: false, method: undefined },
-  { route: '/_fonts/**', handler: _lazy_ew3LMk, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_ew3LMk, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_6HqfOs, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_nuxt_icon/:collection', handler: _cB3NO1, lazy: false, middleware: false, method: undefined },
+  { route: '', handler: _MzDarY, lazy: false, middleware: true, method: undefined },
+  { route: '/__site-config__/debug.json', handler: _AGZgVN, lazy: false, middleware: false, method: undefined },
+  { route: '/__sitemap__/debug.json', handler: _Jak9jV, lazy: false, middleware: false, method: undefined },
+  { route: '/__sitemap__/style.xsl', handler: _QK2F5N, lazy: false, middleware: false, method: undefined },
+  { route: '/sitemap.xml', handler: _ERXJgh, lazy: false, middleware: false, method: undefined },
+  { route: '/robots.txt', handler: _sfH2YQ, lazy: false, middleware: false, method: undefined },
+  { route: '', handler: _a8NotX, lazy: false, middleware: false, method: undefined },
+  { route: '/__robots__/debug.json', handler: _1c1Mcr, lazy: false, middleware: false, method: undefined },
+  { route: '/__robots__/debug-path.json', handler: _TZKGUE, lazy: false, middleware: false, method: undefined },
+  { route: '/_ipx/**', handler: _t8qolB, lazy: false, middleware: false, method: undefined },
+  { route: '/_fonts/**', handler: _lazy_6HqfOs, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_6HqfOs, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -3427,8 +3427,8 @@ const renderSSRHeadOptions = {"omitLineBreaks":false};
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file://D:/sports-site/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file://D:/sports-site/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://D:/webdev/projects/sports-site/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://D:/webdev/projects/sports-site/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
