@@ -688,8 +688,6 @@ const _inlineRuntimeConfig = {
       }
     ],
     "sitemap": [
-      "/sitemap.xml",
-      "/sitemap.xml",
       "/sitemap.xml"
     ],
     "header": true,
@@ -716,8 +714,6 @@ const _inlineRuntimeConfig = {
       }
     ],
     "sitemap": [
-      "/sitemap.xml",
-      "/sitemap.xml",
       "/sitemap.xml"
     ],
     "header": true,
