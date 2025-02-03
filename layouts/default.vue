@@ -1,7 +1,7 @@
 <template>
  <PageLayout type="three-columns">
   <template #header>
-   <ShareHeaderDocs />
+   <AppHeader />  <!-- AppHeaderに変更 -->
   </template>
   <template #start>
    <ViewState
@@ -40,8 +40,7 @@
    </b-div>
   </template>
   <template #footer>
-   <ShareFooter />
+   <AppFooter />  <!-- AppFooterに変更 -->
   </template>
  </PageLayout>
 </template>
-

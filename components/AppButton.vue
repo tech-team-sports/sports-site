@@ -1,7 +1,7 @@
 <!-- Button.vue -->
 <template>
  <div class="back-button">
-   <a href="/example" class="btn">{{ label }}</a>
+   <a href="/" class="btn">{{ label }}</a>
  </div>
 </template>
 

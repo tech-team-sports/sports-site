@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Button from '@/components/Button/index.vue'; // Buttonコンポーネントをインポート
+import AppButton from '@/components/AppButton.vue'; // Buttonコンポーネントをインポート
 
 definePageMeta({
   title: 'Abバド',
@@ -48,8 +48,27 @@ definePageMeta({
     <p>今年のバドミントン大会は、6月と10月に開催される予定です。詳細は公式サイトをご確認ください。</p>
   </section>
 
+  <!-- 有名選手の画像セクション -->
+  <section id="famous-players" class="section famous-players">
+        <h3>有名選手</h3>
+        <div class="players">
+            <div class="player">
+                <img src="@/assets/img/Untitled.jpg" alt="イチロー" class="player-image" />
+                <p>桃田賢斗</p>
+            </div>
+            <div class="player">
+                <img src="@/assets/img/bado.jpg" alt="大谷翔平" class="player-image" />
+                <p>奥原希望</p>
+            </div>
+            <div class="player">
+                <img src="@/assets/img/bado2.jpg" alt="ダルビッシュ" class="player-image" />
+                <p>渡辺勇大</p>
+            </div>
+        </div>
+    </section>
+
   <!-- トップページに戻るボタン -->
-  <Button label="トップページに戻る" />
+  <AppButton label="トップページに戻る" />
 </template>
 
 <style>
@@ -99,6 +118,33 @@ h2.main-title {
 
 .events {
   background-color: #fff8f0;
+}
+
+.famous-players {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.player {
+    text-align: center;
+    max-width: 200px;
+}
+
+.player-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
 }
 
 h3 {

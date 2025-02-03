@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Button from "@/components/Button/index.vue"; // Buttonコンポーネントをインポート
+import AppButton from "@/components/AppButton.vue"; // Buttonコンポーネントをインポート
 
 definePageMeta({
     title: "野球",
@@ -80,7 +80,7 @@ definePageMeta({
     </section>
 
     <!-- トップページに戻るボタン -->
-    <Button label="トップページに戻る" />
+    <AppButton label="トップページに戻る" />
 </template>
 
 <style>
