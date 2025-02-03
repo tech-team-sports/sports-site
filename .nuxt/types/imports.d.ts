@@ -176,6 +176,7 @@ declare global {
   const useAsyncState: typeof import('../../node_modules/@vueuse/core')['useAsyncState']
   const useAttrs: typeof import('../../node_modules/vue')['useAttrs']
   const useBase64: typeof import('../../node_modules/@vueuse/core')['useBase64']
+  const useBaseballData: typeof import('../../composables/useBaseballData')['useBaseballData']
   const useBattery: typeof import('../../node_modules/@vueuse/core')['useBattery']
   const useBluetooth: typeof import('../../node_modules/@vueuse/core')['useBluetooth']
   const useBreakpoints: typeof import('../../node_modules/@vueuse/core')['useBreakpoints']
@@ -583,6 +584,7 @@ declare module 'vue' {
     readonly useAsyncState: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useAsyncState']>
     readonly useAttrs: UnwrapRef<typeof import('../../node_modules/vue')['useAttrs']>
     readonly useBase64: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useBase64']>
+    readonly useBaseballData: UnwrapRef<typeof import('../../composables/useBaseballData')['useBaseballData']>
     readonly useBattery: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useBattery']>
     readonly useBluetooth: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useBluetooth']>
     readonly useBreakpoints: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useBreakpoints']>
