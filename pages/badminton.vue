@@ -2,7 +2,7 @@
 import AppButton from '@/components/AppButton.vue'; // Buttonコンポーネントをインポート
 
 definePageMeta({
-  title: 'Abバド',
+  title: 'バドミントン',
   description: 'バドミントンの世界へようこそ。スポーツの魅力を深掘りしていきます。',
 });
 </script>
