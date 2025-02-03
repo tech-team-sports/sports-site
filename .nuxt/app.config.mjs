@@ -207,6 +207,6 @@ if (import.meta.hot) {
   })
 }
 
-import cfg0 from "D:/sports-site-1/app.config.ts"
+import cfg0 from "D:/sports-site/app.config.ts"
 
 export default /*@__PURE__*/ defuFn(cfg0, inlineConfig)

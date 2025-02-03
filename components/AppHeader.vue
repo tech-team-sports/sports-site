@@ -1,8 +1,10 @@
 <template>
  <header class="header">
-   <div class="logo">
-     <h1>sports site</h1>
-   </div>
+  <div class="logo">
+    <a href="/">
+      <img src="/assets/img/ami.png" alt="Sports Image">
+    </a>
+  </div>
    <nav class="navigation">
      <ul>
        <li><NuxtLink to="/baseball">野球</NuxtLink></li>
@@ -28,9 +30,10 @@ export default {
  padding: 20px;
  color: white;
 }
-.logo h1 {
- margin: 0;
- font-size: 24px;
+.logo img {
+  width: 300px; /* ロゴのサイズ調整 */
+  height: auto;
+  cursor: pointer; /* ロゴにカーソルを合わせると手のひらが表示される */
 }
 .navigation ul {
  display: flex;
