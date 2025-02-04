@@ -37,11 +37,6 @@ export default {
 </script>
 
 <style scoped>
-.logo img {
-  width: 250px;
-  height: auto;
-  object-fit: contain;
-}
 
 .global_menu {
   display: flex;
@@ -49,6 +44,12 @@ export default {
   position: relative;
   color: #333;
   text-align: center;
+}
+
+.logo img {
+  object-fit: contain;
+  width: 250px;
+  height: auto;
 }
 
 .global_menu ul {
@@ -147,5 +148,27 @@ export default {
   margin-right: 8px;
   vertical-align: middle; 
 }
+
+@media screen and (min-width: 1024px) {
+  .logo img {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo img {
+    width: 250px;
+  }
+}
+  
+@media screen and (max-width: 767px) {
+  .global_menu {
+    flex-direction: column; 
+    text-align: left; 
+  }
+  .logo img {
+  width: 160px;
+  }
+} 
 
 </style>
