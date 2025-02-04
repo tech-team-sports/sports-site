@@ -64,7 +64,7 @@ export default {
 }
 
 .menu:hover {
-  background-color: #ffb6c1;
+  background-color: #D3DEF1;
 }
 
 .child_menu {
@@ -73,7 +73,7 @@ export default {
   left: 0;
   width: 200px;
   padding: 0;
-  background: #ffb6c1;
+  background: #D3DEF1;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s ease-in-out;
