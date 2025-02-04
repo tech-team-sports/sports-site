@@ -10,15 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "sass": "1.77.6",
-    "usebootstrap": "^3.5.83",
-    "vue": "latest"
-  },
-  "devDependencies": {
-    "@nuxt/eslint": "^0.6.0",
-    "nuxt": "^3.13.0"
-  },
-  "volta": {
-    "node": "20.17.0"
+    "nuxt": "^3.15.4",
+    "vue": "latest",
+    "vue-router": "latest"
   }
 }
