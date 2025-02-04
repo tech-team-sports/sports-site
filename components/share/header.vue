@@ -11,9 +11,15 @@
         <li class="menu">
           <a href="#">Sports</a>
           <ul class="child_menu">
-            <li><a href="#">Baseball</a></li>
-            <li><a href="#">Soccer</a></li>
-            <li><a href="#">Badminton</a></li>
+            <li>
+                <a href="#"><i class="iconbaseball"></i>Baseball</a>
+            </li>
+            <li>
+                <a href="#"><i class="iconsoccer"></i>Soccer</a>
+            </li>
+            <li>
+                <a href="#"><i class="iconbadminton"></i>Badminton</a>
+            </li>
           </ul>
         </li>
         <li class="menu">
@@ -65,6 +71,7 @@ export default {
 
 .menu:hover {
   background-color: #D3DEF1;
+  border-radius: 0.3rem;
 }
 
 .child_menu {
@@ -72,8 +79,10 @@ export default {
   top: 100%;
   left: 0;
   width: 200px;
+  height: auto;
   padding: 0;
   background: #D3DEF1;
+  border-radius: 0.3rem;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s ease-in-out;
@@ -86,17 +95,57 @@ export default {
 
 .child_menu > li > a {
   font-size: 1em;
-  padding: 10px;
+  padding: 8px 10px;
   text-align: left;
 }
 
 .child_menu > li > a:hover {
-  background-color: #ffb6c1;
-  color: #fff;
+  background-color: #dcdcdc;
+  
 }
 
 .child_menu > li {
   padding: 5px 0;
   display: block;
 }
+
+/* ------------------------------ 
+  アイコン 
+------------------------------ */
+.iconbaseball::before {
+  content: ""; 
+  background-image: url("/assets/img/icon/yakyuicon.png"); 
+  background-size: contain;  
+  background-repeat: no-repeat; 
+  width: 20px;  
+  height: 20px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle; 
+}
+
+.iconsoccer::before {
+  content: ""; 
+  background-image: url("/assets/img/icon/soccericon.png"); 
+  background-size: contain;  
+  background-repeat: no-repeat; 
+  width: 20px;  
+  height: 20px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle; 
+}
+
+.iconbadminton::before {
+  content: ""; 
+  background-image: url("/assets/img/icon/badoicon.png"); 
+  background-size: contain;  
+  background-repeat: no-repeat; 
+  width: 20px;  
+  height: 20px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle; 
+}
+
 </style>
