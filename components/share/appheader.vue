@@ -9,7 +9,7 @@
           <a href="#">HOME</a>
         </li>
         <li class="menu">
-          <a href="#">Sports</a>
+          <a href="#">Sports<i class="dli-caret-down"></i></a>
           <ul class="child_menu">
             <li>
                 <a href="#"><i class="iconbaseball"></i>Baseball</a>
@@ -110,6 +110,21 @@ export default {
   display: block;
 }
 
+.dli-caret-down {
+  display: inline-block;
+  vertical-align: middle;
+  color: darkblue;
+  line-height: 1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0.64952em 0.375em;
+  border-top-color: currentColor;
+  border-bottom: 0;
+  margin-left: 1rem;
+}
+
 /* ------------------------------ 
   アイコン 
 ------------------------------ */
@@ -148,6 +163,7 @@ export default {
   margin-right: 8px;
   vertical-align: middle; 
 }
+
 
 @media screen and (min-width: 1024px) {
   .logo img {

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import Header from './components/share/header.vue';
+  import Header from './components/share/appheader.vue';
 
   export default {
     name: 'App',
