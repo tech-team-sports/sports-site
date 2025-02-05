@@ -1,11 +1,11 @@
-<!-- pages/index.vue -->
 <template>
   <div>
+    <MainSlider />
     <h1>Welcome to the Home Page!</h1>
     <p>This is the entrance page of the website.</p>
   </div>
 </template>
 
 <script setup>
-// 特にスクリプトは必要なし
+import MainSlider from '@/components/index/sliders/MainSlider.vue';
 </script>

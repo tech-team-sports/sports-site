@@ -86,6 +86,7 @@
     border-radius: 0.3rem;
     visibility: hidden;
     opacity: 0;
+    z-index: 10;
     transition: visibility 0s, opacity 0.3s ease-in-out;
   }
    
