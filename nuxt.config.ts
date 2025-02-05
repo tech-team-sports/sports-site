@@ -1,3 +1,5 @@
 export default defineNuxtConfig({
-  pages: false
+  compatibilityDate: "2025-02-05",
+  pages: true,
+  components: true, 
 });
