@@ -2,10 +2,16 @@
 import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
+<<<<<<< HEAD
       'IndexSlidersMainSlider': typeof import("../components/index/sliders/MainSlider.vue")['default']
     'ShareAppFooter': typeof import("../components/share/AppFooter.vue")['default']
     'ShareAppHeader': typeof import("../components/share/AppHeader.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
+=======
+      'ShareAppFooter': typeof import("../components/share/AppFooter.vue")['default']
+    'ShareAppheader': typeof import("../components/share/appheader.vue")['default']
+    'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
+>>>>>>> d5e3466d38e37925a0d9427c00947eff74b6a319
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
     'ClientOnly': typeof import("../node_modules/nuxt/dist/app/components/client-only")['default']
@@ -28,10 +34,16 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
+<<<<<<< HEAD
       'LazyIndexSlidersMainSlider': typeof import("../components/index/sliders/MainSlider.vue")['default']
     'LazyShareAppFooter': typeof import("../components/share/AppFooter.vue")['default']
     'LazyShareAppHeader': typeof import("../components/share/AppHeader.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
+=======
+      'LazyShareAppFooter': typeof import("../components/share/AppFooter.vue")['default']
+    'LazyShareAppheader': typeof import("../components/share/appheader.vue")['default']
+    'LazyNuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
+>>>>>>> d5e3466d38e37925a0d9427c00947eff74b6a319
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'LazyNuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
     'LazyClientOnly': typeof import("../node_modules/nuxt/dist/app/components/client-only")['default']
@@ -62,8 +74,8 @@ declare module 'vue' {
 
 export const IndexSlidersMainSlider: typeof import("../components/index/sliders/MainSlider.vue")['default']
 export const ShareAppFooter: typeof import("../components/share/AppFooter.vue")['default']
-export const ShareAppHeader: typeof import("../components/share/AppHeader.vue")['default']
-export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
+export const ShareAppheader: typeof import("../components/share/appheader.vue")['default']
+export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
 export const ClientOnly: typeof import("../node_modules/nuxt/dist/app/components/client-only")['default']
@@ -88,8 +100,8 @@ export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyIndexSlidersMainSlider: typeof import("../components/index/sliders/MainSlider.vue")['default']
 export const LazyShareAppFooter: typeof import("../components/share/AppFooter.vue")['default']
-export const LazyShareAppHeader: typeof import("../components/share/AppHeader.vue")['default']
-export const LazyNuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
+export const LazyShareAppheader: typeof import("../components/share/appheader.vue")['default']
+export const LazyNuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const LazyNuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
 export const LazyClientOnly: typeof import("../node_modules/nuxt/dist/app/components/client-only")['default']
