@@ -2,7 +2,7 @@
     <header>
       <nav class="global_menu">
         <div class="logo">
-          <img src="/assets/img/logo.png" alt="Logo">
+          <NuxtLink to="/"><img src="/assets/img/logo.png" alt="Logo"></NuxtLink>
         </div>
         <ul class="menu-list">
           <li class="menu">
