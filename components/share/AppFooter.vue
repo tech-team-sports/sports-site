@@ -50,6 +50,7 @@
     text-align: center;
     border-top: 2px solid rgba(61, 61, 61, 0.9);
     font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
   }
   
   .footer-content {
