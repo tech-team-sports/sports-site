@@ -44,11 +44,11 @@
   
   <style scoped>
   footer {
-    background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+    /* background: linear-gradient(135deg, #0a0a0a, #1a1a2e); */
     color: white;
     padding: 40px 0;
     text-align: center;
-    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    border-top: 2px solid rgba(61, 61, 61, 0.9);
     font-family: 'Poppins', sans-serif;
   }
   
@@ -99,7 +99,7 @@
   .menu-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   .submenu {
@@ -119,7 +119,7 @@
     font-weight: normal;
     padding: 5px 10px;
     opacity: 0.8;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     position: relative;
     transition: opacity 0.3s ease-in-out;
@@ -132,7 +132,7 @@
     bottom: -5px;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     transition: width 0.3s ease-in-out;
   }
   
