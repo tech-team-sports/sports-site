@@ -5,13 +5,13 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+
 const swiperOptions = {
   centeredSlides: true,
   slidesPerView: 1,
-  grabCursor: true,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 3200,
     disableOnInteraction: false,
   },
   pagination: {
@@ -44,22 +44,22 @@ const swiperOptions = {
       class="swiper-slider"
       >
         <swiper-slide>
-          <img src="https://cdn.pixabay.com/photo/2022/11/13/18/09/canyon-7589820_1280.jpg" alt="Canyon Image">
+          <img src="/assets/img/preparation.png" alt="Canyon Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="https://cdn.pixabay.com/photo/2022/11/02/22/33/autumn-7566201_1280.jpg" alt="Autumn Image">
+          <img src="/assets/img/preparation.png" alt="Autumn Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="https://cdn.pixabay.com/photo/2023/04/05/09/44/landscape-7901065_1280.jpg" alt="Landscape Image">
+          <img src="/assets/img/preparation.png" alt="Landscape Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="https://cdn.pixabay.com/photo/2020/09/04/16/18/mountains-5544365_1280.jpg" alt="Mountain Image">
+          <img src="/assets/img/preparation.png" alt="Mountain Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="https://cdn.pixabay.com/photo/2022/12/09/22/55/trees-7646226_1280.jpg" alt="Trees Image">
+          <img src="/assets/img/preparation.png" alt="Trees Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="https://cdn.pixabay.com/photo/2019/09/13/11/47/mountains-4473760_1280.jpg" alt="Mountains Image">
+          <img src="/assets/img/preparation.png" alt="Mountains Image">
         </swiper-slide>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
@@ -70,7 +70,7 @@ const swiperOptions = {
 </template>
 
 <style scoped>
-/* スライダーのスタイル調整 */
+
 .swiper-slider {
   width: 100%;
   height: 100%;
@@ -81,5 +81,14 @@ const swiperOptions = {
   height: auto;
   object-fit: cover;
 }
-</style>
 
+.swiper-pagination{
+  position: relative;
+  bottom: auto;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+
+</style>
