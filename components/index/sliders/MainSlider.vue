@@ -50,16 +50,16 @@ const swiperOptions = {
           <img src="/assets/img/sliderimg/b_stadium.jpg" alt="Autumn Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/preparation.png" alt="Landscape Image">
+          <img src="/assets/img/sliderimg/soccer_slider.jpg" alt="Landscape Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/preparation.png" alt="Mountain Image">
+          <img src="/assets/img/sliderimg/soccer_stadium.jpg" alt="Mountain Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/preparation.png" alt="Trees Image">
+          <img src="/assets/img/sliderimg/bad_slider.jpg" alt="Trees Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/preparation.png" alt="Mountains Image">
+          <img src="/assets/img/sliderimg/bad_stadium.jpg" alt="Mountains Image">
         </swiper-slide>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
