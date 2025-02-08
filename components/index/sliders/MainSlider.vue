@@ -44,10 +44,10 @@ const swiperOptions = {
       class="swiper-slider"
       >
         <swiper-slide>
-          <img src="/assets/img/preparation.png" alt="Canyon Image">
+          <img src="/assets/img/sliderimg/baseball.jpg" alt="Canyon Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/preparation.png" alt="Autumn Image">
+          <img src="/assets/img/sliderimg/b_stadium.jpg" alt="Autumn Image">
         </swiper-slide>
         <swiper-slide>
           <img src="/assets/img/preparation.png" alt="Landscape Image">
