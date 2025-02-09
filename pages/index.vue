@@ -10,19 +10,21 @@
            <p v-if="loading">Loding...</p>
 
            <p v-if="errerMessage" style="color: red;">{{ errerMessage }}</p>
-            {{ news.articles }}
-            <input type="number" min="0" max="10" />
+
+           <input type="number" min="0" max="10" v-model="maxArticles" />
+
+            {{ news.article }}
             <ul v-if="news.articles?.length">
-                <li v-for="(article, index) in news.articles" :key="index">
+                <li v-for="(article, index) in news.articles.slice(0, maxArticles)" :key="index">
+                    <img v-if="article.urlToImage" :src="article.urlToImage" alt="Article">
                     <h3>{{ article.titele }}</h3>
                     <p>{{ article.description }}</p>
                     <p>
-                        <a href="article.url" target="_blank">read more</a>
+                        <a :href="article.url" target="_blank">read more</a>
                     </p>
-                    <img v-if="article.urlToImage" :src="article.urlToImage" alt="Article">
                 </li>
             </ul>
-            <p v-else-if="loading">No news</p>
+            <p v-else-if="loading">No news available.</p>
         </div>
     </div>
 </template>
@@ -34,22 +36,20 @@ import { ref, onMounted, onUnmounted } from "vue";
 const news = ref({ articles: [] });
 const loading = ref(true);
 const errerMessage = ref("");
+const maxArticles =ref(10)
  
 onMounted(() => {
     const params = {
         api_key: "53fb2956cf034545947be49cd3f8e1db",
-        q: "メッシ OR ベンゼマ"
+        q: "マルセロ OR ジダン"
     }
  
     fetch(`https://newsapi.org/v2/everything?q=${params.q}&apiKey=${params.api_key}`)
     .then(response => {
-        const { status } = response;
- 
-        if (status === 200) {
-            return response.json();
-        } else {
-            console.log('エラーが発生しました。')
+        if (!response.ok) { 
+        throw new Error(`HTTP error! Status: ${response.status}`);
         }
+        return response.json();
     })
     .then(data => {
         console.log(data);
@@ -61,6 +61,10 @@ onMounted(() => {
     })
     .catch(error => {
         console.error("Fetch error" , error);
+        errerMessage.value = "ニュースの取得にしっぱいしました。";
+    })
+    .finally(() => {
+        loading.value = false;
     });
 });
 </script>
