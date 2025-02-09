@@ -2,6 +2,12 @@
 {
   "compilerOptions": {
     "paths": {
+      "nitropack/types": [
+        "../node_modules/nitropack/types"
+      ],
+      "nitropack/runtime": [
+        "../node_modules/nitropack/runtime"
+      ],
       "nitropack": [
         "../node_modules/nitropack"
       ],
@@ -38,6 +44,9 @@
       "nuxt": [
         "../node_modules/nuxt"
       ],
+      "vite/client": [
+        "../node_modules/vite/client"
+      ],
       "~": [
         ".."
       ],
@@ -61,6 +70,9 @@
       ],
       "@@/*": [
         "../*"
+      ],
+      "#shared": [
+        "../shared"
       ],
       "assets": [
         "../assets"
@@ -92,14 +104,14 @@
       "#app-manifest": [
         "./manifest/meta/dev"
       ],
+      "#components": [
+        "./components"
+      ],
       "#build": [
         "."
       ],
       "#build/*": [
         "./*"
-      ],
-      "#components": [
-        "./components"
       ]
     },
     "esModuleInterop": true,
@@ -144,6 +156,8 @@
     "../dist",
     "../node_modules",
     "../node_modules/nuxt/node_modules",
+    "../node_modules/@nuxt/devtools/node_modules",
+    "../node_modules/@nuxt/telemetry/node_modules",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/devtools/dist/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
