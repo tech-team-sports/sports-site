@@ -19,6 +19,7 @@
                     <img v-if="article.urlToImage" :src="article.urlToImage" alt="Article">
                     <h3>{{ article.titele }}</h3>
                     <p>{{ article.description }}</p>
+                    <p>公開日: {{ formatDate(sampleDate) }}</p>
                     <p>
                         <a :href="article.url" target="_blank">read more</a>
                     </p>
@@ -32,6 +33,7 @@
 <script setup>
 import MainSlider from "@/components/index/sliders/MainSlider.vue";
 import { ref, onMounted, onUnmounted } from "vue";
+import { formatDate } from "@/composables/libs/utils.ts";
  
 const news = ref({ articles: [] });
 const loading = ref(true);
@@ -67,4 +69,7 @@ onMounted(() => {
         loading.value = false;
     });
 });
+
+const sampleDate = "2024-08-10T12:00:00Z";
+
 </script>

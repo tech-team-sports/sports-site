@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "dayjs": "^1.11.10",
     "nuxt": "^3.15.4",
     "swiper": "^11.2.2",
     "vue": "latest",
