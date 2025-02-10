@@ -90,5 +90,4 @@ const swiperOptions = {
   
 }
 
-
 </style>
