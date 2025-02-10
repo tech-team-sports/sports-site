@@ -3,8 +3,8 @@ import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
       'ContactForm': typeof import("../components/ContactForm/ContactForm.vue")['default']
-    'IndexSportsLinkSportslink': typeof import("../components/index/SportsLink/sportslink.vue")['default']
     'IndexSlidersMainSlider': typeof import("../components/index/sliders/MainSlider.vue")['default']
+    'IndexSportsLinks': typeof import("../components/index/sports/links.vue")['default']
     'ShareAppFooter': typeof import("../components/share/AppFooter.vue")['default']
     'ShareAppheader': typeof import("../components/share/appheader.vue")['default']
     'SoccerSoccersliderMainslider': typeof import("../components/soccer/soccerslider/mainslider.vue")['default']
@@ -33,8 +33,8 @@ interface _GlobalComponents {
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyContactForm': typeof import("../components/ContactForm/ContactForm.vue")['default']
-    'LazyIndexSportsLinkSportslink': typeof import("../components/index/SportsLink/sportslink.vue")['default']
     'LazyIndexSlidersMainSlider': typeof import("../components/index/sliders/MainSlider.vue")['default']
+    'LazyIndexSportsLinks': typeof import("../components/index/sports/links.vue")['default']
     'LazyShareAppFooter': typeof import("../components/share/AppFooter.vue")['default']
     'LazyShareAppheader': typeof import("../components/share/appheader.vue")['default']
     'LazySoccerSoccersliderMainslider': typeof import("../components/soccer/soccerslider/mainslider.vue")['default']
@@ -69,8 +69,8 @@ declare module 'vue' {
 }
 
 export const ContactForm: typeof import("../components/ContactForm/ContactForm.vue")['default']
-export const IndexSportsLinkSportslink: typeof import("../components/index/SportsLink/sportslink.vue")['default']
 export const IndexSlidersMainSlider: typeof import("../components/index/sliders/MainSlider.vue")['default']
+export const IndexSportsLinks: typeof import("../components/index/sports/links.vue")['default']
 export const ShareAppFooter: typeof import("../components/share/AppFooter.vue")['default']
 export const ShareAppheader: typeof import("../components/share/appheader.vue")['default']
 export const SoccerSoccersliderMainslider: typeof import("../components/soccer/soccerslider/mainslider.vue")['default']
@@ -99,8 +99,8 @@ export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyContactForm: typeof import("../components/ContactForm/ContactForm.vue")['default']
-export const LazyIndexSportsLinkSportslink: typeof import("../components/index/SportsLink/sportslink.vue")['default']
 export const LazyIndexSlidersMainSlider: typeof import("../components/index/sliders/MainSlider.vue")['default']
+export const LazyIndexSportsLinks: typeof import("../components/index/sports/links.vue")['default']
 export const LazyShareAppFooter: typeof import("../components/share/AppFooter.vue")['default']
 export const LazyShareAppheader: typeof import("../components/share/appheader.vue")['default']
 export const LazySoccerSoccersliderMainslider: typeof import("../components/soccer/soccerslider/mainslider.vue")['default']

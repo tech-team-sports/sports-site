@@ -1,8 +1,7 @@
 <template>
     <div>
         <MainSlider />
-        <h1>Welcome to the Home Page!</h1>
-        <p>This is the entrance page of the website.</p>
+        <links />
  
         <div>
            <h2>NEWS:</h2>
@@ -32,6 +31,7 @@
 
 <script setup>
 import MainSlider from "@/components/index/sliders/MainSlider.vue";
+import links from "~/components/index/sports/links.vue";
 import { ref, onMounted } from "vue";
 import { formatDate } from "@/composables/libs/utils.ts";
 
