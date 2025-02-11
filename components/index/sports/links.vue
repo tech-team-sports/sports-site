@@ -27,7 +27,7 @@
 <style scoped>
 
 .container {
-    padding: 20px;
+    padding: 1.1rem;
     max-width: 1200px; 
     margin: 0 auto;
 }
