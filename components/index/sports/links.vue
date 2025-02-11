@@ -3,16 +3,16 @@
         <h2 class="sports">スポーツ</h2>
         <ul class="items">
             <li class="item">
-                <img src="/assets/img/sliderimg/b_stadium.jpg" alt="">
+                <img src="/assets/img/sliderimg/baseball.jpg" alt="">
                 <NuxtLink to="/baseball"><i class="iconbaseball"></i>野球<i class="arrow"></i></NuxtLink>
             </li>
             <li class="item">
-                <img src="/assets/img/sliderimg/b_stadium.jpg" alt="">
+                <img src="/assets/img/sliderimg/soccer_slider.jpg" alt="">
                 
                 <NuxtLink to="/soccer"><i class="iconsoccer"></i>サッカー</NuxtLink>
             </li>
             <li class="item">
-                <img src="/assets/img/sliderimg/b_stadium.jpg" alt="">
+                <img src="/assets/img/sliderimg/bad_slider.jpg" alt="">
                 
                 <NuxtLink to="/badminton"><i class="iconbadminton"></i>バトミントン</NuxtLink>
             </li>
