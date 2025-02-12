@@ -57,21 +57,22 @@ footer {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; /* ロゴを上に配置 */
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   flex-wrap: wrap;
-  gap: 40px; /* アイテム間に適度な空白 */
+  gap: 50px; /* アイテム間に適度な空白 */
 }
 
 /* ロゴ */
 .logo {
   max-width: 200px;
-  margin-left: 20px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  align-self: flex-start; /* ロゴを上に配置 */
+  margin-left: 20px;
 }
 
 .logo img {
@@ -86,13 +87,13 @@ footer {
   justify-content: flex-end;
   align-items: center;
   flex-grow: 1;
-  gap: 40px; /* メニューアイテム間に適度な空白 */
+  gap: 50px; /* メニューアイテム間に適度な空白 */
 }
 
 /* メニューのレイアウト */
 .menu-grid {
   display: flex;
-  gap: 40px;
+  gap: 80px; /* メニューアイテム間に適度な空白 */
   padding: 0;
   margin: 0;
   list-style: none;
@@ -104,7 +105,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* メニューアイテム間に適度な空白 */
+  gap: 25px; /* メニューアイテム間に適度な空白 */
 }
 
 .menu-title {
