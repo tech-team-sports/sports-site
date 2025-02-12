@@ -3,6 +3,9 @@ import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
       'ContactForm': typeof import("../components/ContactForm/ContactForm.vue")['default']
+    'BadmintonBadAnimation': typeof import("../components/badminton/BadAnimation.vue")['default']
+    'BadmintonBadSlider': typeof import("../components/badminton/BadSlider.vue")['default']
+    'BadmintonBadTOP': typeof import("../components/badminton/BadTOP.vue")['default']
     'IndexSlidersMainSlider': typeof import("../components/index/sliders/MainSlider.vue")['default']
     'IndexSportsLinks': typeof import("../components/index/sports/links.vue")['default']
     'ShareAppFooter': typeof import("../components/share/AppFooter.vue")['default']
@@ -33,6 +36,9 @@ interface _GlobalComponents {
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyContactForm': typeof import("../components/ContactForm/ContactForm.vue")['default']
+    'LazyBadmintonBadAnimation': typeof import("../components/badminton/BadAnimation.vue")['default']
+    'LazyBadmintonBadSlider': typeof import("../components/badminton/BadSlider.vue")['default']
+    'LazyBadmintonBadTOP': typeof import("../components/badminton/BadTOP.vue")['default']
     'LazyIndexSlidersMainSlider': typeof import("../components/index/sliders/MainSlider.vue")['default']
     'LazyIndexSportsLinks': typeof import("../components/index/sports/links.vue")['default']
     'LazyShareAppFooter': typeof import("../components/share/AppFooter.vue")['default']
@@ -69,6 +75,9 @@ declare module 'vue' {
 }
 
 export const ContactForm: typeof import("../components/ContactForm/ContactForm.vue")['default']
+export const BadmintonBadAnimation: typeof import("../components/badminton/BadAnimation.vue")['default']
+export const BadmintonBadSlider: typeof import("../components/badminton/BadSlider.vue")['default']
+export const BadmintonBadTOP: typeof import("../components/badminton/BadTOP.vue")['default']
 export const IndexSlidersMainSlider: typeof import("../components/index/sliders/MainSlider.vue")['default']
 export const IndexSportsLinks: typeof import("../components/index/sports/links.vue")['default']
 export const ShareAppFooter: typeof import("../components/share/AppFooter.vue")['default']
@@ -99,6 +108,9 @@ export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyContactForm: typeof import("../components/ContactForm/ContactForm.vue")['default']
+export const LazyBadmintonBadAnimation: typeof import("../components/badminton/BadAnimation.vue")['default']
+export const LazyBadmintonBadSlider: typeof import("../components/badminton/BadSlider.vue")['default']
+export const LazyBadmintonBadTOP: typeof import("../components/badminton/BadTOP.vue")['default']
 export const LazyIndexSlidersMainSlider: typeof import("../components/index/sliders/MainSlider.vue")['default']
 export const LazyIndexSportsLinks: typeof import("../components/index/sports/links.vue")['default']
 export const LazyShareAppFooter: typeof import("../components/share/AppFooter.vue")['default']
