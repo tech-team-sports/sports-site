@@ -14,13 +14,17 @@
         <li v-for="item in section.listItems" :key="item">{{ item }}</li>
       </ul>
     </div>
-<<<<<<< HEAD
     <NewsList queary="ベンゼマ"/>
   </template>
   
   <script setup>
   import NewsList from "@/components/news/NewsList.vue";
   import { useBadminton } from '@/composables/useBadminton';
+
+import BadSlider from '/components/badminton/BadSlider.vue';
+import BadTOP from '/components/badminton/BadTOP.vue';
+import BadAnimation from '/components/badminton/BadAnimation.vue';
+
   
   const { badmintonData } = useBadminton();
 
@@ -63,25 +67,19 @@
     color: #444;
     margin-bottom: 10px;
   }
-  </style>
   
-=======
-  </div>
-</template>
-
-<script setup>
-import { useBadminton } from '@/composables/useBadminton';
-import BadSlider from '/components/badminton/BadSlider.vue';
-import BadTOP from '/components/badminton/BadTOP.vue';
-import BadAnimation from '/components/badminton/BadAnimation.vue';
-const { badmintonData } = useBadminton();
-</script>
-
-<style scoped>
 .title {
   font-size: 4rem; /* 一番大きいタイトルのサイズを指定 */
   font-weight: bold;
   color: #000; /* 必要に応じて色も調整 */
 }
-</style>
->>>>>>> 3423fb6220867a48ab6e44e2c5c6e089473edb6d
+  </style>
+  
+
+
+
+
+
+
+
+
