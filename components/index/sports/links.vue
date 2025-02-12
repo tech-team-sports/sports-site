@@ -64,6 +64,7 @@
 
 
 @media screen and (min-width: 1024px) {
+
     .sports {
         font-size: 2rem;
     }
@@ -78,6 +79,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
     .sports {
         font-size: 1.75rem;
     }
@@ -92,6 +94,7 @@
 }
 
 @media screen and (max-width: 767px) {
+    
     .sports {
         font-size: 1.5rem;
     }
