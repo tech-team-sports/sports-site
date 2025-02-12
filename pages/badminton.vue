@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    
+    <NewsList query="バドミントン" />
   </div>
 </template>
 
@@ -28,6 +28,7 @@ import { useBadminton } from '@/composables/useBadminton';
 import BadSlider from '/components/badminton/BadSlider.vue';
 import BadTOP from '/components/badminton/BadTOP.vue';
 import BadContents from '/components/badminton/BadContents.vue';
+import NewsList from "@/components/news/NewsList.vue";
 
 const { badmintonData } = useBadminton();
 </script>
