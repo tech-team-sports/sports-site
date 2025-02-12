@@ -13,12 +13,15 @@
         </ul>
       </div>
     </div>
+    <NewsList queary="ベンゼマ"/>
   </template>
   
   <script setup>
+  import NewsList from "@/components/news/NewsList.vue";
   import { useBadminton } from '@/composables/useBadminton';
   
   const { badmintonData } = useBadminton();
+
   </script>
   
   <style scoped>

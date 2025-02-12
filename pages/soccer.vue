@@ -1,8 +1,11 @@
 <template>
-    <MainSlider />
-    <h1>ffffffff</h1>
+    <div>
+        <h1>Soccer News</h1>
+        <NewsList query="ベンゼマ OR エムバペ OR メッシ" />
+    </div>
 </template>
 
 <script setup>
-import MainSlider from "@/components/soccer/soccerslider/mainslider.vue";
+import NewsList from "@/components/news/NewsList.vue";
 </script>
+
