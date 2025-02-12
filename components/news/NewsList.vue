@@ -43,7 +43,6 @@ const { news, loading, errorMessage } = useNews(props.query);
 .items li {
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: 300px; 
     text-align: start;
     overflow: hidden;
@@ -67,6 +66,7 @@ const { news, loading, errorMessage } = useNews(props.query);
 }
 
 .item > li > p {
+    max-width: 300px;
     font-size: 1rem;
     color: #333;
 }
