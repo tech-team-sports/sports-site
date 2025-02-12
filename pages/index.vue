@@ -4,7 +4,7 @@
         <links />
  
         <div class="container">
-           <h2 >NEWS</h2>
+           <h1 class="news" >NEWS</h1>
 
            <p v-if="loading">Loading...</p>
 
@@ -15,9 +15,9 @@
                     <ul class="item" v-if="news.articles?.length">
                         <li v-for="(article, index) in news.articles.slice(0, maxArticles)" :key="index">
                             <img v-if="article.urlToImage" :src="article.urlToImage" alt="Article">
-                            <h3>{{ article.title }}</h3>
+                            <h2>{{ article.title }}</h2>
                             <p class="description">{{ article.description }}</p>
-                            <p>公開日: {{ formatDate(article.publishedAt) }}</p>
+                            <h3>公開日: {{ formatDate(article.publishedAt) }}</h3>
                             <a :href="article.url" target="_blank">Read more</a>
                         </li>
                     </ul>
@@ -98,15 +98,40 @@ onMounted(() => {
 
 }
 
+.item > li > h2 {
+    font-size: 1.2rem;
+}
+
+.item > li > p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.item > li > h3 {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
 .item > li > a {
     margin-top: 0.7rem;
     padding: 10px 15px;
     background-color: royalblue;
+    color: white;
     border-radius: 0.8rem;
     text-decoration: none;
+    transform: background-color 0.3s ease;
+}
+
+.item > li > a:hover {
+    background-color: blue;
 }
 
 @media screen and (min-width: 1024px) {
+
+    .news {
+        font-size: 2rem;
+    }
+
     .items {
         grid-template-columns: repeat(4, 1fr) ;
 
@@ -118,6 +143,11 @@ onMounted(() => {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .news {
+        font-size: 1.75rem;
+    }
+
     .items {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -128,6 +158,10 @@ onMounted(() => {
 }
 
 @media screen and (max-width: 767px) { 
+
+    .news {
+        font-size: 1.5rem;
+    }
     
     .items {
         grid-template-columns: 1fr;
