@@ -16,11 +16,9 @@
                         <li v-for="(article, index) in news.articles.slice(0, maxArticles)" :key="index">
                             <img v-if="article.urlToImage" :src="article.urlToImage" alt="Article">
                             <h3>{{ article.title }}</h3>
-                            <p>{{ article.description }}</p>
+                            <p class="description">{{ article.description }}</p>
                             <p>公開日: {{ formatDate(article.publishedAt) }}</p>
-                            <p>
-                                <a :href="article.url" target="_blank">Read more</a>
-                            </p>
+                            <a :href="article.url" target="_blank">Read more</a>
                         </li>
                     </ul>
                 <p v-else-if="!loading">No news available.</p>
@@ -85,6 +83,7 @@ onMounted(() => {
     max-width: 300px; 
     text-align: start;
     overflow: hidden;
+    margin-top: 1rem;
 }
 
 .item img {
@@ -99,6 +98,13 @@ onMounted(() => {
 
 }
 
+.item > li > a {
+    margin-top: 0.7rem;
+    padding: 10px 15px;
+    background-color: royalblue;
+    border-radius: 0.8rem;
+    text-decoration: none;
+}
 
 @media screen and (min-width: 1024px) {
     .items {
