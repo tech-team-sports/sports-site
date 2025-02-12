@@ -6,12 +6,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 const swiperOptions = {
-  centeredSlides: true,
-  slidesPerView: 1,
-  loop: true,
+  centeredSlides: true, // スライドが中央に表示される
+  slidesPerView: 1, // 1枚ずつ表示
+  loop: true, // ループ
   autoplay: {
-    delay: 3200,
-    disableOnInteraction: false,
+    delay: 3200, // 自動再生の遅延
+    disableOnInteraction: false, // ユーザーが操作しても自動再生を停止しない
   },
   pagination: {
     el: ".swiper-pagination",
@@ -24,11 +24,11 @@ const swiperOptions = {
   },
   breakpoints: {
     640: {
-      slidesPerView: 1.25,
+      slidesPerView: 1, // 小さなスクリーンでも1枚ずつ表示
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 2,
+      slidesPerView: 1, // 大きなスクリーンでも1枚ずつ表示
       spaceBetween: 20,
     },
   },
@@ -73,13 +73,13 @@ const swiperOptions = {
 <style scoped>
 .swiper-slider {
   width: 100%;
-  height: 100%;
+  height: 80vh; /* 高さを80%に変更して小さくする */
 }
 
 .swiper-slide img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%; /* 画像がスライダーの高さに合わせる */
+  object-fit: cover; /* 画像が切り取られないように */
 }
 
 .swiper-pagination {
