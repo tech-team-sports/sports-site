@@ -2,7 +2,7 @@
     <div>
         <MainSlider />
         <Links />
-        <NewsList query="ジダン OR ロナウド OR マルセロ" />
+        <NewsList query="メジャーリーグ OR 欧州CL OR バトミントン " />
     </div>
 </template>
 
