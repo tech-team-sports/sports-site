@@ -2,7 +2,7 @@
     <li class="item">
         <img v-if="article.urlToImage" :src="article.urlToImage" :alt="article.title" />
         <h3>{{ article.title }}</h3>
-        <p>{{ article.description }}</p>
+        <!-- <p>{{ article.description }}</p> -->
         <h4>公開日: {{ new Date(article.publishedAt).toLocaleDateString() }}</h4>
         <a :href="article.url" target="_blank">Read more</a>
     </li>
@@ -12,7 +12,7 @@
 import { defineProps } from "vue";
 
 defineProps({
-    article: Object,
+    article: Object
 });
 </script>
 

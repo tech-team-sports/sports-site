@@ -8,12 +8,10 @@
             </li>
             <li class="item">
                 <img src="/assets/img/soccerSlider/stadium.jpg" alt="">
-                
                 <NuxtLink to="/europe"><i class="iconsoccer"></i>欧州CL</NuxtLink>
             </li>
             <li class="item">
                 <img src="/assets/img/soccerSlider/win.jpg" alt="">
-                
                 <NuxtLink to="/world"><i class="iconsoccer"></i>ワールドカップ</NuxtLink>
             </li>
         </ul>

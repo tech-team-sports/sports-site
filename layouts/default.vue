@@ -1,5 +1,5 @@
 <script setup>
-import AppHeader from '@/components/share/AppHeader.vue';
+import AppHeader from '~/components/share/Appheader.vue';
 import AppFooter from '@/components/share/AppFooter.vue';
 import ReturnTopButton from '@/components/whole-animation/ReturnTopButton';
 </script>
