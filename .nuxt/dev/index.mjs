@@ -3,30 +3,30 @@ import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { parentPort, threadId } from 'node:worker_threads';
-import { getRequestHeader, splitCookiesString, setResponseStatus, setResponseHeader, send, getRequestHeaders, defineEventHandler, handleCacheHeaders, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, setResponseHeaders, createError, getRouterParam, readBody, getQuery as getQuery$1, getResponseStatusText } from 'file://D:/webdev/projects/sports-site/node_modules/h3/dist/index.mjs';
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://D:/webdev/projects/sports-site/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { stringify, uneval } from 'file://D:/webdev/projects/sports-site/node_modules/devalue/index.js';
-import destr from 'file://D:/webdev/projects/sports-site/node_modules/destr/dist/index.mjs';
-import { withQuery, joinURL, withTrailingSlash, parseURL, withoutBase, getQuery, joinRelativeURL } from 'file://D:/webdev/projects/sports-site/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://D:/webdev/projects/sports-site/node_modules/vue/server-renderer/index.mjs';
-import { propsToString, renderSSRHead } from 'file://D:/webdev/projects/sports-site/node_modules/@unhead/ssr/dist/index.mjs';
-import { createServerHead as createServerHead$1, CapoPlugin } from 'file://D:/webdev/projects/sports-site/node_modules/unhead/dist/index.mjs';
-import { klona } from 'file://D:/webdev/projects/sports-site/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://D:/webdev/projects/sports-site/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file://D:/webdev/projects/sports-site/node_modules/scule/dist/index.mjs';
-import { createHooks } from 'file://D:/webdev/projects/sports-site/node_modules/hookable/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://D:/webdev/projects/sports-site/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file://D:/webdev/projects/sports-site/node_modules/unenv/runtime/fetch/index.mjs';
+import { getRequestHeader, splitCookiesString, setResponseStatus, setResponseHeader, send, getRequestHeaders, defineEventHandler, handleCacheHeaders, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, setResponseHeaders, createError, getRouterParam, readBody, getQuery as getQuery$1, getResponseStatusText } from 'file://D:/sports-site/node_modules/h3/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://D:/sports-site/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file://D:/sports-site/node_modules/devalue/index.js';
+import destr from 'file://D:/sports-site/node_modules/destr/dist/index.mjs';
+import { withQuery, joinURL, withTrailingSlash, parseURL, withoutBase, getQuery, joinRelativeURL } from 'file://D:/sports-site/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://D:/sports-site/node_modules/vue/server-renderer/index.mjs';
+import { propsToString, renderSSRHead } from 'file://D:/sports-site/node_modules/@unhead/ssr/dist/index.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file://D:/sports-site/node_modules/unhead/dist/index.mjs';
+import { klona } from 'file://D:/sports-site/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file://D:/sports-site/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file://D:/sports-site/node_modules/scule/dist/index.mjs';
+import { createHooks } from 'file://D:/sports-site/node_modules/hookable/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://D:/sports-site/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file://D:/sports-site/node_modules/unenv/runtime/fetch/index.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { consola } from 'file://D:/webdev/projects/sports-site/node_modules/consola/dist/index.mjs';
-import { getContext } from 'file://D:/webdev/projects/sports-site/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/webdev/projects/sports-site/node_modules/errx/dist/index.js';
-import { isVNode, unref, version } from 'file://D:/webdev/projects/sports-site/node_modules/vue/index.mjs';
-import { hash } from 'file://D:/webdev/projects/sports-site/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://D:/webdev/projects/sports-site/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://D:/webdev/projects/sports-site/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file://D:/webdev/projects/sports-site/node_modules/radix3/dist/index.mjs';
-import { defineHeadPlugin } from 'file://D:/webdev/projects/sports-site/node_modules/@unhead/shared/dist/index.mjs';
+import { consola } from 'file://D:/sports-site/node_modules/consola/dist/index.mjs';
+import { getContext } from 'file://D:/sports-site/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/sports-site/node_modules/errx/dist/index.js';
+import { isVNode, unref, version } from 'file://D:/sports-site/node_modules/vue/index.mjs';
+import { hash } from 'file://D:/sports-site/node_modules/ohash/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://D:/sports-site/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://D:/sports-site/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file://D:/sports-site/node_modules/radix3/dist/index.mjs';
+import { defineHeadPlugin } from 'file://D:/sports-site/node_modules/@unhead/shared/dist/index.mjs';
 
 function hasReqHeader(event, name, includes) {
   const value = getRequestHeader(event, name);
@@ -172,13 +172,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _Z28dBn0nqW = (function(nitro) {
+const _uQa70BzZPL = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "D:/webdev/projects/sports-site";
+const rootDir = "D:/sports-site";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -197,7 +197,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : undefined
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _A6nF6o4XJH = (nitroApp) => {
+const _YnbRFbeV2x = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -267,18 +267,18 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _Z28dBn0nqW,
-_A6nF6o4XJH
+  _uQa70BzZPL,
+_YnbRFbeV2x
 ];
 
-const _lazy_6HqfOs = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_ew3LMk = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_6HqfOs, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_6HqfOs, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_ew3LMk, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_ew3LMk, lazy: true, middleware: false, method: undefined }
 ];
 
-const serverAssets = [{"baseName":"server","dir":"D:/webdev/projects/sports-site/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"D:/sports-site/server/assets"}];
 
 const assets = createStorage();
 
@@ -290,11 +290,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\webdev\\projects\\sports-site","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\webdev\\projects\\sports-site\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\webdev\\projects\\sports-site\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\webdev\\projects\\sports-site\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:\\webdev\\projects\\sports-site\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\sports-site","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\sports-site\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\sports-site\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\sports-site\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:\\sports-site\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1161,8 +1161,8 @@ function publicAssetsURL(...path) {
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file://D:/webdev/projects/sports-site/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file://D:/webdev/projects/sports-site/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://D:/sports-site/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://D:/sports-site/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
