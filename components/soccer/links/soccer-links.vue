@@ -3,18 +3,18 @@
         <h2 class="sports">サッカーニュース</h2>
         <ul class="items">
             <li class="item">
-                <img src="/assets/img/sliderimg/baseball.jpg" alt="">
+                <img src="/assets/img/soccerSlider/player.jpg" alt="">
                 <NuxtLink to="/japan"><i class="iconsoccer"></i>Jリーグ</NuxtLink>
             </li>
             <li class="item">
-                <img src="/assets/img/sliderimg/soccer_slider.jpg" alt="">
+                <img src="/assets/img/soccerSlider/stadium.jpg" alt="">
                 
                 <NuxtLink to="/europe"><i class="iconsoccer"></i>欧州CL</NuxtLink>
             </li>
             <li class="item">
-                <img src="/assets/img/sliderimg/bad_slider.jpg" alt="">
+                <img src="/assets/img/soccerSlider/win.jpg" alt="">
                 
-                <NuxtLink to="/player"><i class="iconsoccer"></i>選手</NuxtLink>
+                <NuxtLink to="/world"><i class="iconsoccer"></i>ワールドカップ</NuxtLink>
             </li>
         </ul>
     </section>
