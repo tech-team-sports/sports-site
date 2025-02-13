@@ -43,22 +43,22 @@ const swiperOptions = {
         class="swiper-slider"
       >
         <swiper-slide>
-          <img src="/assets/img/badminton/bad.jpg" alt="Canyon Image" loading="lazy" />
+          <img src="/assets/img/badminton/badtop.jpg" alt="Canyon Image" loading="lazy" />
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/badminton/bad2.jpg" alt="Autumn Image" loading="lazy" />
+          <img src="/assets/img/badminton/badtop.jpg" alt="Autumn Image" loading="lazy" />
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/badminton/bad3.jpg" alt="Landscape Image" loading="lazy" />
+          <img src="/assets/img/badminton/badtop.jpg" alt="Landscape Image" loading="lazy" />
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/badminton/bad4.jpg" alt="Mountain Image" loading="lazy" />
+          <img src="/assets/img/badminton/badtop.jpg" alt="Mountain Image" loading="lazy" />
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/badminton/bad5.jpg" alt="Trees Image" loading="lazy" />
+          <img src="/assets/img/badminton/badtop.jpg" alt="Trees Image" loading="lazy" />
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/badminton/bad6.jpg" alt="Mountains Image" loading="lazy" />
+          <img src="/assets/img/badminton/badtop.jpg" alt="Mountains Image" loading="lazy" />
         </swiper-slide>
         
         <!-- Pagination & Navigation Buttons -->

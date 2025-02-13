@@ -3,7 +3,7 @@
         <h2 class="sports">バドミントンの詳細情報</h2>
         <ul class="items">
             <li class="item">
-                <NuxtLink to="#">
+                <NuxtLink to="/Badminton/badpage">
                     <div class="box">
                         <img src="/assets/img/badminton/bad.jpg" alt="バドミントン1">
                         <div class="content">

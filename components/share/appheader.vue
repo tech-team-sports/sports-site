@@ -18,7 +18,7 @@
               <NuxtLink to="/soccer"><i class="iconsoccer"></i>Soccer</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/badminton"><i class="iconbadminton"></i>Badminton</NuxtLink>
+              <NuxtLink to="/Badminton/badTOP"><i class="iconbadminton"></i>Badminton</NuxtLink>
             </li>
           </ul>
         </li>

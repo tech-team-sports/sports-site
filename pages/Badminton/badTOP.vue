@@ -1,8 +1,8 @@
 <template>
   <div>
-    <BadTOP />
-    <BadContents />
     <BadSlider />
+    <BadContents />
+    
     <div class="badminton-intro">
       <h1 class="title" v-if="badmintonData.title">{{ badmintonData.title }}</h1>
       <p class="description" v-if="badmintonData.description">{{ badmintonData.description }}</p>
@@ -24,9 +24,8 @@
 </template>
 
 <script setup>
-import { useBadminton } from '@/composables/useBadminton';
+import { useBadminton } from '@/composables/Badminton/useBadminton';
 import BadSlider from '/components/badminton/BadSlider.vue';
-import BadTOP from '/components/badminton/BadTOP.vue';
 import BadContents from '/components/badminton/BadContents.vue';
 import NewsList from "@/components/news/NewsList.vue";
 
