@@ -13,19 +13,19 @@ import swiperOptions from "~/composables/useSlider";
       class="swiper-slider"
       >
         <swiper-slide>
-          <img src="/assets/img/soccerSlider/ball.jpg" alt="Canyon Image">
+          <img src="" alt="Canyon Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/sliderimg/soccer_slider.jpg" alt="Autumn Image">
+          <img src="" alt="Autumn Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/soccerSlider/player.jpg" alt="Landscape Image">
+          <img src="" alt="Landscape Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/soccerSlider/stadium.jpg" alt="Landscape Image">
+          <img src="" alt="Landscape Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/soccerSlider/win.jpg" alt="Landscape Image">
+          <img src="" alt="Landscape Image">
         </swiper-slide>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>

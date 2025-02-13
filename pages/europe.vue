@@ -1,12 +1,14 @@
 <template>
-    <div>
-      <h1>Jリーグのページ</h1>
-      <NuxtLink to="/">ホームに戻る</NuxtLink>
-      <MainSlider />
-    </div>
-  </template>
+  <NewsList query="欧州CL" />
+  <linkReturn />
+</template>
 
 <script setup>
-import MainSlider from '~/components/index/sliders/MainSlider.vue';
+import NewsList from '~/components/news/NewsList.vue';
+import linkReturn from '~/components/soccer/links/link-return.vue';
 </script>
+
+<style scoped>
+
+</style>
   
