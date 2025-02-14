@@ -2,12 +2,12 @@
     <div>
       <BadTitle />
       <HistoryPage />
-      <Button />
+      <BadButton />
     </div>
   </template>
   
   <script setup>
   import BadTitle from '/components/badminton/BadTitle.vue';
   import HistoryPage from "/components/badminton/HistoryPage.vue";
-  import Button from "/components/badminton/Button.vue";
+  import BadButton from "/components/badminton/BadButton.vue";
   </script>
