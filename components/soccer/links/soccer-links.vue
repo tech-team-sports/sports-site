@@ -3,17 +3,22 @@
         <h2 class="sports">サッカーニュース</h2>
         <ul class="items">
             <li class="item">
-                <img src="/assets/img/socce/ja.jpg" alt="">
-                <NuxtLink to="/japan"><i class="iconsoccer"></i>Jリーグ</NuxtLink>
+                <NuxtLink to="/japan">
+                    <img src="/assets/img/socce/ja.jpg" alt="Jリーグ">
+                    <i class="iconsoccer"></i>Jリーグ
+                </NuxtLink>
             </li>
             <li class="item">
-                <img src="/assets/img/sliderimg/soccer_stadium.jpg" alt="">
-                <NuxtLink to="/europe"><i class="iconsoccer"></i>欧州CL</NuxtLink>
-                <!-- sliderimg -->
+                <NuxtLink to="/europe">
+                    <img src="/assets/img/sliderimg/soccer_stadium.jpg" alt="欧州CL">
+                    <i class="iconsoccer"></i>欧州CL
+                </NuxtLink>
             </li>
             <li class="item">
-                <img src="/assets/img/socce/france.jpg" alt="">
-                <NuxtLink to="/world"><i class="iconsoccer"></i>ワールドカップ</NuxtLink>
+                <NuxtLink to="/world">
+                    <img src="/assets/img/socce/france.jpg" alt="ワールドカップ">
+                    <i class="iconsoccer"></i>ワールドカップ
+                </NuxtLink>
             </li>
         </ul>
     </section>
@@ -49,6 +54,10 @@
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
+}
+
+.item img:hover {
+    opacity: 0.8;
 }
 
 .item a {
@@ -111,16 +120,18 @@
   ------------------------------ */
 
 .iconsoccer::before {
-  content: "";
-  background-image: url("/assets/img/icon/soccericon.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-right: 8px;
-  margin-bottom: 1px;
-  vertical-align: middle;
+    content: "";
+    background-image: url("/assets/img/icon/soccericon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 1px;
+    vertical-align: middle;
 }
+
+
 
 </style>
