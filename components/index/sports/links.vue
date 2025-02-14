@@ -15,7 +15,7 @@
                 </NuxtLink>
             </li>
             <li class="item">
-                <NuxtLink to="/badminton">
+                <NuxtLink to="/Badminton/badTOP">
                     <img src="/assets/img/sliderimg/bad_slider.jpg" alt="">              
                     <i class="iconbadminton"></i>バトミントン
                 </NuxtLink>
