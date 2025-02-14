@@ -3,7 +3,7 @@
         <ul class="items">
           <li class="item">
             <h2>基本ルール</h2>
-            <img src="" alt="">
+            <img src="/assets/img/socce/play.jpg" alt="" loading="lazy">
             <ul>
               <li><strong>試合時間:</strong> 前半45分、後半45分の合計90分 (延長戦やPK戦あり)</li>
               <li><strong>プレイヤー:</strong> 1チーム11人(GK1人+フィールドプレイヤー10人)</li>
@@ -13,7 +13,7 @@
           </li>
           <li class="item">
             <h2>セットプレー</h2>
-            <img src="" alt="">
+            <img src="/assets/img/socce/free.jpg" alt="" loading="lazy">
             <ul>
               <li><strong>フリーキック:</strong> 相手チームの反則時に与えられる</li>
               <li><strong>ゴールキック:</strong> 攻撃側チームがボールをゴールライン外へ出した場合に与えられる</li>
@@ -24,7 +24,7 @@
           </li>
           <li class="item">
             <h2>主要な反則</h2>
-            <img src="" alt="">
+            <img src="/assets/img/socce/foul.jpg" alt="" loading="lazy">
             <ul>
               <li><strong>遅延行為:</strong> 時間稼ぎを目的としたプレー</li>
               <li><strong>ファウル:</strong> ラフプレー（押す・蹴る・引っ張るなど）</li>
@@ -34,7 +34,7 @@
           </li>
           <li class="item">
             <h2>カード制度</h2>
-            <img src="" alt="">
+            <img src="/assets/img/socce/red.jpg" alt="" loading="lazy">
             <ul>
               <li><strong>イエローカード:</strong> 警告 (2枚で退場)</li>
               <li><strong>レッドカード:</strong> 一発退場（その試合に出場不可）</li>
