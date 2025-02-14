@@ -1,6 +1,6 @@
 <template>
   <NewsList query="欧州CL" />
-  <linkReturn />
+  <linkReturn/>
 </template>
 
 <script setup>
@@ -11,4 +11,3 @@ import linkReturn from '~/components/soccer/links/link-return.vue';
 <style scoped>
 
 </style>
-  

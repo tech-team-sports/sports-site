@@ -4,6 +4,6 @@ export default defineNuxtConfig({
   pages: true,
   components: true,
   build: {
-    transpile: ["swiper"], 
+    transpile: ["swiper","gsap"], 
   },
 });
