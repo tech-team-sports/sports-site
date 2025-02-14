@@ -13,9 +13,10 @@ export default {
 <style scoped>
 .data-container {
   display: flex;
+  scale: 1.6;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin: 80px;
 }
 
 .btn {
@@ -26,7 +27,7 @@ export default {
   font-size: 28px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .btn::after,
@@ -36,7 +37,7 @@ export default {
   height: 10px;
   position: absolute;
   border: 0px solid #fff;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .btn::after {
@@ -60,7 +61,7 @@ export default {
 
 .btn:hover::before,
 .btn:hover::after {
-  width: 100%;
-  height: 100%;
+  width: 104%;
+  height: 111%;
 }
 </style>
