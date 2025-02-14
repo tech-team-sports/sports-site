@@ -1,4 +1,3 @@
-
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination, Navigation, Autoplay, Keyboard } from 'swiper/modules';
 import 'swiper/css';
