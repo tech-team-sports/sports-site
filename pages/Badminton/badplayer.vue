@@ -1,105 +1,93 @@
 <template>
-  <div class="players-page">
-    <h1>バドミントン選手の紹介</h1>
-    <div class="players-list">
-      <div 
-        v-for="(player, index) in players" 
-        :key="index" 
-        class="player-card"
-      >
-      <img :src="'/assets/img/badminton/' + player.image" :alt="player.name" class="player-image" />
-        <div class="player-info">
-          <h2>{{ player.name }}</h2>
-          <p>{{ player.bio }}</p>
-          <ul>
-            <li>国籍: {{ player.country }}</li>
-            <li>生年: {{ player.birthYear }}</li>
-            <li>主な成績: {{ player.achievements.join(', ') }}</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <div>
+    <BadTitle />
+    <PlayersList />
+    <Button />
   </div>
 </template>
 
-<script>
-import { usePlayers } from '@/composables/Badminton/usePlayers';
-
-export default {
-  setup() {
-    const { players } = usePlayers();
-    return { players };
-  }
-}
+<script setup>
+import BadTitle from '/components/badminton/BadTitle.vue';
+import PlayersList from '/components/badminton/PlayersList.vue';
+import Button from "/components/badminton/Button.vue";
 </script>
 
 <style scoped>
 .players-page {
-  padding: 40px 20px;
-  background: linear-gradient(135deg, #a7c7e7, #e0e7f7);
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #3b8d99, #5aabbb);
   min-height: 100vh;
+  font-family: 'Arial', sans-serif;
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
   text-align: center;
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #333;
-  letter-spacing: 1px;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .players-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
   justify-items: center;
+  padding: 0 20px;
 }
 
 .player-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 15px;
   background-color: #fff;
-  padding: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
   overflow: hidden;
-  width: 100%;
-  max-width: 350px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.card-inner {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
 }
 
 .player-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }
 
 .player-image {
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: 200px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #e0e7f7;
-  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.player-card:hover .player-image {
+  transform: scale(1.1);
 }
 
 .player-info {
+  padding: 20px;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
 .player-info h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-size: 26px;
   color: #333;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .player-info p {
   font-size: 16px;
   color: #666;
+  line-height: 1.5;
   margin-bottom: 15px;
-  line-height: 1.6;
 }
 
 .player-info ul {
@@ -111,10 +99,31 @@ h1 {
   font-size: 14px;
   color: #444;
   margin-bottom: 8px;
+  font-weight: 500;
 }
 
 .player-info li span {
   font-weight: bold;
-  color: #2a6fa6;
+  color: #007BFF;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .players-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .player-card {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .players-list {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
