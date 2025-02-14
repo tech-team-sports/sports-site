@@ -17,12 +17,14 @@
         </div>
       </div>
     </div>
+    <BadButton />
     </div>
 </template>
 
 <script setup>
 import { useBadminton } from '@/composables/Badminton/useBadminton';
 import BadTitle from '/components/badminton/BadTitle.vue';
+import BadButton from "/components/badminton/BadButton.vue";
 
 const { badmintonData } = useBadminton();
 </script>

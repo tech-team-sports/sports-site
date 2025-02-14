@@ -15,7 +15,7 @@
             <li class="item">
                 <NuxtLink to="/Badminton/badplayer">
                     <div class="box">
-                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン2">
+                        <img src="/assets/img/badminton/momota.jpg" alt="バドミントン2">
                         <div class="content">
                             <i class="iconbadminton"></i>選手紹介
                         </div>
@@ -35,7 +35,7 @@
             <li class="item">
                 <NuxtLink to="#">
                     <div class="box">
-                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン4">
+                        <img src="/assets/img/badminton/racket.jpg" alt="バドミントン4">
                         <div class="content">
                             <i class="iconbadminton"></i>用具
                         </div>
@@ -53,7 +53,7 @@
                 </NuxtLink>
             </li>
             <li class="item">
-                <NuxtLink to="#">
+                <NuxtLink to="/Badminton/badHistory">
                     <div class="box">
                         <img src="/assets/img/badminton/bad.jpg" alt="バドミントン6">
                         <div class="content">
@@ -67,7 +67,7 @@
 </template>
 
 <script setup>
-// 特にスクリプト部分には変更は不要ですが、必要なデータを追加することができます。
+
 </script>
 
 <style scoped>
