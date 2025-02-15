@@ -3,11 +3,15 @@
         <h2 class="sports">バドミントンの詳細情報</h2>
         <ul class="items">
             <li class="item">
-                <NuxtLink to="/Badminton/badpage">
+                <NuxtLink to="/Badminton/badrule">
                     <div class="box">
                         <img src="/assets/img/badminton/bad.jpg" alt="バドミントン1">
                         <div class="content">
-                            <i class="iconbadminton"></i>バドミントンルール<i class="arrow"></i>
+                            <i class="iconbadminton"></i>
+                            <div>
+                                <p class="title">バドミントンルール</p>
+                                <p class="description">基本的なルールを詳しく解説</p>
+                            </div>
                         </div>
                     </div>
                 </NuxtLink>
@@ -17,37 +21,53 @@
                     <div class="box">
                         <img src="/assets/img/badminton/momota.jpg" alt="バドミントン2">
                         <div class="content">
-                            <i class="iconbadminton"></i>選手紹介
+                            <i class="iconbadminton"></i>
+                            <div>
+                                <p class="title">選手紹介</p>
+                                <p class="description">有名なバドミントン選手を紹介</p>
+                            </div>
                         </div>
                     </div>
                 </NuxtLink>
             </li>
             <li class="item">
-                <NuxtLink to="#">
+                <NuxtLink to="/Badminton/badpage">
                     <div class="box">
                         <img src="/assets/img/badminton/bad.jpg" alt="バドミントン3">
                         <div class="content">
-                            <i class="iconbadminton"></i>テクニック
+                            <i class="iconbadminton"></i>
+                            <div>
+                                <p class="title">テクニック</p>
+                                <p class="description">試合で使える技術を学ぼう</p>
+                            </div>
                         </div>
                     </div>
                 </NuxtLink>
             </li>
             <li class="item">
-                <NuxtLink to="#">
+                <NuxtLink to="/Badminton/badtool">
                     <div class="box">
                         <img src="/assets/img/badminton/racket.jpg" alt="バドミントン4">
                         <div class="content">
-                            <i class="iconbadminton"></i>用具
+                            <i class="iconbadminton"></i>
+                            <div>
+                                <p class="title">用具</p>
+                                <p class="description">ラケットやシャトルの選び方</p>
+                            </div>
                         </div>
                     </div>
                 </NuxtLink>
             </li>
             <li class="item">
-                <NuxtLink to="#">
+                <NuxtLink to="/Badminton/badTournament">
                     <div class="box">
                         <img src="/assets/img/badminton/bad.jpg" alt="バドミントン5">
                         <div class="content">
-                            <i class="iconbadminton"></i>大会
+                            <i class="iconbadminton"></i>
+                            <div>
+                                <p class="title">大会</p>
+                                <p class="description">バドミントンの主要大会を紹介</p>
+                            </div>
                         </div>
                     </div>
                 </NuxtLink>
@@ -57,7 +77,11 @@
                     <div class="box">
                         <img src="/assets/img/badminton/bad.jpg" alt="バドミントン6">
                         <div class="content">
-                            <i class="iconbadminton"></i>歴史
+                            <i class="iconbadminton"></i>
+                            <div>
+                                <p class="title">歴史</p>
+                                <p class="description">バドミントンの歴史を知ろう</p>
+                            </div>
                         </div>
                     </div>
                 </NuxtLink>
@@ -67,7 +91,6 @@
 </template>
 
 <script setup>
-
 </script>
 
 <style scoped>
@@ -87,7 +110,7 @@
 .items {
     display: grid;
     gap: 1.2rem;
-    grid-template-columns: repeat(3, 1fr); /* 1列に3つ並べる */
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .item {
@@ -101,11 +124,14 @@
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: 250px; /* ボックスの高さを統一 */
 }
 
 .box img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* 画像の比率を統一 */
     transition: opacity 0.3s ease;
 }
 
@@ -130,6 +156,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
     transition: background 0.3s ease;
 }
 
@@ -137,26 +164,32 @@
     background: rgba(0, 0, 0, 0.8);
 }
 
-.arrow {
-    margin-left: 8px;
-    font-size: 14px;
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 0.9rem;
+    margin-top: 2px;
+    color: #ddd;
 }
 
 @media screen and (min-width: 1024px) {
     .items {
-        grid-template-columns: repeat(3, 1fr); /* 1列に3つ並べる */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .items {
-        grid-template-columns: repeat(2, 1fr); /* 2列に変更 */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 767px) {
     .items {
-        grid-template-columns: repeat(1, 1fr); /* 1列に変更 */
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
