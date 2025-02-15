@@ -45,6 +45,5 @@ useGsapTextAnimation("animated-text", "FIFAワールドカップのニュース�
 }
 }
 
-
 </style>
   
