@@ -56,6 +56,10 @@
     border-radius: 0.5rem;
 }
 
+.item img:hover {
+    opacity: 0.8;
+}
+
 .item a {
     display: block;
     margin-top: 1rem;

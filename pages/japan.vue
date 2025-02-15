@@ -1,33 +1,23 @@
 <template>
-  <div class="title">
-    <h1 id="myText">Jリーグ</h1>
-  </div>
+  <div class="animated-text"></div>
   <NewsList query="サッカー日本リーグ" />
   <linkReturn />
 </template>
 
 <script setup>
-import { onMounted } from "vue";
-import { gsap } from "gsap";
-import { TextPlugin } from "gsap/TextPlugin";
-
 import NewsList from "~/components/news/NewsList.vue";
 import linkReturn from "~/components/soccer/links/link-return.vue";
+import { useGsapTextAnimation } from "~/composables/Gsap/useGsapTextAnimation";
 
-gsap.registerPlugin(TextPlugin);
-
-// onMounted を使って DOM がレンダリングされた後に GSAP を実行
-onMounted(() => {
-  gsap.to("#myText", { duration: 1, text: "サッカーニュース", delay: 1 });
-});
+useGsapTextAnimation("animated-text","Jリーグのニュースです")
 </script>
 
 <style scoped>
-.title {
+.animated-text {
   display: flex;
+  margin-top: 2rem;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  font-size: 3rem;
 }
+
 </style>
