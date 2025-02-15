@@ -1,12 +1,11 @@
 import { onMounted } from "vue";
 import { gsap } from "gsap";
+import type { CSSProperties } from "vue";
 
-export function  useGsapTextAnimation(targetClass:string, text: string) {
+export function useGsapTextAnimation(targetClass: string, text: string, ) {
     onMounted(() => {
-        const  paragraph = document.querySelector(`.${targetClass}`);
+        const paragraph = document.querySelector(`.${targetClass}`) as HTMLElement | null;
         if (!paragraph) return;
-
-        paragraph.textContent = text;
 
         const newTextContent = [...text]
             .map((char) => `<span>${char}</span>`)
@@ -20,5 +19,3 @@ export function  useGsapTextAnimation(targetClass:string, text: string) {
         );
     });
 }
-
-//any 
