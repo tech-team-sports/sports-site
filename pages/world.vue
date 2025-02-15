@@ -16,8 +16,32 @@ useGsapTextAnimation("animated-text", "FIFAワールドカップのニュース�
 .animated-text {
   display: flex;
   margin-top: 2rem;
+  max-width: 1200px;
+  padding: 1rem;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
+  color: aquamarine;
 }
+
+@media screen and (min-width: 1024px) {
+  .animated-text {
+    font-size: 2.5rem;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .animated-text {
+    font-size: 2.25rem;
+}
+}
+
+@media screen and (max-width: 767px) {
+  .animated-text {
+    font-size: 2rem;
+}
+}
+
+
 </style>
   

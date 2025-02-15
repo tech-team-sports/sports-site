@@ -9,7 +9,6 @@ import NewsList from '~/components/news/NewsList.vue';
 import linkReturn from '~/components/soccer/links/link-return.vue';
 import { useGsapTextAnimation } from '~/composables/Gsap/useGsapTextAnimation';
 
-
 useGsapTextAnimation("animated-text", "欧州CLのニュースです")
 </script>
 

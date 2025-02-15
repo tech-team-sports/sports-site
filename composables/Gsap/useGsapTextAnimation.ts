@@ -1,15 +1,13 @@
 import { onMounted } from "vue";
 import { gsap } from "gsap";
 
-export function  useGsapTextAnimation(targetClass:any, text: any) {
+export function  useGsapTextAnimation(targetClass:string, text: string) {
     onMounted(() => {
         const  paragraph = document.querySelector(`.${targetClass}`);
         if (!paragraph) return;
 
-        // 直接渡されたテキストを適用
         paragraph.textContent = text;
 
-        // テキストを1文字ずつ <span> で囲む
         const newTextContent = [...text]
             .map((char) => `<span>${char}</span>`)
             .join("");
@@ -22,3 +20,5 @@ export function  useGsapTextAnimation(targetClass:any, text: any) {
         );
     });
 }
+
+//any 
