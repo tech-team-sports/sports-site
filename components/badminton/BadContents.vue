@@ -33,7 +33,7 @@
                 </NuxtLink>
             </li>
             <li class="item">
-                <NuxtLink to="#">
+                <NuxtLink to="/Badminton/badtool">
                     <div class="box">
                         <img src="/assets/img/badminton/racket.jpg" alt="バドミントン4">
                         <div class="content">
