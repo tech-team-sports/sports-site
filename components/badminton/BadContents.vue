@@ -3,7 +3,7 @@
         <h2 class="sports">バドミントンの詳細情報</h2>
         <ul class="items">
             <li class="item">
-                <NuxtLink to="/Badminton/badpage">
+                <NuxtLink to="/Badminton/badrule">
                     <div class="box">
                         <img src="/assets/img/badminton/bad.jpg" alt="バドミントン1">
                         <div class="content">
@@ -31,7 +31,7 @@
                 </NuxtLink>
             </li>
             <li class="item">
-                <NuxtLink to="#">
+                <NuxtLink to="/Badminton/badpage">
                     <div class="box">
                         <img src="/assets/img/badminton/bad.jpg" alt="バドミントン3">
                         <div class="content">
@@ -59,7 +59,7 @@
                 </NuxtLink>
             </li>
             <li class="item">
-                <NuxtLink to="#">
+                <NuxtLink to="/Badminton/badTournament">
                     <div class="box">
                         <img src="/assets/img/badminton/bad.jpg" alt="バドミントン5">
                         <div class="content">
