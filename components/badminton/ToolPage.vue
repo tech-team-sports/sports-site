@@ -83,25 +83,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 50px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    background: #f4f4f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff, #f4f4f9);
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   }
   
   h2 {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+    color: #222;
+    margin-bottom: 20px;
   }
   
   .intro {
     font-size: 18px;
-    color: #666;
+    color: #555;
     margin-bottom: 40px;
     text-align: center;
     max-width: 800px;
@@ -109,34 +109,29 @@
   
   .equipment-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     width: 100%;
-    margin-top: 20px;
   }
   
   .equipment-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
   }
   
   .equipment-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   }
   
   .equipment-image {
     width: 100%;
-    max-width: 280px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
   }
   
   .equipment-item:hover .equipment-image {
@@ -144,55 +139,24 @@
   }
   
   .equipment-info {
+    padding: 20px;
     text-align: center;
-    margin-top: 15px;
   }
   
   .equipment-info h3 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
-  }
-  
-  .equipment-info p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
   }
   
   .detailed-section {
     margin-top: 40px;
     padding: 30px;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 1100px;
   }
-  
-  .detailed-section h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .detailed-section p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-  
-  .detailed-section ul {
-    list-style-type: disc;
-    margin-left: 30px;
-    color: #555;
-  }
-  
-  .detailed-section ul li {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
   </style>
-  
