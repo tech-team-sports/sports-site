@@ -9,4 +9,10 @@ export default defineNuxtConfig({
     preset: "static", 
   },
   compatibilityDate: "2025-02-15",
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in',
+    },
+  },
 })
