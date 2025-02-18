@@ -29,7 +29,7 @@ export default function usePlayers() {
       playStyle: "ディフェンシブ",
       achievements: "世界選手権優勝 (2017)",
       description: "粘り強いラリーと正確なネットプレーが特徴。スタミナが豊富で、どんなラリーにも対応できるタフさが武器。",
-      image: "/img/badminton/momota.jpg",
+      image: "/img/badminton/okuhara.jpg",
       careerHighlight: "2017年世界選手権優勝",
       playStyleDetail: "ディフェンシブなプレースタイルで、相手に隙を与えずにラリーを続ける。",
       quote: "「諦めないことが一番大事」"
@@ -45,7 +45,7 @@ export default function usePlayers() {
       playStyle: "カウンター型",
       achievements: "世界選手権優勝 (2022)",
       description: "高いディフェンス力と速いカウンターショットが特徴。相手の攻撃をしのぎながらチャンスを作り出すスタイル。",
-      image: "/img/badminton/momota.jpg",
+      image: "/img/badminton/yamaguti.jpg",
       careerHighlight: "2022年世界選手権優勝",
       playStyleDetail: "カウンターショットを得意とし、相手の攻撃を逆転に繋げる。",
       quote: "「勝ちたい気持ちがすべて。」"
@@ -61,7 +61,7 @@ export default function usePlayers() {
       playStyle: "ダブルススペシャリスト",
       achievements: "全英オープン優勝 (2021)",
       description: "ダブルスの戦略家として知られ、ネット前での素早い反応と的確なリターンが強み。",
-      image: "/img/badminton/momota.jpg",
+      image: "/img/badminton/watanabe.jpg",
       careerHighlight: "2021年全英オープン優勝",
       playStyleDetail: "ネットプレーで素早い反応を示し、ダブルスでの強さを発揮。",
       quote: "「パートナーとの信頼関係が大事。」"
@@ -77,7 +77,7 @@ export default function usePlayers() {
       playStyle: "ダブルススペシャリスト",
       achievements: "全英オープン優勝 (2021)",
       description: "渡辺勇大との混合ダブルスで活躍。スマッシュの決定力が高く、攻撃の起点となる選手。",
-      image: "/img/badminton/momota.jpg",
+      image: "/img/badminton/higasino.jpg",
       careerHighlight: "2021年全英オープン優勝",
       playStyleDetail: "攻撃的なプレースタイルで、特にスマッシュの威力が強み。",
       quote: "「常に前向きに、攻めることが大切。」"
@@ -93,7 +93,7 @@ export default function usePlayers() {
       playStyle: "ダブルスオールラウンダー",
       achievements: "世界ランキング1位経験者",
       description: "パワーと精密なコントロールを兼ね備えたダブルスの名手。長身を活かしたスマッシュが持ち味。",
-      image: "/img/badminton/momota.jpg",
+      image: "/img/badminton/hukusima.jpg",
       careerHighlight: "世界ランキング1位経験者",
       playStyleDetail: "スマッシュを駆使した攻撃力に加え、精密なネットプレーも得意。",
       quote: "「チームワークが勝利の鍵。」"
@@ -109,7 +109,7 @@ export default function usePlayers() {
       playStyle: "ディフェンス型",
       achievements: "世界ランキング1位経験者",
       description: "福島由紀とのペアで世界を席巻。正確なレシーブと粘り強いラリーで相手を圧倒する。",
-      image: "/img/badminton/momota.jpg",
+      image: "/img/badminton/hirota.jpg",
       careerHighlight: "世界ランキング1位経験者",
       playStyleDetail: "ディフェンス力が抜群で、長いラリーを支配する。",
       quote: "「練習と本番で全力を尽くす。」"
@@ -125,7 +125,7 @@ export default function usePlayers() {
       playStyle: "アグレッシブアタッカー",
       achievements: "2022年世界ジュニア準優勝",
       description: "若手ながらトップレベルの実力を持つ。素早いフットワークと鋭いショットが特徴。",
-      image: "/img/badminton/momota.jpg",
+      image: "/img/badminton/naraoka.jpg",
       careerHighlight: "2022年世界ジュニア準優勝",
       playStyleDetail: "アグレッシブな攻撃型で、速いフットワークを活かしたプレースタイル。",
       quote: "「攻める気持ちが勝負を決める。」"
