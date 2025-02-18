@@ -1,4 +1,4 @@
-import{_ as Er}from"./fQRbQ1Xt.js";import{_ as zr,q as Fr,o as Lr,w as Ir,d as Nr,D as Br}from"./n7hfHV_E.js";const Vr={};function Ur(u,t){const e=Er;return Lr(),Fr(e,{class:"btn",to:"/soccer"},{default:Ir(()=>t[0]||(t[0]=[Nr("サッカーのページへ戻る")])),_:1})}const ss=zr(Vr,[["render",Ur],["__scopeId","data-v-5084f426"]]);function mt(u){if(u===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return u}function Ei(u,t){u.prototype=Object.create(t.prototype),u.prototype.constructor=u,u.__proto__=t}/*!
+import{_ as Er}from"./I_0fPbKu.js";import{_ as zr,q as Fr,o as Lr,w as Ir,d as Nr,D as Br}from"./NTCrr4LP.js";const Vr={};function Ur(u,t){const e=Er;return Lr(),Fr(e,{class:"btn",to:"/soccer"},{default:Ir(()=>t[0]||(t[0]=[Nr("サッカーのページへ戻る")])),_:1})}const ss=zr(Vr,[["render",Ur],["__scopeId","data-v-5084f426"]]);function mt(u){if(u===void 0)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return u}function Ei(u,t){u.prototype=Object.create(t.prototype),u.prototype.constructor=u,u.__proto__=t}/*!
  * GSAP 3.12.7
  * https://gsap.com
  *
