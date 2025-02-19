@@ -52,36 +52,15 @@ const swiperOptions = {
                 </swiper-slide>
                 <swiper-slide>
                     <img
-                        src="/assets/img/baseball/basetop.jpg"
+                        src="/assets/img/baseball/basetop2.jpg"
                         alt="Autumn Image"
                         loading="lazy"
                     />
                 </swiper-slide>
                 <swiper-slide>
                     <img
-                        src="/assets/img/baseball/basetop.jpg"
+                        src="/assets/img/baseball/basetop3.jpg"
                         alt="Landscape Image"
-                        loading="lazy"
-                    />
-                </swiper-slide>
-                <swiper-slide>
-                    <img
-                        src="/assets/img/baseball/basetop.jpg"
-                        alt="Mountain Image"
-                        loading="lazy"
-                    />
-                </swiper-slide>
-                <swiper-slide>
-                    <img
-                        src="/assets/img/baseball/basetop.jpg"
-                        alt="Trees Image"
-                        loading="lazy"
-                    />
-                </swiper-slide>
-                <swiper-slide>
-                    <img
-                        src="/assets/img/baseball/basetop.jpg"
-                        alt="Mountains Image"
                         loading="lazy"
                     />
                 </swiper-slide>
