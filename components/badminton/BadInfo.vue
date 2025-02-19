@@ -1,163 +1,90 @@
 <template>
-    <div class="badminton-info">
-      <h1>バドミントンの基本情報</h1>
-      
-      <!-- バドミントンの魅力 -->
-      <section class="intro-section">
-        <h2>バドミントンの魅力</h2>
-        <p>バドミントンは、素早い反応と戦略が求められるエキサイティングなスポーツです。シンプルなルールながらも奥深いゲーム性を持っており、プレイヤー同士の緊張感溢れる戦いが繰り広げられます。</p>
-      </section>
-  
-      <!-- バドミントンのルール -->
-      <section class="rule-section">
-        <h2>バドミントンのルール</h2>
-        <p>バドミントンは、2人または4人で行うスポーツです。ラケットでシャトルを相手のコートに打ち合い、得点を競います。ポイントは、シャトルが相手のコートに落ちたとき、または相手のミスによって得られます。</p>
-        <ul>
-          <li><strong>ゲームの開始：</strong>最初にサーブを行う選手は、コインで決めます。</li>
-          <li><strong>得点：</strong>1ゲームは21点先取。2点差がついた場合、勝者が決まります。</li>
-          <li><strong>サーブのルール：</strong>サーブは交互に行い、サーバーが得点した場合にのみ、サーブ権が交代します。</li>
-          <li><strong>ネット越し：</strong>シャトルはネットを越えて相手側に飛ばさなければならず、ネットに触れるとポイントは相手に渡ります。</li>
-        </ul>
-      </section>
-  
-      <!-- 必要な用具 -->
-      <section class="equipment-section">
-        <h2>必要な用具</h2>
-        <p>バドミントンをプレイするためには、以下の用具が必要です。</p>
-        <div class="equipment-cards">
-          <div class="card">
-            <h3>ラケット</h3>
-            <p>軽くて丈夫なラケットを選びます。</p>
-          </div>
-          <div class="card">
-            <h3>シャトル</h3>
-            <p>羽根でできたシャトルを使用します。プラスチック製や羽根製が一般的です。</p>
-          </div>
-          <div class="card">
-            <h3>シューズ</h3>
-            <p>滑りにくく、足を保護するシューズが必要です。</p>
-          </div>
-        </div>
-      </section>
-  
-      <!-- 得点方法 -->
-      <section class="scoring-section">
-        <h2>バドミントンの得点方法</h2>
-        <p>バドミントンは、ラリー（シャトルの打ち合い）でポイントを競います。プレイヤーまたはチームが相手のミスを誘うことでポイントを得ます。</p>
-        <ul>
-          <li><strong>ラリー：</strong>シャトルがコート内に落ちる、または相手がミスした場合に得点になります。</li>
-          <li><strong>サービスの順番：</strong>サービスが成功した場合、サーバーは次のサーブを行います。</li>
-        </ul>
-      </section>
-  
-      <!-- 面白い事実 -->
-      <section class="fun-facts-section">
-        <h2>面白いバドミントンの事実</h2>
-        <ul>
-          <li>バドミントンは、最も速いスポーツの一つで、シャトルが時速300km以上で飛ぶことがあります。</li>
-          <li>バドミントンは、インドで起源を持つスポーツです。</li>
-          <li>オリンピック競技として正式に採用されたのは1992年です。</li>
-        </ul>
-      </section>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'BadmintonInfo',
-  }
-  </script>
-  
-  <style scoped>
-  .badminton-info {
-    margin: 20px;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #333;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #f39c12;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    margin-top: 30px;
-    color: #2c3e50;
-    border-bottom: 3px solid #f39c12;
-    padding-bottom: 10px;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 12px;
-    font-size: 1.2rem;
-  }
-  
-  strong {
-    font-weight: bold;
-  }
-  
-  .intro-section,
-  .rule-section,
-  .fun-facts-section {
-    margin: 20px 0;
-  }
-  
-  .equipment-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 20px;
-  }
-  
-  .card {
-    background: #ecf0f1;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card h3 {
-    margin-top: 10px;
-    color: #2c3e50;
-    font-size: 1.5rem;
-  }
-  
-  .card p {
-    font-size: 1.1rem;
-    color: #7f8c8d;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card:hover p {
-    color: #f39c12;
-  }
-  
-  @media (max-width: 768px) {
-    .equipment-cards {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .equipment-cards {
-      grid-template-columns: 1fr;
-    }
-  }
-  </style>
-  
+  <div class="badminton-info">
+    <h1>バドミントンの競技紹介</h1>
+
+    <section>
+      <h2>バドミントンの競技ルール</h2>
+      <p>
+        バドミントンは、2人または4人のプレイヤーがシャトルと呼ばれる羽根付きのボールを打ち合い、得点を競う競技です。基本的にはネットを挟んで向かい合ったプレイヤーがシャトルを打ち合い、シャトルが相手のコートに落ちるか、相手がシャトルを打ち返せない場合に得点が入ります。バドミントンは非常にスピード感のあるスポーツで、技術力と反射神経が重要な役割を果たします。
+      </p>
+      <h3>試合の形式</h3>
+      <p>
+        バドミントンの試合は、シングルス（1対1）またはダブルス（2対2）で行われます。試合は通常、ゲーム形式で進行し、1セット11点または21点を先取した選手がそのセットを勝利します。3セットマッチが一般的で、最初に2セットを先取した選手が勝者となります。セットの間に1分間の休憩が設けられることが多いです。
+      </p>
+      <h3>サーブ</h3>
+      <p>
+        サーブはゲームを開始する際に重要な役割を果たします。シングルスの場合、サーブは右側のサービスエリアから始まり、次に左側のエリアにサーブを打ちます。サーブを打つ際には、シャトルがネットを越え、相手のサービスエリアに入らなければなりません。サーブが不正の場合（例えばネットに引っかかったり、サービスエリアに入らなかったりした場合）は、相手に得点が与えられます。ダブルスでは、サーブが交互に行われ、サーブをしたチームがラリーでポイントを得た場合にそのままサーブを続けます。
+      </p>
+      <h3>得点方法</h3>
+      <p>
+        バドミントンでは、シャトルが相手コートに落ちるか、相手がシャトルを返せなかった場合に得点が入ります。また、相手が規則に違反した場合にも得点が加算されます。例えば、シャトルがコート外に飛び出す、シャトルがネットに引っかかる、または選手が無理な動きでシャトルを返そうとする場合などです。
+      </p>
+      <h3>反則</h3>
+      <p>
+        バドミントンの反則にはいくつかの種類があります。例えば、シャトルがネットを越えない、またはコート外に出てしまった場合、または選手が相手のコートに立ち入ることが反則となります。選手がシャトルを持ってしまう、または触れてしまうことも反則です。反則が発生すると、得点が相手に与えられます。
+      </p>
+      <h3>ゲームの進行</h3>
+      <p>
+        ゲームが進行する中で、プレイヤーはシャトルの飛び方やスピードを読みながら、素早く反応する必要があります。バドミントンは非常にスピード感のあるスポーツで、選手は瞬時に判断し、体の動きを調整してシャトルを打ち返さなければなりません。また、ダブルスでは2人の選手が連携してプレーをするため、パートナーとのコミュニケーションも非常に重要です。
+      </p>
+      <h3>ラリー</h3>
+      <p>
+        ラリーとは、サーブが行われた後、シャトルが双方のプレイヤー間で打ち合われる場面を指します。ラリー中、選手はシャトルをネット越しに打ち合い、シャトルが相手コートに落ちるか、相手が返せない場合に得点が入ります。ラリーは非常に短く、数秒で終わることもあれば、長時間続くこともあります。ラリーの途中では、選手は様々なショットを使い分けて、相手の隙間を狙う戦術を取ることが多いです。
+      </p>
+      <h3>試合の終了</h3>
+      <p>
+        試合が終了する条件は、最初に2セットを取った選手が勝者となることです。3セットマッチで行われることが多く、勝者はその時点で決定します。試合が終わると、両選手はお互いにスポーツマンシップを持って握手を交わし、試合を終了します。
+      </p>
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'BadmintonInfo',
+}
+</script>
+
+<style scoped>
+.badminton-info {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.badminton-info h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #16a085;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #2980b9;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+  color: #34495e;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+</style>
