@@ -102,11 +102,7 @@
         "./imports"
       ],
       "#app-manifest": [
-<<<<<<< HEAD
-        "./manifest/meta/dev.json"
-=======
         "./manifest/meta/dev"
->>>>>>> 1b966f05fd73fdd934609abcb253b5108ab42f86
       ],
       "#components": [
         "./components"
