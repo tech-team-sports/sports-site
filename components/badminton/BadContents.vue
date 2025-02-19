@@ -19,7 +19,7 @@
             <li class="item">
                 <NuxtLink to="/Badminton/badHistory">
                     <div class="box">
-                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン6">
+                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン2">
                         <div class="content">
                             <i class="iconbadminton"></i>
                             <div>
@@ -33,7 +33,7 @@
             <li class="item">
                 <NuxtLink to="/Badminton/badplayer">
                     <div class="box">
-                        <img src="/assets/img/badminton/momota.jpg" alt="バドミントン2">
+                        <img src="/assets/img/badminton/momota.jpg" alt="バドミントン3">
                         <div class="content">
                             <i class="iconbadminton"></i>
                             <div>
@@ -45,9 +45,9 @@
                 </NuxtLink>
             </li>
             <li class="item">
-                <NuxtLink to="/Badminton/badpage">
+                <NuxtLink to="/Badminton/badTechniques">
                     <div class="box">
-                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン3">
+                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン4">
                         <div class="content">
                             <i class="iconbadminton"></i>
                             <div>
@@ -61,7 +61,7 @@
             <li class="item">
                 <NuxtLink to="/Badminton/badtool">
                     <div class="box">
-                        <img src="/assets/img/badminton/racket.jpg" alt="バドミントン4">
+                        <img src="/assets/img/badminton/racket.jpg" alt="バドミントン5">
                         <div class="content">
                             <i class="iconbadminton"></i>
                             <div>
@@ -75,7 +75,7 @@
             <li class="item">
                 <NuxtLink to="/Badminton/badTournament">
                     <div class="box">
-                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン5">
+                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン6">
                         <div class="content">
                             <i class="iconbadminton"></i>
                             <div>
