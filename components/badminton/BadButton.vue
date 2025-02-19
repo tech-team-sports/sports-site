@@ -11,6 +11,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+
 .data-container {
   display: flex;
   scale: 1.6;
@@ -24,6 +26,7 @@ export default {
   position: relative;
   padding: 10px 20px;
   background: #ae94eb;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 28px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -57,6 +60,7 @@ export default {
 .btn:hover {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
+  background: rgba(174, 148, 235, 0.5);
 }
 
 .btn:hover::before,
