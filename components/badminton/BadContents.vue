@@ -5,12 +5,26 @@
             <li class="item">
                 <NuxtLink to="/Badminton/badrule">
                     <div class="box">
-                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン1">
+                        <img src="/assets/img/badminton/kyougi.jpg" alt="バドミントン1">
                         <div class="content">
                             <i class="iconbadminton"></i>
                             <div>
-                                <p class="title">バドミントンルール</p>
+                                <p class="title">競技紹介</p>
                                 <p class="description">基本的なルールを詳しく解説</p>
+                            </div>
+                        </div>
+                    </div>
+                </NuxtLink>
+            </li>
+            <li class="item">
+                <NuxtLink to="/Badminton/badHistory">
+                    <div class="box">
+                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン6">
+                        <div class="content">
+                            <i class="iconbadminton"></i>
+                            <div>
+                                <p class="title">歴史</p>
+                                <p class="description">バドミントンの歴史を知ろう</p>
                             </div>
                         </div>
                     </div>
@@ -67,20 +81,6 @@
                             <div>
                                 <p class="title">大会</p>
                                 <p class="description">バドミントンの主要大会を紹介</p>
-                            </div>
-                        </div>
-                    </div>
-                </NuxtLink>
-            </li>
-            <li class="item">
-                <NuxtLink to="/Badminton/badHistory">
-                    <div class="box">
-                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン6">
-                        <div class="content">
-                            <i class="iconbadminton"></i>
-                            <div>
-                                <p class="title">歴史</p>
-                                <p class="description">バドミントンの歴史を知ろう</p>
                             </div>
                         </div>
                     </div>

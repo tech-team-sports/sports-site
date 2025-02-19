@@ -1,163 +1,68 @@
 <template>
-    <div class="badminton-info">
-      <h1>バドミントンの基本情報</h1>
-      
-      <!-- バドミントンの魅力 -->
-      <section class="intro-section">
-        <h2>バドミントンの魅力</h2>
-        <p>バドミントンは、素早い反応と戦略が求められるエキサイティングなスポーツです。シンプルなルールながらも奥深いゲーム性を持っており、プレイヤー同士の緊張感溢れる戦いが繰り広げられます。</p>
-      </section>
-  
-      <!-- バドミントンのルール -->
-      <section class="rule-section">
-        <h2>バドミントンのルール</h2>
-        <p>バドミントンは、2人または4人で行うスポーツです。ラケットでシャトルを相手のコートに打ち合い、得点を競います。ポイントは、シャトルが相手のコートに落ちたとき、または相手のミスによって得られます。</p>
-        <ul>
-          <li><strong>ゲームの開始：</strong>最初にサーブを行う選手は、コインで決めます。</li>
-          <li><strong>得点：</strong>1ゲームは21点先取。2点差がついた場合、勝者が決まります。</li>
-          <li><strong>サーブのルール：</strong>サーブは交互に行い、サーバーが得点した場合にのみ、サーブ権が交代します。</li>
-          <li><strong>ネット越し：</strong>シャトルはネットを越えて相手側に飛ばさなければならず、ネットに触れるとポイントは相手に渡ります。</li>
-        </ul>
-      </section>
-  
-      <!-- 必要な用具 -->
-      <section class="equipment-section">
-        <h2>必要な用具</h2>
-        <p>バドミントンをプレイするためには、以下の用具が必要です。</p>
-        <div class="equipment-cards">
-          <div class="card">
-            <h3>ラケット</h3>
-            <p>軽くて丈夫なラケットを選びます。</p>
-          </div>
-          <div class="card">
-            <h3>シャトル</h3>
-            <p>羽根でできたシャトルを使用します。プラスチック製や羽根製が一般的です。</p>
-          </div>
-          <div class="card">
-            <h3>シューズ</h3>
-            <p>滑りにくく、足を保護するシューズが必要です。</p>
-          </div>
-        </div>
-      </section>
-  
-      <!-- 得点方法 -->
-      <section class="scoring-section">
-        <h2>バドミントンの得点方法</h2>
-        <p>バドミントンは、ラリー（シャトルの打ち合い）でポイントを競います。プレイヤーまたはチームが相手のミスを誘うことでポイントを得ます。</p>
-        <ul>
-          <li><strong>ラリー：</strong>シャトルがコート内に落ちる、または相手がミスした場合に得点になります。</li>
-          <li><strong>サービスの順番：</strong>サービスが成功した場合、サーバーは次のサーブを行います。</li>
-        </ul>
-      </section>
-  
-      <!-- 面白い事実 -->
-      <section class="fun-facts-section">
-        <h2>面白いバドミントンの事実</h2>
-        <ul>
-          <li>バドミントンは、最も速いスポーツの一つで、シャトルが時速300km以上で飛ぶことがあります。</li>
-          <li>バドミントンは、インドで起源を持つスポーツです。</li>
-          <li>オリンピック競技として正式に採用されたのは1992年です。</li>
-        </ul>
-      </section>
+  <div class="badminton-info">
+    <h1>バドミントンの競技紹介</h1>
+    
+    <div class="description">
+      <p>
+        バドミントンはイギリス発祥のスポーツで、19世紀に広まりました。1893年には、イギリスでバドミントン協会が設立され、競技のルールが統一されるようになりました。その後、世界中で人気が高まり、日本でも1946年に日本バドミントン協会（NBA）が設立され、本格的な競技活動が始まりました。
+      </p>
+      <p>
+        国際的な大会としては、1992年のバルセロナオリンピックで正式種目として採用され、現在では男女シングルス、男女ダブルス、さらにペアで戦う混合ダブルスの3種目が行われています。オリンピック以外にも、世界バドミントン選手権やトマス杯（男子団体戦）、ユーバー杯（女子団体戦）など、数多くの国際大会が開催されており、競技人口も年々増加しています。
+      </p>
+      <p>
+        バドミントンは、そのスピード感あふれるラリーと緻密な戦略が魅力のスポーツで、初心者からトップアスリートまで幅広い層に楽しまれています。特にアジア圏では人気が高く、中国やインドネシア、日本、韓国などが世界トップレベルの選手を輩出しています。
+      </p>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'BadmintonInfo',
-  }
-  </script>
-  
-  <style scoped>
-  .badminton-info {
-    margin: 20px;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #333;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #f39c12;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    margin-top: 30px;
-    color: #2c3e50;
-    border-bottom: 3px solid #f39c12;
-    padding-bottom: 10px;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 12px;
-    font-size: 1.2rem;
-  }
-  
-  strong {
-    font-weight: bold;
-  }
-  
-  .intro-section,
-  .rule-section,
-  .fun-facts-section {
-    margin: 20px 0;
-  }
-  
-  .equipment-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 20px;
-  }
-  
-  .card {
-    background: #ecf0f1;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card h3 {
-    margin-top: 10px;
-    color: #2c3e50;
-    font-size: 1.5rem;
-  }
-  
-  .card p {
-    font-size: 1.1rem;
-    color: #7f8c8d;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card:hover p {
-    color: #f39c12;
-  }
-  
-  @media (max-width: 768px) {
-    .equipment-cards {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .equipment-cards {
-      grid-template-columns: 1fr;
-    }
-  }
-  </style>
-  
+    <div class="section-top">
+      <BadInfoList />
+    </div>
+  </div>
+</template>
+
+<script>
+import BadInfoList from '@/components/badminton/BadInfoList.vue';
+
+export default {
+  name: 'BadmintonInfo',
+  components: {
+    BadInfoList,
+  },
+};
+</script>
+
+<style scoped>
+.badminton-info {
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #f39c12, #e74c3c);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.section-top {
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+.description {
+  background: #ecf0f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+}
+
+.description p {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+</style>
