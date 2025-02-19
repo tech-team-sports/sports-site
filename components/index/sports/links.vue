@@ -3,20 +3,20 @@
         <h2 class="sports">スポーツ</h2>
         <ul class="items">
             <li class="item">
-                <NuxtLink to="/baseball">
-                    <img src="/assets/img/sliderimg/baseball.jpg" alt="">
+                <NuxtLink to="/baseball/baseTOP">
+                    <img src="/assets/img/sliderimg/baseball.jpg" alt="" />
                     <i class="iconbaseball"></i>野球
                 </NuxtLink>
             </li>
             <li class="item">
                 <NuxtLink to="/soccer">
-                    <img src="/assets/img/sliderimg/soccer_slider.jpg" alt="">
+                    <img src="/assets/img/sliderimg/soccer_slider.jpg" alt="" />
                     <i class="iconsoccer"></i>サッカー
                 </NuxtLink>
             </li>
             <li class="item">
                 <NuxtLink to="/Badminton/badTOP">
-                    <img src="/assets/img/sliderimg/bad_slider.jpg" alt="">              
+                    <img src="/assets/img/sliderimg/bad_slider.jpg" alt="" />
                     <i class="iconbadminton"></i>バトミントン
                 </NuxtLink>
             </li>
@@ -24,15 +24,12 @@
     </section>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style scoped>
-
 .container {
     padding: 1.1rem;
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -48,7 +45,6 @@
 .item {
     text-align: center;
 }
-
 
 .item img {
     width: 100%;
@@ -68,11 +64,8 @@
 .item a:hover {
     color: royalblue;
 }
- 
-
 
 @media screen and (min-width: 1024px) {
-
     .sports {
         font-size: 2rem;
     }
@@ -83,11 +76,9 @@
     .item a {
         font-size: 1.3rem;
     }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
     .sports {
         font-size: 1.75rem;
     }
@@ -102,7 +93,6 @@
 }
 
 @media screen and (max-width: 767px) {
-    
     .sports {
         font-size: 1.5rem;
     }
@@ -119,41 +109,41 @@
     アイコン
   ------------------------------ */
 .iconbaseball::before {
-  content: "";
-  background-image: url("/assets/img/icon/yakyuicon.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-right: 8px;
-  margin-bottom: 1px;
-  vertical-align: middle;
+    content: "";
+    background-image: url("/assets/img/icon/yakyuicon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 1px;
+    vertical-align: middle;
 }
 
 .iconsoccer::before {
-  content: "";
-  background-image: url("/assets/img/icon/soccericon.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-right: 8px;
-  margin-bottom: 1px;
-  vertical-align: middle;
+    content: "";
+    background-image: url("/assets/img/icon/soccericon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 1px;
+    vertical-align: middle;
 }
 
 .iconbadminton::before {
-  content: "";
-  background-image: url("/assets/img/icon/badoicon.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-right: 8px;
-  margin-bottom: 1px;
-  vertical-align: middle;
+    content: "";
+    background-image: url("/assets/img/icon/badoicon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 1px;
+    vertical-align: middle;
 }
 </style>

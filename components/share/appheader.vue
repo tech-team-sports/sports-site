@@ -12,7 +12,7 @@
           <a href="#">Sports<i class="dli-caret-down"></i></a>
           <ul class="child_menu">
             <li>
-              <NuxtLink to="/baseball"><i class="iconbaseball"></i>Baseball</NuxtLink>
+              <NuxtLink to="/baseball/baseTOP"><i class="iconbaseball"></i>Baseball</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/soccer"><i class="iconsoccer"></i>Soccer</NuxtLink>

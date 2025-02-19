@@ -16,7 +16,7 @@
           <li class="menu">
             <span class="menu-title">Sports</span>
             <ul class="submenu">
-              <li><NuxtLink to="/baseball">Baseball</NuxtLink></li>
+              <li><NuxtLink to="/baseball/baseTOP">Baseball</NuxtLink></li>
               <li><NuxtLink to="/soccer">Soccer</NuxtLink></li>
               <li><NuxtLink to="/Badminton/badTOP">Badminton</NuxtLink></li>
             </ul>
