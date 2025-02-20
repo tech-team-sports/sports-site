@@ -1,7 +1,9 @@
 <template>
   <div class="timeline">
-    <!-- ナビゲーションボタン（左右別々） -->
+    <h1>バドミントンの歴史タイムライン</h1>
+
     <div class="timeline-nav">
+      <!-- ナビゲーションボタン（左） -->
       <div class="nav-left">
         <button @click="moveLeft"></button>
       </div>
@@ -21,16 +23,21 @@
       </ul>
     </div>
 
-    <div class="nav-right">
-        <button @click="moveRight"></button>
+      <!-- ナビゲーションボタン（右） -->
+      <div class="nav-right">
+          <button @click="moveRight"></button>
       </div>
     </div>
 
-    <!-- 映画詳細情報 -->
+    <!-- バド詳細情報 -->
     <div class="timeline-info" v-if="selectedItem">
-      <h2>{{ selectedItem.year }} - {{ selectedItem.info }}</h2>
-      <p>{{ selectedItem.description }}</p>
-      <img :src="selectedItem.image" :alt="selectedItem.year" class="selected-item-image" />
+      <div class="timeline-info-content">
+        <div class="text-content">
+          <h2>{{ selectedItem.year }} - {{ selectedItem.info }}</h2>
+          <p>{{ selectedItem.description }}</p>
+        </div>
+        <img :src="selectedItem.image" :alt="selectedItem.year" class="selected-item-image" />
+      </div>
     </div>
   </div>
 </template>
@@ -113,15 +120,48 @@ export default {
   align-items: center;
 }
 
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
 .timeline-nav {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 600px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  border-bottom: 4px solid black; /* 下線を太く */
-  padding-bottom: 10px; /* 下線とコンテンツの間に空白を追加 */
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 60%; /* 下線の長さ */
+  border-bottom: 6px solid black; /* 下線 */
+  padding-bottom: 15px; /* コンテンツと下線の空白 */
+}
+
+.timeline-items {
+  display: flex;
+  list-style-type: none;
+  padding: 15px;
+  overflow-x: auto;
+  background-color: black;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.timeline-item {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.timeline-item.selected {
+  color: #007bff;
+}
+
+.timeline-item:hover {
+  color: #0056b3;
 }
 
 .nav-left button, .nav-right button {
@@ -129,7 +169,7 @@ export default {
   height: 50px;
   background-color: white; /* 中を白 */
   color: black; /* 矢印を黒に */
-  border: 2px solid black; /* 外枠を黒の丸線 */
+  border: 4px solid black; /* 外枠を黒の丸線 */
   border-radius: 50%;
   font-size: 24px;
   cursor: pointer;
@@ -143,10 +183,10 @@ export default {
 .nav-right button::before {
   content: "";
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border: solid black;
-  border-width: 0 0 2px 2px;
+  border-width: 0 0 4px 4px; /* 矢印を太くする */
 }
 
 .nav-left button::before {
@@ -161,43 +201,50 @@ export default {
   background-color: #f0f0f0;
 }
 
-.timeline-items {
+.nav-left {
+  margin-right: 20px;
+}
+
+.nav-right {
+  margin-left: 20px;
+}
+
+/* タイムライン情報のスタイル */
+.timeline-info {
   display: flex;
-  list-style-type: none;
-  padding: 10px;
-  overflow-x: auto;
-  margin: 0;
-  background-color: black;
-  border-radius: 10px;
   justify-content: center;
   align-items: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  width: 100%;
 }
 
-.timeline-item {
-  margin: 0 15px;
-  cursor: pointer;
+.timeline-info-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+  margin-top: -100px;
+}
+
+h2 {
+  font-size: 2rem;
   font-weight: bold;
-  font-size: 18px;
-  color: white;
-}
-
-.timeline-item.selected {
-  color: #007bff;
-}
-
-.timeline-item:hover {
-  color: #0056b3;
-}
-
-.timeline-info {
-  margin-top: 20px;
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 .timeline-info img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px;
-  border-radius: 8px;
+  width: 400px;   /* 固定の幅 */
+  height: 280px;  /* 固定の高さ */
+  object-fit: cover; /* 画像の比率を保ちながら、領域に合わせて切り抜く */
+  border-radius: 12px;
 }
+
 </style>
