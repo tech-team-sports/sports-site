@@ -3,6 +3,8 @@
     <div class="overlay"></div>
     <div class="text-overlay">
       <h1 class="title">{{ title }}</h1>
+    </div>
+    <div class="sub-overlay">
       <p class="sub">{{ subTitle }}</p>
     </div>
     <img :src="imageSrc" alt="Dynamic Image" />
@@ -48,38 +50,51 @@ defineProps({
 
 .text-overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
+  top: 20px;  /* 左上に配置 */
+  left: 20px;
   z-index: 1;
 }
 
-.title,
+.title {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 4rem;
+  padding: 10px 20px; /* 背景のパディング */
+  background-color: white; /* 白い背景 */
+  border-radius: 30px; /* 丸みを付ける */
+  color: black; /* 文字色を黒に */
+}
+
+.sub-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 完全に中央に配置 */
+  width: 100%; /* 幅を100%に設定 */
+  text-align: center; /* テキストを中央揃え */
+  z-index: 1;
+}
+
 .sub {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
-  display: inline-block;
-  opacity: 0;  /* 初期状態で非表示 */
-  animation: fadeInLeft 0.6s forwards;  /* アニメーションを適用 */
-}
-
-.title {
-  font-size: 4rem;
-}
-
-.sub {
-  font-size: 1.5rem;
-  margin-top: 10px;
-  animation-delay: 0.5s;  /* サブタイトルが少し遅れて表示 */
-}
-
-@keyframes fadeInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  font-size: 3.5rem; /* 少し大きめに */
+  color: #ffffff; /* 白い文字色 */
+  letter-spacing: 2px; /* 文字の間隔を広げて視覚的に強調 */
+  white-space: nowrap; /* テキストが改行されないようにする */
+  overflow: hidden; /* はみ出した部分を隠す */
+  text-overflow: ellipsis; /* テキストが溢れた場合に「...」で表示 */
+  
+  /* マーカー風の背景 */
+  background-color: rgba(255, 255, 0, 0.7); /* 明るい黄色の背景 */
+  padding: 10px 20px; /* 背景と文字の間に余白を追加 */
+  border-radius: 5px; /* 丸みをつけて、柔らかい印象を与える */
+  
+  /* 文字にふち文字（アウトライン）を追加 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 
+               -2px -2px 4px rgba(0, 0, 0, 0.7), /* 左上と右下の影 */
+               2px -2px 4px rgba(0, 0, 0, 0.7), 
+               -2px 2px 4px rgba(0, 0, 0, 0.7); /* 右上と左下の影 */
 }
 
 img {

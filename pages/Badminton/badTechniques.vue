@@ -2,7 +2,7 @@
   <div>
     <BadTitle 
         title="バドミントン" 
-        subTitle="バドミントンページです"
+        subTitle="試合で使える技術を学ぼう"
         imageSrc="/img/badminton/Title/gijutu.jpg"
       />
   <Techniques />

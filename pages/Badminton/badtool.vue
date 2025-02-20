@@ -2,7 +2,7 @@
     <div>
       <BadTitle 
         title="バドミントン" 
-        subTitle="バドミントンページです"
+        subTitle="ラケットやシャトルの使い方"
         imageSrc="/img/badminton/Title/racket.jpg"
       />
       <ToolPage />

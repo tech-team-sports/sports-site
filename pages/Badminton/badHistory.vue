@@ -2,7 +2,7 @@
     <div>
       <BadTitle 
         title="バドミントン" 
-        subTitle="バドミントンページです"
+        subTitle="バドミントンの歴史を知ろう"
         imageSrc="/img/badminton/Title/rekisi.jpg"
       />
       <HistoryTimeline />
