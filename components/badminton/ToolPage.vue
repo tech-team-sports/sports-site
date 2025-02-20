@@ -1,162 +1,205 @@
 <template>
-    <div class="equipment-list">
-      <h2>🏸 バドミントンの道具</h2>
-      <p class="intro">バドミントンをプレイするには、正しい道具を使うことが重要です。初心者から上級者まで、最適な道具を選びましょう。</p>
-      <div class="equipment-container">
-        <div class="equipment-item" v-for="item in equipmentData" :key="item.id">
-          <img :src="item.image" :alt="item.name" class="equipment-image" />
-          <div class="equipment-info">
-            <h3>{{ item.name }}</h3>
-            <p>{{ item.description }}</p>
-          </div>
+  <div class="badminton-gear">
+    <h1>バドミントン用具紹介</h1>
+
+    <!-- ラケット選び方 -->
+    <section class="racket-section">
+      <h2>ラケットの選び方</h2>
+      <p>
+        バドミントンラケットは、プレイスタイルやレベルに応じて選ぶことが大切です。ラケットの選び方を理解することで、より良いパフォーマンスを発揮できます。以下のポイントを参考にして、最適なラケットを選びましょう。
+      </p>
+      <ul>
+        <li>
+          <h3>ラケットの重量</h3>
+          <p>軽いラケットは速いショットに適しており、重いラケットはパワーを重視するプレイヤーに向いています。初心者の方は軽めのラケットを選ぶことをおすすめします。</p>
+        </li>
+        <li>
+          <h3>シャフトの硬さ</h3>
+          <p>硬いシャフトはパワーショットに、柔らかいシャフトはコントロールに優れています。特にシャフトの硬さは、打球感や反応に大きく影響します。</p>
+        </li>
+        <li>
+          <h3>グリップサイズ</h3>
+          <p>グリップサイズは手のひらにフィットするものを選びましょう。グリップが小さすぎると、ラケットをしっかり握れず、操作性が悪くなります。逆に大きすぎても手首に負担がかかります。</p>
+        </li>
+        <li>
+          <h3>バランス</h3>
+          <p>ラケットのバランスは、ヘッドライト（先端が軽い）とヘッドヘビー（先端が重い）の2タイプがあります。ヘッドライトはコントロールが良く、ヘッドヘビーはパワーを重視しています。</p>
+        </li>
+        <li>
+          <h3>素材</h3>
+          <p>ラケットのフレームやシャフトは、カーボンやアルミ、グラファイトなどさまざまな素材で作られています。カーボンは軽くて強い反発力がありますが、高価です。</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- シャトル選び方 -->
+    <section class="shuttle-section">
+      <h2>シャトルの選び方</h2>
+      <p>
+        シャトルはバドミントンの試合や練習において非常に重要なアイテムです。シャトルには主に羽根シャトルとプラスチックシャトルがありますが、プレイ環境に応じて適切なシャトルを選ぶことが大切です。
+      </p>
+      <ul>
+        <li>
+          <h3>羽根シャトル</h3>
+          <p>羽根シャトルはプロや競技者向けに使われることが多いです。ナチュラルな飛行をし、安定した飛距離を保ちます。主にカナリア羽根など自然素材で作られており、価格は高めですが、試合における飛び方が自然で、打球感も優れています。</p>
+        </li>
+        <li>
+          <h3>プラスチックシャトル</h3>
+          <p>初心者や練習用に適しています。耐久性が高く、価格が安価で、風や天候に影響されにくいため、屋外での練習に最適です。品質が上がっており、今では十分にゲームプレイに耐えることができます。</p>
+        </li>
+        <li>
+          <h3>耐久性</h3>
+          <p>プラスチックシャトルは耐久性が高く、長時間使用できますが、羽根シャトルに比べて飛行の安定性が劣る場合があります。特に羽根シャトルを使用する際は、どれくらいの頻度で交換するかがポイントになります。</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 用具おすすめ -->
+    <section class="gear-recommendation">
+      <h2>おすすめ用具</h2>
+      <p>
+        ここでは、初心者から上級者まで、様々なレベルに対応したおすすめのラケットやシャトルを紹介します。自分にぴったりの用具を見つけ、より楽しいバドミントンライフを送りましょう。
+      </p>
+      <div class="gear-list">
+        <div class="gear-item">
+          <img src="/assets/img/badminton/racket.jpg" alt="高性能ラケット" />
+          <h3>高性能ラケット</h3>
+          <p>軽量で反応が速く、競技用としても活躍する高性能ラケット。バランスが良く、パワーとコントロールの両方を兼ね備えています。</p>
+        </div>
+        <div class="gear-item">
+          <img src="/assets/img/badminton/racket.jpg" alt="羽根シャトル" />
+          <h3>羽根シャトル</h3>
+          <p>プロの試合でも使用される高品質な羽根シャトル。優れた飛距離とナチュラルな飛行で、競技の精度を高めます。</p>
+        </div>
+        <div class="gear-item">
+          <img src="/assets/img/badminton/racket.jpg" alt="プラスチックシャトル" />
+          <h3>プラスチックシャトル</h3>
+          <p>練習用や屋外での使用に最適なプラスチックシャトル。耐久性が高く、風の影響を受けにくいため、長時間の練習に向いています。</p>
         </div>
       </div>
-  
-      <!-- 詳細な説明セクション -->
-      <div class="detailed-section">
-        <h3>1. ラケットの種類と選び方</h3>
-        <p>ラケットはバドミントンにおける最も重要な道具です。初心者向けから上級者向けまで選び方を理解し、自分に合ったものを選びましょう。</p>
-        <ul>
-          <li>初心者向けラケット: 軽量で操作が簡単なもの</li>
-          <li>上級者向けラケット: 高性能で精度の高いショットが可能</li>
-          <li>ラケットの重さとバランス: 重さ、バランスがプレイスタイルに影響</li>
-          <li>選び方: グリップの大きさや素材に注目</li>
-        </ul>
-  
-        <h3>2. シャトルの種類</h3>
-        <p>シャトルの選択がプレイ感に大きく影響します。ナイロンシャトルとフェザーシャトルの違いを理解しましょう。</p>
-        <ul>
-          <li>ナイロンシャトル: 耐久性に優れ、カジュアルなゲームに最適</li>
-          <li>フェザーシャトル: 競技用で性能が高いが、耐久性は低い</li>
-          <li>天候に合わせた選択: 温暖な気候ではフェザーシャトル、風の強い場所ではナイロンシャトル</li>
-        </ul>
-  
-        <h3>3. シューズとウェア</h3>
-        <p>動きやすさと安全性を確保するため、専用のシューズとウェアが不可欠です。</p>
-        <ul>
-          <li>シューズ: 足元の安定性、グリップ力、クッション性が重要</li>
-          <li>ウェア: 通気性と動きやすさを重視、吸汗速乾性の高い素材を選ぶ</li>
-          <li>快適にプレイするため: 体型に合わせたフィット感を重視</li>
-        </ul>
-      </div>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'EquipmentList',
-    data() {
-      return {
-        equipmentData: [
-          {
-            id: 1,
-            name: 'バドミントンラケット',
-            image: '/img/badminton/momota.jpg',
-            description: '軽量で耐久性に優れたラケットです。初心者向けのラケットとして最適です。',
-          },
-          {
-            id: 2,
-            name: 'シャトルコック',
-            image: '/img/badminton/shuttlecock.jpg',
-            description: '羽根付きシャトルで、飛びやすさが特徴です。競技用に適しています。',
-          },
-          {
-            id: 3,
-            name: 'バドミントンシューズ',
-            image: '/img/badminton/shoes.jpg',
-            description: '足元の安定性を高めるため、バドミントン専用のシューズです。',
-          },
-          {
-            id: 4,
-            name: 'ウェア',
-            image: '/img/badminton/clothing.jpg',
-            description: '通気性が良く、動きやすさを提供するバドミントン用ウェアです。',
-          },
-        ],
-      };
-    },
-  };
-  </script>
-  
-  <style scoped>
-  .equipment-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: linear-gradient(135deg, #ffffff, #f4f4f9);
-    border-radius: 16px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 20px;
-  }
-  
-  .intro {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 40px;
-    text-align: center;
-    max-width: 800px;
-  }
-  
-  .equipment-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-    width: 100%;
-  }
-  
-  .equipment-item {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .equipment-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-  
-  .equipment-image {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .equipment-item:hover .equipment-image {
-    transform: scale(1.05);
-  }
-  
-  .equipment-info {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .equipment-info h3 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .detailed-section {
-    margin-top: 40px;
-    padding: 30px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1100px;
-  }
-  </style>
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "BadmintonGear",
+};
+</script>
+
+<style scoped>
+.badminton-gear {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  padding: 3rem 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #007BFF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007BFF;
+}
+
+.racket-section h3, .shuttle-section h3 {
+  font-size: 1.4rem; /* 少し大きめに */
+  color: #007BFF;   /* 青色で強調 */
+  font-weight: 600;  /* 太字で強調 */
+  margin-bottom: 0.5rem; /* 少し下に余白を */
+  text-transform: capitalize; /* 各単語の頭文字を大文字に */
+  letter-spacing: 0.5px; /* 文字間隔を少し広げて読みやすく */
+  padding: 0.5rem 1rem; /* ボックス内にパディングを追加 */
+  background-color: #e6f0ff; /* 背景色に淡い青色 */
+  border-radius: 8px; /* 丸みをつけて柔らかい印象 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 薄いシャドウで浮き上がる効果 */
+}
+
+
+
+.gear-item h3 {
+  margin-top: 1rem;
+  font-size: 1.6rem; /* 文字サイズを少し大きく */
+  color: #007BFF;   /* 青色で目立たせる */
+  font-weight: 600;  /* 少し太めにして強調 */
+  text-transform: uppercase; /* 大文字にして強調 */
+  letter-spacing: 1px; /* 文字間隔を広げて読みやすく */
+}
+
+
+section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.gear-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.gear-item {
+  text-align: center;
+  max-width: 300px;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.gear-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gear-item img:hover {
+  transform: scale(1.05);
+}
+
+.gear-item h3 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #007BFF;
+}
+
+.gear-item p {
+  font-size: 1.1rem;
+  color: #555;
+}
+</style>
