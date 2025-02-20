@@ -19,7 +19,7 @@
             <li class="item">
                 <NuxtLink to="/Badminton/badHistory">
                     <div class="box">
-                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン2">
+                        <img src="/assets/img/badminton/rekisi.jpg" alt="バドミントン2">
                         <div class="content">
                             <i class="iconbadminton"></i>
                             <div>
@@ -47,7 +47,7 @@
             <li class="item">
                 <NuxtLink to="/Badminton/badTechniques">
                     <div class="box">
-                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン4">
+                        <img src="/assets/img/badminton/gijutu.jpg" alt="バドミントン4">
                         <div class="content">
                             <i class="iconbadminton"></i>
                             <div>
@@ -75,7 +75,7 @@
             <li class="item">
                 <NuxtLink to="/Badminton/badTournament">
                     <div class="box">
-                        <img src="/assets/img/badminton/bad.jpg" alt="バドミントン6">
+                        <img src="/assets/img/badminton/taikai.jpg" alt="バドミントン6">
                         <div class="content">
                             <i class="iconbadminton"></i>
                             <div>
@@ -98,12 +98,15 @@
     padding: 1.1rem;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .sports {
-    margin: 2rem 0 1rem 0;
-    font-size: 2rem;
-    color: #00796b;
+    margin: 4rem 0 1rem 0;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #306fad;
     text-align: center;
 }
 
@@ -133,11 +136,6 @@
     height: 100%;
     object-fit: cover; /* 画像の比率を統一 */
     transition: opacity 0.3s ease;
-}
-
-.box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .box:hover img {

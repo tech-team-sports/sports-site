@@ -40,7 +40,7 @@ export default {
   height: 10px;
   position: absolute;
   border: 0px solid #fff;
-  transition: all 0.8s;
+  transition: all 0.7s;
 }
 
 .btn::after {
