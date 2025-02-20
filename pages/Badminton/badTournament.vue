@@ -2,7 +2,7 @@
     <div>
       <BadTitle 
         title="Badminton" 
-        subTitle="バドミントンページの主要大会を紹介"
+        subTitle="バドミントンの主要大会を紹介"
         imageSrc="/img/badminton/Title/taikai.jpg"
       />
       <BadTournament />
