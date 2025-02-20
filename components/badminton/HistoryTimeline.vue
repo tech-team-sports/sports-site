@@ -51,37 +51,37 @@ export default {
           year: 1873,
           info: 'バドミントンの起源',
           description: 'バドミントンは、インディアンバードというゲームに由来しており、イギリスで発展しました。このゲームはインディアからイギリスに持ち込まれたもので、羽根付きのシャトルを使用します。',
-          image: '/img/badminton/momota.jpg',
+          image: '/img/badminton/History/bad1973.jpg',
         },
         {
           year: 1934,
           info: '国際バドミントン連盟の設立',
-          description: '国際バドミントン連盟（IBF）が設立され、バドミントンが国際競技として普及しました。競技ルールが整備され、世界大会が開催されるようになりました。',
-          image: '/img/badminton/hukusima.jpg',
+          description: '国際バドミントン連盟（IBF）が設立され、バドミントンが国際競技として普及しました。競技ルールが整備され、世界大会が開催されるようになりました。1981年に名前が改称されて世界バドミントン連盟（BWF）となりました。',
+          image: '/img/badminton/History/bad1934.jpg',
         },
         {
           year: 1992,
           info: 'バドミントンがオリンピック競技に',
           description: '1992年のバルセロナオリンピックで、バドミントンが正式なオリンピック競技として採用されました。これにより、世界中でバドミントンの人気が急上昇しました。',
-          image: '/img/badminton/higasino.jpg',
+          image: '/img/badminton/History/bad1992.jpg',
         },
         {
           year: 2000,
           info: 'バドミントンの普及',
           description: '21世紀に入り、バドミントンは世界中でますます人気を集め、特にアジア諸国で非常に活発にプレイされています。中国、インドネシア、韓国などの国々ではトップレベルの選手が登場しています。',
-          image: '/img/badminton/watanabe.jpg',
+          image: '/img/badminton/History/bad2000.jpg',
         },
         {
           year: 2020,
           info: '東京オリンピックでの活躍',
           description: '2020年の東京オリンピックでは、日本が女子ダブルスで金メダルを獲得するなど、バドミントンの競技に新たな光が当たりました。国内外でバドミントン人気が高まりました。',
-          image: '/img/badminton/yamaguti.jpg',
+          image: '/img/badminton/History/bad2020.jpg',
         },
         {
-          year: 2024,
+          year: 2025,
           info: 'バドミントンの未来',
           description: '今後、バドミントンはさらに進化を遂げ、テクノロジーの進歩や新たな競技形式が導入されることが予想されます。世界中の多くの国々で、バドミントンはますます注目される競技となるでしょう。',
-          image: '/img/badminton/okuhara.jpg',
+          image: '/img/badminton/History/bad2025.jpg',
         },
       ],
       selectedItem: null,
@@ -114,6 +114,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Source+Han+Sans+JP:wght@700&display=swap');
+
 .timeline {
   display: flex;
   flex-direction: column;
@@ -134,7 +136,7 @@ h1 {
   margin: 30px auto;
   width: 60%; /* 下線の長さ */
   border-bottom: 6px solid black; /* 下線 */
-  padding-bottom: 15px; /* コンテンツと下線の空白 */
+  padding-bottom: 10px; /* コンテンツと下線の空白 */
 }
 
 .timeline-items {
@@ -142,8 +144,6 @@ h1 {
   list-style-type: none;
   padding: 15px;
   overflow-x: auto;
-  background-color: black;
-  border-radius: 10px;
   justify-content: center;
   align-items: center;
   gap: 50px;
@@ -153,15 +153,17 @@ h1 {
   cursor: pointer;
   font-weight: bold;
   font-size: 20px;
-  color: white;
 }
 
 .timeline-item.selected {
-  color: #007bff;
+  color: #ffffff;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .timeline-item:hover {
-  color: #0056b3;
+  color: #8a8a8a;
 }
 
 .nav-left button, .nav-right button {
@@ -235,9 +237,16 @@ h1 {
 }
 
 h2 {
+  font-family: 'Source Han Sans JP', sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 30px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .timeline-info img {
