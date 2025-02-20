@@ -36,7 +36,7 @@
           <h2>{{ selectedItem.year }} - {{ selectedItem.info }}</h2>
           <p>{{ selectedItem.description }}</p>
         </div>
-        <img :src="selectedItem.image" :alt="selectedItem.year" class="selected-item-image" />
+        <img :src="selectedItem.image" :alt="selectedItem.year" class="selected-item-image" v-show="selectedItem"  />
       </div>
     </div>
   </div>
