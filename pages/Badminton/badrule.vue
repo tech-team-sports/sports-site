@@ -1,7 +1,7 @@
 <template>
     <div>
       <BadTitle 
-        title="バドミントン" 
+        title="Badminton" 
         subTitle="基本的なルールを詳しく解説"
         imageSrc="/img/badminton/Title/kyougi.jpg"
       />

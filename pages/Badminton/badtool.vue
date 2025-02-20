@@ -1,7 +1,7 @@
 <template>
     <div>
       <BadTitle 
-        title="バドミントン" 
+        title="Badminton" 
         subTitle="ラケットやシャトルの使い方"
         imageSrc="/img/badminton/Title/racket.jpg"
       />

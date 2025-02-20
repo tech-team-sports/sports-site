@@ -58,12 +58,18 @@ defineProps({
 .title {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
-  font-size: 4rem;
-  padding: 10px 20px; /* 背景のパディング */
-  background-color: white; /* 白い背景 */
-  border-radius: 30px; /* 丸みを付ける */
+  font-size: 3rem;
+  padding: 10px 70px; /* 背景のパディングを増やして長くする */
+  background-color: white; /* 背景色（初期は白） */
   color: black; /* 文字色を黒に */
+  position: relative;
+  left: -60px; /* 左の隠れを防ぐため、位置を修正 */
+  z-index: 1; /* 画像やオーバーレイより前面に表示 */
+  overflow: visible; /* 文字が隠れないように */
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); /* 斜めにカット */
 }
+
+
 
 .sub-overlay {
   position: absolute;
