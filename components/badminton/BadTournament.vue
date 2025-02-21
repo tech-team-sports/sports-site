@@ -1,153 +1,165 @@
 <template>
-  <div class="tournament-page">
-    <section class="tournament-types">
-      <h1>大会の種類</h1>
-      <ul class="tournament-list">
-        <li class="tournament-card">
-          <img src="/assets/img/badminton/racket.jpg" alt="オリンピック大会" class="tournament-image" />
-          <div class="card-content">
-            <div class="title">
-              <h2>オリンピック大会</h2>
-            </div>
-            <p>オリンピック大会は、世界中のトップアスリートが集まる最高峰のスポーツイベントです。バドミントンは1992年のバルセロナオリンピックで正式競技に採用され、以後、シングルス、ダブルス、混合ダブルスの3種目が行われます。選手にとって人生をかけた舞台であり、金メダルを目指して戦います。特に、オリンピックで金メダルを獲得することは、選手のキャリアを一段と輝かせる成果となり、バドミントンの魅力が世界中に広まります。</p>
-          </div>
-        </li>
-        <li class="tournament-card">
-          <img src="/assets/img/badminton/racket.jpg" alt="地方大会" class="tournament-image" />
-          <div class="card-content">
-            <div class="title">
-              <h2>地方大会</h2>
-            </div>
-            <p>地域ごとの大会で、都道府県選手権や地区予選大会があります。優秀な選手は全国大会や大きな大会へ進むチャンスを得ます。地域に密着した大会で、バドミントンの普及にも貢献しています。これらの大会は、地元選手にとっては一大イベントであり、地元の応援を受けながら技術を磨く場でもあります。また、ここで好成績を収めることが、次のステップへの大きな足掛かりとなります。</p>
-          </div>
-        </li>
-        <li class="tournament-card">
-          <img src="/assets/img/badminton/racket.jpg" alt="日本バドミントン選手権大会" class="tournament-image" />
-          <div class="card-content">
-            <div class="title">
-              <h2>日本バドミントン選手権大会</h2>
-            </div>
-            <p>国内最も権威のある大会で、シングルス、ダブルス、混合ダブルスの競技が行われます。全国から集まるトップ選手が、名実ともに日本一の座を争います。特に、この大会で優勝することは、選手にとって誇りとなり、国際大会への道を開く重要なステップとなります。日本バドミントン界の実力者たちが集まり、観客も熱狂するイベントです。</p>
-          </div>
-        </li>
-        <li class="tournament-card">
-          <img src="/assets/img/badminton/racket.jpg" alt="インターハイ（高校総体）" class="tournament-image" />
-          <div class="card-content">
-            <div class="title">
-              <h2>インターハイ（高校総体）</h2>
-            </div>
-            <p>全国の高校生が集まり競う大会で、将来のプロ選手や大学生選手にも注目される大会です。シングルス、ダブルス、団体戦が行われ、若き才能たちがしのぎを削ります。この大会で活躍することは、次の世代のスター選手が誕生する瞬間でもあり、参加者にとっては、全国レベルの競技力を証明する絶好の機会となります。インターハイの成績は、大学推薦やプロ入りのきっかけにもなるため、高校生選手にとっては非常に重要な大会です。</p>
-          </div>
-        </li>
-        <li class="tournament-card">
-          <img src="/assets/img/badminton/racket.jpg" alt="全日本社会人バドミントン大会" class="tournament-image" />
-          <div class="card-content">
-            <div class="title">
-              <h2>全日本社会人バドミントン大会</h2>
-            </div>
-            <p>社会人選手が集まり、企業チームやクラブチームが競う大会です。仕事を持ちながら競技を続ける選手たちが集まり、競技レベル向上に寄与しています。選手たちは忙しい仕事の合間を縫って練習を重ね、バドミントンに対する情熱を燃やし続けています。この大会は、プロ選手とはまた異なる視点での競技力が求められるため、非常にユニークな大会と言えるでしょう。</p>
-          </div>
-        </li>
-        <li class="tournament-card">
-          <img src="/assets/img/badminton/racket.jpg" alt="アジア選手権大会" class="tournament-image" />
-          <div class="card-content">
-            <div class="title">
-              <h2>アジア選手権大会</h2>
-            </div>
-            <p>アジア各国のトップ選手が集まり、アジアナンバーワンを決める大会です。オリンピックや世界選手権に匹敵する重要な大会であり、アジアのバドミントンの実力を知る絶好の機会です。選手たちは、アジアの名誉をかけて戦い、その後の世界大会へのチャンスをつかむための大きな舞台として位置付けられています。</p>
-          </div>
-        </li>
-      </ul>
+  <div class="badminton-equipment">
+    <h1>バドミントンの主要大会</h1>
+    <div class="image-container">
+      <img src="/assets/img/badminton/kaijou.jpg" alt="会場">
+    </div>
+    <p class="titletext">バドミントンは世界中で人気のあるスポーツであり、数多くの国際大会が開催されています。
+      これらの大会は、選手たちの技術や戦術を競い合う場であり、ファンにとっても非常に魅力的なイベントです。
+      特に、世界ランク上位の選手が集まる大会では、ハイレベルなプレーが繰り広げられ、観客を圧倒します。
+      これらの大会は、選手たちにとってキャリアの集大成となることも多く、また次世代の選手にとっては貴重な経験の場でもあります。
+      バドミントンの大会は、世界中で注目される大きなイベントとなり、スポーツの楽しさや競技の魅力を広める重要な役割を担っています。</p>
+
+    <section>
+      <h2>バドミントン世界選手権</h2>
+      <p class="text">バドミントンの世界選手権は、世界で最も権威のある大会の一つです。
+        毎年、世界中のトップ選手が集まり、男女シングルス、男女ダブルス、混合ダブルスなど、さまざまなカテゴリーで競い合います。
+        選手たちは、長年の努力と鍛錬を積んだ技術を駆使し、全力で戦います。
+        特に、この大会はオリンピックと並ぶほどの重要性を持ち、世界一の称号を得ることは選手にとって最大の栄誉です。
+        また、競技のレベルは非常に高く、選手同士の戦術的な駆け引きやテクニックが見どころです。
+        この大会は、バドミントンファンにとって必見のイベントであり、毎年多くの注目を集めています。
+        選手が自国を代表して戦う姿勢は、競技の持つ魅力をさらに引き立てています。</p>
+    </section>
+    
+    <section>
+      <h2>オリンピックバドミントン競技</h2>
+      <p class="text">オリンピックのバドミントン競技も、バドミントンの中で最も注目されるイベントです。
+        オリンピックにおけるバドミントンは、シングルス、ダブルス、混合ダブルスの3つの競技が行われ、世界中の選手が金メダルを目指して競います。
+        オリンピックは四年に一度しか開催されないため、選手たちにとっては、キャリアの中で最も重要な大会の一つです。
+        そのため、競技が行われる場面では、選手たちが自分の全力を尽くし、最高のパフォーマンスを発揮します。
+        バドミントンは非常にスピードと技術を要求されるスポーツであり、その緊張感や激しい戦いは観客にとって大きな魅力となります。
+        オリンピックでは、競技のレベルが最高のものとなり、選手たちの成長や努力の成果を見ることができる貴重な機会です。
+        競技後の感動やドラマも、オリンピックならではの魅力と言えるでしょう。</p>
+    </section>
+    
+    <section>
+      <h2>BWFワールドツアー</h2>
+      <p class="text">BWFワールドツアーは、バドミントンのプロツアーで、年間を通してさまざまな国で開催されます。
+        このツアーには、スーパーシリーズやグランプリ、ワールドツアーの各カテゴリーがあり、選手たちは年間を通してランキングを争います。
+        各大会は選手にとって重要なポイント獲得のチャンスであり、世界ランクを上げるために必死に戦います。
+        特にトップ選手にとっては、ツアーでの成績がその後のキャリアに大きな影響を与えるため、勝利を目指して戦うことが求められます。
+        BWFワールドツアーでは、技術力だけでなく、精神的な強さや戦術も求められ、非常にレベルの高い戦いが繰り広げられます。
+        毎年、さまざまな国で行われるため、ファンも世界中で熱狂的に応援し、バドミントンの魅力を実感することができます。</p>
+    </section>
+    
+    <section>
+      <h2>アジアバドミントン選手権</h2>
+      <p class="text">アジアバドミントン選手権は、アジア地域の最高のバドミントン選手が集まる大会で、アジア全体の強豪選手たちが一堂に会し、地域の頂点を目指して激しい戦いを繰り広げます。
+        この大会では、シングルス、ダブルス、混合ダブルスなど、様々なカテゴリーで選手たちが競い合い、アジアのバドミントンレベルの高さを証明します。
+        アジアはバドミントンが盛んな国々が多く、特にインディアネシア、マレーシア、中国、韓国などが強い実力を誇ります。
+        これらの国々は、選手たちが国内選手権で得た経験をもとに、世界舞台でも高いレベルで活躍しています。
+        アジアバドミントン選手権は、これらの選手たちが互いに競い合い、競技の深さや技術力の向上を目指す貴重な大会です。</p>
+    </section>
+    
+    <section>
+      <h2>全日本バドミントン選手権大会</h2>
+      <p class="text">日本最大のバドミントン大会である全日本バドミントン選手権大会は、国内のトップ選手が一堂に会し、シングルス、ダブルス、混合ダブルスの各部門で競い合う大会です。
+        毎年開催され、国内のバドミントンシーンを代表する選手たちが、名誉と栄誉をかけて戦います。
+        優勝者は、国内ランキングに大きな影響を与え、将来的な国際大会への出場権を得ることもあります。
+        特に、この大会は若手選手にとって大きな登竜門となっており、未来の日本代表選手が誕生する場所でもあります。
+        また、会場では観客と選手が近くで触れ合うことができ、ファンにとっても貴重な体験となるイベントです。
+        熱い戦いとともに、選手たちの成長を見守ることができるこの大会は、日本のバドミントン界にとって欠かせない重要な大会となっています。</p>
+    </section>
+
+    <section>
+      <h2>ジャパンオープンバドミントン選手権</h2>
+      <p class="text">ジャパンオープンは、世界バドミントンツアーの一環として毎年開催される国際大会で、日本国内で行われる最も権威のある国際大会のひとつです。
+        この大会には、世界ランキング上位の選手たちが集まり、非常にレベルの高い試合が繰り広げられます。
+        ジャパンオープンで優勝することは、選手にとって世界的な注目を集めることができるため、非常に重要な大会となっています。
+        シングルス、ダブルス、混合ダブルスの各部門で競われ、日本の選手にとっては、世界の強豪と戦う貴重な機会でもあります。
+        また、海外のトップ選手との対戦は、日本のバドミントン界にとって刺激的であり、観客にとっても魅力的な試合を提供する場となっています。
+        ジャパンオープンは、国際的なバドミントンシーンでの地位を確認するために欠かせない大会であり、毎年熱い戦いが繰り広げられています。</p>
     </section>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'TournamentPage',
-};
-</script>
-
 <style scoped>
-.tournament-page {
-  font-family: 'Arial', sans-serif;
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 1200px;
-}
-
-section {
-  margin-bottom: 40px;
+.badminton-equipment {
+  font-family: 'Arial', sans-serif; /* より読みやすいフォント */
+  padding: 50px 160px;
 }
 
 h1 {
-  text-align: center;
   font-size: 3.5rem;
   font-weight: bold;
-  color: #333;
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-.tournament-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-  gap: 20px;
-}
-
-.tournament-card {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.tournament-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.card-content {
   text-align: center;
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  color: #333; /* ダークな色で視認性アップ */
 }
 
 h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #222;
+  font-size: 2rem; /* より大きなフォントサイズ */
+  font-weight: bold; 
+  color: #ff6347; /* 明るい色 (例: トマト色) */
+  margin-top: 30px; /* 上部の余白を追加 */
+  margin-bottom: 15px; /* 下部の余白を追加 */
+  border-bottom: 4px solid #ff6347; /* 下線の長さと太さを調整 */
+  padding-bottom: 10px; /* 下線とテキストの間に余白を追加 */
 }
 
-
-p {
+.text {
   font-size: 1rem;
-  color: #666;
-  text-align: justify;
-  line-height: 1.6;
+  color: #333;
+  line-height: 1.8; /* 行間を広げて読みやすく */
+  margin-bottom: 15px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.titletext {
+  line-height: 1.8; /* 行間を広げて読みやすく */
+  padding: 0 80px;
+  margin-top: 40px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 30px; /* セクション間の余白 */
 }
 
 @media (max-width: 768px) {
+  .badminton-equipment {
+  padding: 30px;
+  margin-top: 40px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .badminton-equipment h2 {
+    font-size: 1.25rem;
+  }
+
+  .tool {
+    margin-bottom: 1rem;
+  }
+
+  .tool p {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .badminton-equipment {
+  padding: 10px;
+  }
+
   h1 {
     font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  p {
-    font-size: 0.9rem;
   }
 }
 </style>

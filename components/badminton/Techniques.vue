@@ -1,13 +1,14 @@
 <template>
     <div class="techniques-section">
-      <h2 class="title">✨ バドミントン必勝テクニック ✨</h2>
+      <h1 class="title">バドミントン必勝テクニック</h1>
       <div class="techniques-list">
         <div v-for="(technique, index) in techniques" :key="index" class="technique-item">
           <div class="technique-info">
-            <h3>{{ technique.name }}</h3>
+            <h2>{{ technique.name }}</h2>
             <img :src="technique.image" :alt="technique.name" class="technique-image" />
             <p>{{ technique.description }}</p>
-            <p><strong>工夫点:</strong> {{ technique.pointsText }}</p>
+            <h3>Point</h3> 
+            <p class="point">{{ technique.pointsText }}</p>
           </div>
         </div>
       </div>
@@ -21,6 +22,8 @@
   </script>
   
   <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
   .techniques-section {
     text-align: center;
     padding: 3rem;
@@ -28,11 +31,10 @@
   }
   
   .title {
-    font-size: 2.4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
   
   /* 幅を広く調整 */
@@ -73,7 +75,7 @@
     margin: 0 auto;
   }
   
-  .technique-info h3 {
+  .technique-info h2 {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     color: #fff; /* タイトルの色を白に変更 */
@@ -82,16 +84,33 @@
     border-radius: 8px; /* 角を丸める */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* 軽いシャドウを追加して立体感を出す */
   }
-  
-  .technique-info p {
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff0000;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    letter-spacing: 2px; /* 文字間隔を広げて強調 */
+}
+
+.point {
     font-size: 1.2rem;
+    font-weight: 600;
     margin-bottom: 1rem;
-    color: #555;
-  }
-  
-  /* レスポンシブ対応 */
+    color: #ffffff;
+    line-height: 1.6; /* 読みやすさ向上のため行間を広げる */
+    background-color: #ff6464;
+    border-radius: 20px;
+    padding: 30px;
+    width: 800px;
+    margin: 0 auto; /* 中央に配置 */
+}
+
   @media (max-width: 800px) {
-    .technique-info h3 {
+    .technique-info h2 {
       font-size: 1.6rem;
     }
   
