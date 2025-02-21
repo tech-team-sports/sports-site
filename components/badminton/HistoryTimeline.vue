@@ -51,7 +51,7 @@ export default {
           year: 1873,
           info: 'バドミントンの起源',
           description: 'バドミントンは、インディアンバードというゲームに由来しており、イギリスで発展しました。このゲームはインディアからイギリスに持ち込まれたもので、羽根付きのシャトルを使用します。',
-          image: '/img/badminton/History/bad1973.jpg',
+          image: '/img/badminton/History/bad1873.jpg',
         },
         {
           year: 1934,
