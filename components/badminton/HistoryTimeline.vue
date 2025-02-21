@@ -256,4 +256,118 @@ p {
   border-radius: 12px;
 }
 
+@media (max-width: 768px) {
+  /* タイムラインの全体的なレイアウト */
+  .timeline {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem; /* 見出しサイズを小さく */
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .timeline-nav {
+    width: 90%; /* ナビゲーションの幅を広げる */
+    margin: 20px auto;
+    padding-bottom: 10px;
+  }
+
+  .timeline-items {
+    gap: 20px; /* アイテムの間隔を狭く */
+    padding: 10px;
+  }
+
+  .timeline-item {
+    font-size: 20px; /* アイテムの文字サイズを小さく */
+  }
+
+  .timeline-info {
+    padding: 15px;
+    flex-direction: column; /* アイテムを縦並びに */
+    align-items: flex-start;
+    max-width: 100%; /* 最大幅を100%に */
+  }
+
+  .timeline-info-content {
+    flex-direction: column; /* テキストと画像を縦並びに */
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .text-content {
+    text-align: left;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 1.8rem; /* タイトルのフォントサイズを小さく */
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 14px; /* 説明文のフォントサイズを小さく */
+  }
+
+  .timeline-info img {
+    width: 100%; /* 画像を親要素の幅に合わせる */
+    height: auto; /* 高さを自動調整 */
+    border-radius: 8px; /* 画像の角を少し丸める */
+  }
+
+  .nav-left button, .nav-right button {
+    width: 40px; /* ボタンサイズを小さく */
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .nav-left button::before,
+  .nav-right button::before {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem; /* 見出しのフォントサイズをさらに小さく */
+  }
+
+  .timeline-nav {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .timeline-items {
+    gap: 10px; /* アイテム間隔をさらに狭く */
+  }
+
+  .timeline-item {
+    font-size: 18px; /* アイテム文字サイズを小さく */
+  }
+
+  .timeline-info {
+    padding: 10px;
+  }
+
+  .timeline-info-content {
+    gap: 10px;
+  }
+
+  h2 {
+    font-size: 1.6rem; /* タイトルをさらに小さく */
+  }
+
+  p {
+    font-size: 16px; /* 説明文も小さく */
+  }
+
+  .timeline-info img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
 </style>

@@ -143,5 +143,10 @@ h1 {
   .history-section p {
     font-size: 14px;
   }
+
+  .history-img img {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>
