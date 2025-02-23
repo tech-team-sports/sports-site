@@ -29,7 +29,7 @@ export default {
   color: #4c7ae2;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  transition: all 0.8s;
+  transition: all 0.7s;
 }
 
 .btn::after,
@@ -39,7 +39,7 @@ export default {
   height: 10px;
   position: absolute;
   border: 0px solid #fff;
-  transition: all 0.7s;
+  transition: all 0.6s;
 }
 
 .btn::after {
