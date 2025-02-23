@@ -73,13 +73,13 @@ const swiperOptions = {
 <style scoped>
 .swiper-slider {
   width: 100%;
-  height: 80vh; /* 高さを80%に変更して小さくする */
+  height: 80vh; /* デフォルトの高さ */
 }
 
 .swiper-slide img {
   width: 100%;
-  height: 100%; /* 画像がスライダーの高さに合わせる */
-  object-fit: cover; /* 画像が切り取られないように */
+  height: 100%;
+  object-fit: cover;
 }
 
 .swiper-pagination {
@@ -99,33 +99,62 @@ const swiperOptions = {
 
 .swiper-pagination-bullet:hover {
   background-color: rgba(255, 255, 255, 1);
-  transform: scale(1.2); /* ホバー時にサイズを大きく */
+  transform: scale(1.2);
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #007bff; /* アクティブなインジケーターに青色 */
-  transform: scale(1.3); /* アクティブ時に少し大きく */
+  background-color: #007bff;
+  transform: scale(1.3);
 }
 
 .swiper-button-next, .swiper-button-prev {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 20px; /* ボタンの大きさを大きくする */
+  padding: 20px;
   cursor: pointer;
-  border-radius: 50%; /* 丸くする */
-  width: 60px; /* 幅を大きくする */
-  height: 60px; /* 高さを大きくする */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 30px; /* アイコンのサイズ */
+  font-size: 30px;
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ▼ 追加: レスポンシブ対応 */
+@media (max-width: 640px) {
+  .swiper-slider {
+    height: 50vh; /* モバイルでは高さを小さく */
+  }
+  .swiper-button-next, .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .swiper-slider {
+    height: 65vh; /* タブレット用の高さ */
+  }
+  .swiper-button-next, .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 25px;
+  }
 }
 </style>
