@@ -7,9 +7,7 @@
         <div class="player-info">
           <h2>{{ player.name }}</h2>
           <p class="info-item"><strong>国籍:</strong> {{ player.nationality }}</p>
-          <p class="info-item"><strong>生年:</strong> {{ player.birthYear }}</p>
-          <p class="info-item"><strong>身長:</strong> {{ player.height }} cm</p>
-          <p class="info-item"><strong>体重:</strong> {{ player.weight }} kg</p>
+          <p class="info-item"><strong>生年月日:</strong> {{ player.birthYear }}</p>
           <p class="info-item"><strong>利き手:</strong> {{ player.hand }}</p>
           <p class="info-item"><strong>プレースタイル:</strong> {{ player.playStyle }}</p>
           <p class="info-item"><strong>主な実績:</strong> {{ player.achievements }}</p>
@@ -72,18 +70,16 @@ h1 {
 }
 
 .player-item img {
-  width: 100%;
-  height: 320px;
+  width: 80%;
+  height: 300px;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
 }
 
 .player-info {
   padding: 20px;
   line-height: 1.6;
-  border-top: 2px solid #ddd; /* 上部の区切り線 */
   border-bottom: 2px solid #ddd; /* 下部の区切り線 */
 }
 
@@ -97,7 +93,7 @@ h1 {
 }
 
 .info-item {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 10px 0;
   color: #37474f;
   font-weight: 500;
