@@ -16,7 +16,7 @@ export default {
   scale: 1.4;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 80px;
 }
 
