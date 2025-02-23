@@ -69,8 +69,6 @@ defineProps({
   clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); /* 斜めにカット */
 }
 
-
-
 .sub-overlay {
   position: absolute;
   top: 50%;
@@ -87,7 +85,8 @@ defineProps({
   font-size: 3.5rem; /* 少し大きめに */
   color: #ffffff; /* 白い文字色 */
   letter-spacing: 2px; /* 文字の間隔を広げて視覚的に強調 */
-  white-space: nowrap; /* テキストが改行されないようにする */
+  /* white-space: nowrap; テキストが改行されないようにする */
+  word-wrap: break-word; /* 長い単語が改行されるように */
   overflow: hidden; /* はみ出した部分を隠す */
   text-overflow: ellipsis; /* テキストが溢れた場合に「...」で表示 */
   
@@ -110,4 +109,52 @@ img {
   object-position: center;
   z-index: 0;
 }
+
+/* レスポンシブ対応 */
+@media (max-width: 1200px) {
+  .container {
+    height: 500px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .sub {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: 400px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .sub {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .sub {
+    font-size: 1.7rem;
+  }
+
+  img {
+    height: 100%;
+  }
+}
+
 </style>
