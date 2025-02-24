@@ -1,81 +1,59 @@
 <template>
-    <div class="tournament-info">
-      <h1>{{ tournament.name }} バドミントン大会</h1>
-      <p><strong>日程:</strong> {{ tournament.date }}</p>
-      <p><strong>場所:</strong> {{ tournament.location }}</p>
-  
-      <h2>参加者</h2>
-      <ul>
-        <li v-for="player in tournament.players" :key="player.id">
-          {{ player.name }} (国: {{ player.country }})
-        </li>
-      </ul>
-  
-      <h2>結果</h2>
-      <div v-if="tournament.results.length > 0">
-        <ul>
-          <li v-for="(result, index) in tournament.results" :key="index">
-            {{ result.player1 }} vs {{ result.player2 }} - {{ result.winner }} 勝者
-          </li>
-        </ul>
+  <div>
+    <div class="top">
+      <h1>バドミントンの主要大会</h1>
+      <div class="image-container">
+          <img src="/assets/img/badminton/kaijou.jpg" alt="会場" />
       </div>
-      <div v-else>
-        <p>結果はまだ発表されていません。</p>
+        <p>
+          バドミントンは世界中で愛され、多くの国際大会が開催されています。
+          特に世界ランク上位の選手が集まる大会では、白熱した試合が繰り広げられ、観客を魅了します。
+          これらの大会は、選手のキャリアにおいて重要な節目となるだけでなく、次世代の育成にも大きな影響を与えます。
+          また、各大会ごとに異なる特色や歴史があり、会場の雰囲気や試合のレベルも大会によって変わります。
+          ここでは、バドミントンの主要な大会について詳しく紹介します。
+        </p>
       </div>
+    <div class="section-top">
+      <BadTournamentList />
     </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        tournament: {
-          name: '2025年バドミントン世界選手権',
-          date: '2025年8月20日〜2025年8月30日',
-          location: '東京体育館（東京）',
-          players: [
-            { id: 1, name: '佐藤 大輔', country: '日本' },
-            { id: 2, name: '李 明軒', country: '中国' },
-            { id: 3, name: '張 磊', country: '中国' },
-            { id: 4, name: 'バド・ジョン・アントニー', country: 'インド' },
-          ],
-          results: [
-            { player1: '佐藤 大輔', player2: '李 明軒', winner: '佐藤 大輔' },
-            { player1: '張 磊', player2: 'バド・ジョン・アントニー', winner: 'バド・ジョン・アントニー' },
-          ],
-        },
-      };
-    },
-  };
-  </script>
-  
-  <style scoped>
-  .tournament-info {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  h1 {
-    color: #2c3e50;
-  }
-  
-  h2 {
-    color: #3498db;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  strong {
-    font-weight: bold;
-  }
-  </style>
-  
+  </div>
+</template>
+
+<script setup>
+import BadTournamentList from './components/badminton/BadTournamentList.vue';
+</script>
+
+<style scoped>
+.top {
+  font-family: 'Arial', sans-serif;
+  padding: 50px 160px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2d4cc9;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 70px;
+  color: #333;
+  text-align: left;
+}
+</style>

@@ -1,8 +1,12 @@
 <template>
     <div>
-      <BadTitle />
+      <BadTitle 
+        title="Badminton" 
+        subTitle="バドミントンの歴史を知ろう"
+        imageSrc="/img/badminton/Title/rekisi.jpg"
+      />
+      <HistoryTimeline />
       <HistoryPage />
-      <Timeline />
       <BadButton />
     </div>
   </template>
@@ -11,5 +15,5 @@
   import BadTitle from '/components/badminton/BadTitle.vue';
   import HistoryPage from "/components/badminton/HistoryPage.vue";
   import BadButton from "/components/badminton/BadButton.vue";
-  import Timeline from "/components/badminton/Timeline.vue";
+  import HistoryTimeline from "/components/badminton/HistoryTimeline.vue";
   </script>

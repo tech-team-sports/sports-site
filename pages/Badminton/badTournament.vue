@@ -1,6 +1,10 @@
 <template>
     <div>
-      <BadTitle />
+      <BadTitle 
+        title="Badminton" 
+        subTitle="バドミントンの主要大会を紹介"
+        imageSrc="/img/badminton/Title/taikai.jpg"
+      />
       <BadTournament />
       <BadButton />
     </div>

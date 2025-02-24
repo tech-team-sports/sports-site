@@ -1,6 +1,10 @@
 <template>
     <div>
-      <BadTitle />
+      <BadTitle 
+        title="Badminton" 
+        subTitle="基本的なルールを詳しく解説"
+        imageSrc="/img/badminton/Title/kyougi.jpg"
+      />
       <BadInfo />
       <BadButton />
     </div>

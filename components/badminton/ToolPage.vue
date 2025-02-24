@@ -1,162 +1,246 @@
 <template>
-    <div class="equipment-list">
-      <h2>🏸 バドミントンの道具</h2>
-      <p class="intro">バドミントンをプレイするには、正しい道具を使うことが重要です。初心者から上級者まで、最適な道具を選びましょう。</p>
-      <div class="equipment-container">
-        <div class="equipment-item" v-for="item in equipmentData" :key="item.id">
-          <img :src="item.image" :alt="item.name" class="equipment-image" />
-          <div class="equipment-info">
-            <h3>{{ item.name }}</h3>
-            <p>{{ item.description }}</p>
-          </div>
-        </div>
+  <div class="badminton-equipment">
+    <h1>バドミントンの用具紹介</h1>
+    
+    <section>
+      <h2>1. ラケット</h2>
+
+      <h3 class="subtitle">ラケットの種類</h3>
+      <div class="tool">
+          <p>バドミントンラケットには、攻撃型・守備型・バランス型の3種類があります。<br />
+            攻撃型は、パワフルなショットを打つために設計されており、ヘッドが重くなっているため、速い打球や強いスパイクが可能です。<br />
+            守備型は、ヘッドライト型で、軽量で操作性に優れており、素早い反応を求められる守備的なプレースタイルに適しています。<br />
+            バランス型は、攻撃と守備のバランスが取れており、どちらのスタイルにも適用できる万能なラケットです。</p>
+          <img src="/assets/img/badminton/BadTool/racket.jpg" alt="ラケット">
       </div>
-  
-      <!-- 詳細な説明セクション -->
-      <div class="detailed-section">
-        <h3>1. ラケットの種類と選び方</h3>
-        <p>ラケットはバドミントンにおける最も重要な道具です。初心者向けから上級者向けまで選び方を理解し、自分に合ったものを選びましょう。</p>
-        <ul>
-          <li>初心者向けラケット: 軽量で操作が簡単なもの</li>
-          <li>上級者向けラケット: 高性能で精度の高いショットが可能</li>
-          <li>ラケットの重さとバランス: 重さ、バランスがプレイスタイルに影響</li>
-          <li>選び方: グリップの大きさや素材に注目</li>
-        </ul>
-  
-        <h3>2. シャトルの種類</h3>
-        <p>シャトルの選択がプレイ感に大きく影響します。ナイロンシャトルとフェザーシャトルの違いを理解しましょう。</p>
-        <ul>
-          <li>ナイロンシャトル: 耐久性に優れ、カジュアルなゲームに最適</li>
-          <li>フェザーシャトル: 競技用で性能が高いが、耐久性は低い</li>
-          <li>天候に合わせた選択: 温暖な気候ではフェザーシャトル、風の強い場所ではナイロンシャトル</li>
-        </ul>
-  
-        <h3>3. シューズとウェア</h3>
-        <p>動きやすさと安全性を確保するため、専用のシューズとウェアが不可欠です。</p>
-        <ul>
-          <li>シューズ: 足元の安定性、グリップ力、クッション性が重要</li>
-          <li>ウェア: 通気性と動きやすさを重視、吸汗速乾性の高い素材を選ぶ</li>
-          <li>快適にプレイするため: 体型に合わせたフィット感を重視</li>
-        </ul>
+
+      <h3 class="subtitle">ラケットの選び方</h3>
+      <p>プレースタイルに応じてラケットを選ぶことが非常に重要です。<br />
+        攻撃的なプレイヤーには、ヘッドヘビー型が向いており、強力なショットを打つ際に有利です。
+        一方、守備的なプレイヤーには、ヘッドライト型のラケットが適しています。ヘッドが軽いため、素早い反応が求められる守備の動きに最適です。
+        バランス型もあり、攻撃と守備の両方に対応できる万能な選択肢として人気です。</p>
+      
+      <h3>素材</h3>
+        <p>バドミントンラケットの素材にはさまざまな種類がありますが、最も一般的で人気があるのはカーボン素材です。</p>
+        <p>カーボンは非常に軽量でありながら、耐久性にも優れているため、長時間のプレイでも性能が維持されやすい特徴があります。
+        また、振動吸収性にも優れ、手に伝わる衝撃を軽減するため、プレイヤーの負担を減らすことができます。
+        さらに、カーボンは高い反発力を持っているため、強力なショットを打つことが可能です。</p>
+        <p>アルミ製のラケットもあり、特に初心者向けとして人気です。アルミ製は軽くて安価ですが、耐久性や反発力ではカーボンに劣ります。
+        そのため、競技レベルのプレイヤーにはカーボンが推奨されますが、軽さを重視する場合やコストを抑えたい場合にはアルミ製も選択肢として考えられます。</p>
+      
+      <h3>バランス</h3>
+        <p>バドミントンラケットのバランスには主に3種類、ヘッドヘビー、イーブンバランス、ヘッドライトがあります。</p>
+        <p>ヘッドヘビー型は、ラケットの重心がヘッド（先端）に寄っているため、強力なショットを打つことができます。
+        特に攻撃的なプレースタイルを好む選手に向いており、スマッシュやドロップショットのパワーを増強するために効果的です。</p>
+        <p>イーブンバランス型は、ラケットの重心が均等に分布しており、攻守のバランスが取れた性能を持っています。
+        オールラウンドプレーヤーに最適で、素早い反応を求められる状況でも対応可能です。</p>
+        <p>ヘッドライト型は、ラケットの重心がグリップ側に寄っているため、軽量で操作性に優れています。
+        守備的なプレイヤーや素早い反応が求められる場面で有利です。プレースタイルや好みに応じて適切なバランスを選ぶことが、パフォーマンス向上に繋がります。</p>
+      
+      <h3>ラケットの重量</h3>
+      <p>バドミントンラケットの重量には、一般的に4U（80-84g）や3U（85-89g）があります。
+        軽いラケットは操作性に優れ、素早い動きが求められるシーンで便利です。<br />
+        一方で、重いラケットはパワーが出しやすく、特にスマッシュや強力なショットを打つ際に有利です。
+        自分のプレースタイルに合わせてラケットの重さを選ぶことで、試合でのパフォーマンスが向上します。</p>
+      
+      <h3>グリップサイズ</h3>
+      <p>バドミントンラケットのグリップサイズはG4やG5が一般的で、手の大きさや持ち方によって最適なサイズが変わります。<br />
+        グリップが大きすぎるとラケットが操作しづらくなり、小さすぎると手が痛くなることがあります。
+        自分の手のひらの大きさや、ラケットを握る感覚を意識して選ぶことが大切です。
+        試打して自分にぴったりのサイズを見つけると、より快適にプレーできるようになります。</p>
+    </section>
+    
+    <section>
+      <h2>2. シャトル</h2>
+
+      <h3 class="subtitle">シャトルの種類</h3>
+      <div class="tool">
+          <p>バドミントンのシャトルには、天然羽根（フェザー）とナイロン製（プラスチック）の2種類があります。<br />
+            フェザーシャトルは試合でよく使用され、飛行性能が良く、自然な羽音が特徴です。<br />
+            ナイロン製シャトルは耐久性が高く、主に練習用や初心者向けに使用されます。<br />
+            それぞれに特徴があり、プレースタイルや用途に応じて選ぶことが重要です。</p>
+          <img src="/assets/img/badminton/BadTool/shuttle.jpg" alt="シャトル">
       </div>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'EquipmentList',
-    data() {
-      return {
-        equipmentData: [
-          {
-            id: 1,
-            name: 'バドミントンラケット',
-            image: '/img/badminton/momota.jpg',
-            description: '軽量で耐久性に優れたラケットです。初心者向けのラケットとして最適です。',
-          },
-          {
-            id: 2,
-            name: 'シャトルコック',
-            image: '/img/badminton/shuttlecock.jpg',
-            description: '羽根付きシャトルで、飛びやすさが特徴です。競技用に適しています。',
-          },
-          {
-            id: 3,
-            name: 'バドミントンシューズ',
-            image: '/img/badminton/shoes.jpg',
-            description: '足元の安定性を高めるため、バドミントン専用のシューズです。',
-          },
-          {
-            id: 4,
-            name: 'ウェア',
-            image: '/img/badminton/clothing.jpg',
-            description: '通気性が良く、動きやすさを提供するバドミントン用ウェアです。',
-          },
-        ],
-      };
-    },
-  };
-  </script>
-  
-  <style scoped>
-  .equipment-list {
-    display: flex;
+
+      <h3 class="subtitle">シャトルの選び方</h3>
+      <p>試合では、フェザーシャトルが一般的に使用されます。<br />
+        フェザーシャトルは飛行性能が優れており、コントロール性や精度が高いため、競技の中で最も適しています。
+        練習用にはナイロン製シャトルもおすすめです。<br />
+        ナイロン製は耐久性が高く、安価で長時間使用できるため、繰り返しの練習に向いています。
+        初心者や練習の際に特に便利で、コストパフォーマンスも良いです。</p>
+      
+      <h3>素材</h3>
+      <p>フェザーシャトルはガチョウやアヒルの羽を使用しており、羽根の質感とバランスが非常に重要です。</p>
+        <p>自然の羽根を使うため、飛行性能やコントロール性に優れていますが、耐久性が低く、特に強いショットや衝撃に弱いため、試合で使用されることが一般的です。<br />
+        一方、ナイロン製のシャトルは人工素材を使用しており、耐久性が非常に高く、長期間使用できるのが特徴です。
+        特に練習や初心者向けに適しており、安価で手に入りやすいことから、多くの場面で利用されています。
+        しかし、ナイロン製シャトルはフェザーシャトルに比べると飛行性能が劣るため、試合での使用は少ない傾向にあります。</p>
+    </section>
+    
+    <section>
+      <h2>3. ウェア</h2>
+      <h3 class="subtitle">ウェアの種類と選び方</h3>
+      <div class="tool">
+        <p>バドミントンのウェア選びでは、吸汗速乾性が高い素材を選ぶことが非常に重要です。<br />
+          試合中や練習中は激しい動きが求められ、汗をかくことが多いため、汗を素早く吸収して乾かす機能がある素材が最適です。<br />
+          これにより、体温調節がスムーズに行え、快適にプレイできます。また、動きやすさも非常に大切なポイントです。<br />
+          バドミントンは足を大きく動かすスポーツなので、ストレッチ性のある素材やフィット感が重要です。<br />
+          さらに、通気性の良いデザインや軽量素材が使われたウェアを選ぶと、長時間のプレイでも快適さが保たれます。</p>
+        <img src="/assets/img/badminton/BadTool/wear.jpg" alt="ウェア">
+      </div>
+    </section>
+    
+    <section>
+      <h2>4. シューズ</h2>
+      <h3 class="subtitle">シューズの種類と選び方</h3>
+      <div class="tool">
+          <p>バドミントンシューズ選びでは、グリップ力が高く、コートでの動きをしっかりとサポートできるものが推奨されます。<br />
+            急な方向転換やストップが必要なスポーツであるため、シューズのソールがしっかりとコートに食いつき、滑らない設計が重要です。<br />
+            また、クッション性のあるシューズを選ぶことで、足への負担を軽減し、長時間のプレイでも疲れにくくなります。<br />
+            さらに、足の形に合ったフィット感が重要で、足の幅やアーチに合わせたデザインを選ぶことで、より快適にプレイすることができます。</p>
+          <img src="/assets/img/badminton/BadTool/shoes.jpg" alt="シューズ">
+      </div>
+    </section>
+    
+    <section>
+      <h2>5. あると便利なもの</h2>
+      <p>バドミントンをプレイする際、あると便利なアイテムには、グリップテープ、サポーター、スポーツドリンクなどがあります。<br />
+        グリップテープはラケットのグリップ部分に巻いて使用するもので、汗で滑りやすくなる手をしっかりとサポートしてくれます。<br />
+        また、サポーターは膝や足首を保護し、ケガを防ぐ役割を果たします。
+        特に激しい動きが多いスポーツなので、サポーターを使用することで安心してプレーできます。<br />
+        さらに、スポーツドリンクはプレー中に失われる水分や塩分を補給でき、疲れにくくするための重要なアイテムです。<br />
+        これらを揃えておくことで、より快適で効果的にバドミントンを楽しむことができます。</p>
+    </section>
+
+    <section>
+      <h2>まとめ</h2>
+      <p>バドミントンの用具選びは、プレースタイルやレベルに応じて慎重に行う必要があります。<br />
+        ラケットやシャトル、ウェアの選び方を理解し、自分に合った用具を選ぶことで、パフォーマンスを最大限に引き出すことができます。<br />
+        競技の向上には、道具への理解が重要な一歩です。</p>
+    </section>
+  </div>
+</template>
+
+<style scoped>
+.badminton-equipment {
+  font-family: 'Arial', sans-serif; /* より読みやすいフォント */
+  padding: 50px 160px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333; /* ダークな色で視認性アップ */
+}
+
+h2 {
+  font-size: 2rem; /* より大きなフォントサイズ */
+  font-weight: bold; 
+  color: #ff6347; /* 明るい色 (例: トマト色) */
+  margin-top: 30px; /* 上部の余白を追加 */
+  margin-bottom: 15px; /* 下部の余白を追加 */
+  border-bottom: 4px solid #ff6347; /* 下線の長さと太さを調整 */
+  padding-bottom: 10px; /* 下線とテキストの間に余白を追加 */
+  text-transform: uppercase; /* タイトルを大文字にして目立たせる */
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  background-color: #4c8bf5; /* 青色背景 */
+  border-radius: 8px;
+  padding: 15px 30px; /* パディングを調整して余白を持たせる */
+  margin-bottom: 15px; /* 下部の余白を追加 */
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.subtitle {
+  color: #05070a;
+  background-color: transparent; /* 背景色を透明に設定 */
+  border: 2px solid #cfcfcf; /* 他の枠の色と太さ */
+  border-top: 2px solid #0077ff; /* 上の枠だけ碧色に設定 */
+  padding: 20px;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8; /* 行間を広げて読みやすく */
+  margin-bottom: 15px;
+}
+
+.tool {
+  display: flex; /* Flexboxで横並びにする */
+  align-items: center; /* 垂直方向で中央揃え */
+  justify-content: space-between; /* 両端に配置 */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tool p {
+  flex: 1; /* pが残りのスペースを占めるように */
+  margin-right: 20px; /* pと画像の間に余白を追加 */
+}
+
+.tool img {
+  width: 450px;
+  height: 250px;
+  object-fit: cover; /* 画像の比率を保ちながら、領域に合わせて切り抜く */
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 30px; /* セクション間の余白 */
+}
+
+
+@media (max-width: 768px) {
+  .badminton-equipment {
+  padding: 30px;
+  margin-top: 40px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .badminton-equipment h2 {
+    font-size: 1.25rem;
+  }
+
+  .badminton-equipment h3 {
+    font-size: 1rem;
+  }
+
+  .tool {
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .tool p {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: linear-gradient(135deg, #ffffff, #f4f4f9);
-    border-radius: 16px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
   }
-  
-  h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 20px;
+
+  .tool img {
+    width: 90%;
+    height: auto;
+    order: -1; /* 画像を上に配置 */
   }
-  
-  .intro {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 40px;
-    text-align: center;
-    max-width: 800px;
+}
+
+@media (max-width: 500px) {
+  .badminton-equipment {
+  padding: 10px;
   }
-  
-  .equipment-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-    width: 100%;
+
+  h1 {
+    font-size: 2rem;
   }
-  
-  .equipment-item {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .equipment-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-  
-  .equipment-image {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .equipment-item:hover .equipment-image {
-    transform: scale(1.05);
-  }
-  
-  .equipment-info {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .equipment-info h3 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .detailed-section {
-    margin-top: 40px;
-    padding: 30px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1100px;
-  }
-  </style>
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
   <div class="data-container">
-    <NuxtLink to="/Badminton/badTOP"><span class="btn">TOPへ戻る</span></NuxtLink>
+    <NuxtLink to="/Badminton/badTOP"><span class="btn">トップへ戻る</span></NuxtLink>
   </div>
 </template>
 
@@ -11,26 +11,26 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
-
 .data-container {
   display: flex;
-  scale: 1.6;
+  scale: 1.4;
   justify-content: center;
   align-items: center;
-  margin: 80px;
+  margin-top: 60px;
+  margin-bottom: 80px;
 }
 
 .btn {
   cursor: pointer;
   position: relative;
-  padding: 10px 20px;
-  background: #ae94eb;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 28px;
+  padding: 12px 60px;
+  background: #87ceeb;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4c7ae2;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  transition: all 0.8s;
+  transition: all 0.7s;
 }
 
 .btn::after,
@@ -40,32 +40,33 @@ export default {
   height: 10px;
   position: absolute;
   border: 0px solid #fff;
-  transition: all 0.8s;
+  transition: all 0.6s;
 }
 
 .btn::after {
   top: -1px;
   left: -1px;
-  border-top: 5px solid black;
-  border-left: 5px solid black;
+  border-top: 4px solid #026aa6;
+  border-left: 4px solid #026aa6;
 }
 
 .btn::before {
   bottom: -1px;
   right: -1px;
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
+  border-bottom: 4px solid #026aa6;
+  border-right: 4px solid #026aa6;
 }
 
 .btn:hover {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  background: rgba(174, 148, 235, 0.5);
+  color: #ffffff;
+  background: #27acd9;
 }
 
 .btn:hover::before,
 .btn:hover::after {
   width: 104%;
-  height: 111%;
+  height: 117%;
 }
 </style>

@@ -103,11 +103,11 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px;
+    padding: 40px;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    background: #f0f4f8; /* 明るいグレーの背景 */
     border-radius: 20px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
     font-family: 'Roboto', sans-serif;
@@ -116,21 +116,24 @@ export default {
 h2 {
     font-size: 48px;
     font-weight: 700;
-    color: #444;
+    color: #0066cc; /* ダークブルー */
     margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .intro {
-    font-size: 20px;
-    color: #777;
+    font-size: 18px;
+    color: #333333;
     margin-bottom: 50px;
     text-align: center;
-    max-width: 850px;
+    max-width: 950px;
+    line-height: 1.6;
 }
 
 .equipment-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
     width: 100%;
 }
@@ -141,6 +144,8 @@ h2 {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     padding: 20px;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
 }
 
 .equipment-item:hover {
@@ -148,47 +153,79 @@ h2 {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-.equipment-info {
-    text-align: center;
-}
-
 .equipment-info h3 {
     font-size: 24px;
     font-weight: 600;
-    color: #333;
+    color: #0066cc; /* ダークブルー */
     margin-bottom: 15px;
+    text-transform: capitalize;
 }
 
 .equipment-info p {
     font-size: 16px;
-    color: #777;
+    color: #666666; /* グレー */
     margin-bottom: 25px;
+    line-height: 1.6;
 }
 
 .detailed-section {
     margin-top: 50px;
     padding: 40px;
-    background: #ffffff;
+    background: #ffffff; /* ホワイトバックグラウンド */
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 1150px;
+    text-align: left;
 }
 
 .detailed-section h3 {
     font-size: 28px;
     font-weight: 600;
-    color: #444;
+    color: #0066cc;
     margin-bottom: 20px;
 }
 
 .detailed-section ul {
     font-size: 16px;
-    color: #666;
+    color: #333333;
     line-height: 1.8;
 }
 
 .detailed-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.detailed-section ul li::before {
+    content: "•";
+    color: #0066cc; /* アイコンの色 */
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    top: -4px;
+}
+
+@media screen and (max-width: 768px) {
+    .equipment-list {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .equipment-container {
+        gap: 20px;
+    }
+
+    .detailed-section {
+        padding: 30px;
+    }
 }
 </style>

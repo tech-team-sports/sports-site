@@ -76,47 +76,52 @@ export default {
 
 <style scoped>
 .Baseball-info {
-    margin: 30px auto;
+    margin: 40px auto;
     max-width: 1200px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
+    font-family: 'Lora', serif;
+    color: #2c3e50;
+    background-color: #ffffff;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
     text-align: center;
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    color: #2980b9;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #00aaff;
+    font-weight: bold;
+    letter-spacing: 4px;
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: 2.2rem;
-    margin-top: 30px;
-    color: #34495e;
-    border-bottom: 2px solid #2980b9;
-    padding-bottom: 8px;
+    font-size: 2rem;
+    margin-top: 25px;
+    color: #2c3e50;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #00aaff;
 }
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 ul {
-    list-style-type: disc;
-    margin-left: 20px;
+    list-style-type: circle;
+    margin-left: 30px;
 }
 
 ul li {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 strong {
     font-weight: bold;
+    color: #00aaff;
 }
 
 .intro-section,
@@ -133,29 +138,29 @@ strong {
 }
 
 .card {
-    background: linear-gradient(145deg, #ffffff, #f1f1f1);
-    border-radius: 12px;
-    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 25px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    transform: translateY(0);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
 
 .card h3 {
     margin-top: 10px;
-    color: #2c3e50;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    color: #34495e;
 }
 
 .card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #7f8c8d;
+    line-height: 1.6;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover p {
