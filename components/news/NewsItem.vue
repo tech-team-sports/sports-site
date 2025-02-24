@@ -19,13 +19,13 @@ defineProps({
 <style scoped>
 .container {
     padding: 1.1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: var(--max-width);
+    margin: var(--margin);
 }
 
 .items {
     display: grid;
-    gap: 1rem;
+    gap: var(--gap);
 }
 
 .items li {
@@ -42,7 +42,7 @@ defineProps({
     max-width: 300px; 
     height: 200px;
     object-fit: cover;
-    margin: 0 auto; 
+    margin: var( --margin); 
 }
 
 .item {   
@@ -60,8 +60,8 @@ defineProps({
 }
 
 .item > p {
-    font-size: 1rem;
-    color: #333;
+    font-size: var(--main-font-size);
+    color: var(--text-color);
 }
 
 .item > h3 {
@@ -72,15 +72,15 @@ defineProps({
 .item > a {
     margin-top: 0.7rem;
     padding: 10px 15px;
-    background-color: royalblue;
+    background-color: var(--link-color);
     color: white;
-    border-radius: 0.8rem;
+    border-radius: var(--border-radius);
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .item > a:hover {
-    background-color: blue;
+    background-color: var(--link-hover-color);
 }
 
 @media screen and (min-width: 1024px) {
