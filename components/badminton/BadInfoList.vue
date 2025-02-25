@@ -71,63 +71,59 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
   }
-  
+
   .top {
     margin-bottom: 40px;
-  }
-  
-  h1 {
     text-align: center;
+  }
+
+  h1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
   }
-  
+
   img {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
-  
+
+  .rule-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+
   .description {
     color: #d2ff00;
     font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
     font-weight: bold;
-    display: inline-block;
     width: 30%;
     text-align: center;
   }
-  
+
   .text {
     line-height: 1.6;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 15px;
-    display: inline-block;
     width: 65%;
   }
-  
+
   hr {
     border: none;
     border-top: 2px solid #ecf0f1;
     margin: 20px 0;
   }
-  
-  .rule-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
-  
+
   .sub {
     background-color: #f9ff12;
     padding: 20px;
@@ -140,19 +136,77 @@
     margin-left: auto; /* 右寄せにするために自動的に左のマージンを設定 */
     margin-right: 0; /* 右のマージンを0に設定 */
   }
-  
+
   .subtitle {
     font-size: 1.8rem;
     font-weight: bold;
     color: #3535af;
     margin-bottom: 10px;
   }
-  
+
   .subdescription {
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.6;
     color: #384149;
   }
-  </style>
-  
+
+  /* スマホ対応 */
+  @media (max-width: 768px) {
+    .competition-rules {
+    border-radius: 40px;
+    }
+
+    h1 {
+      font-size: 1.95rem;
+    }
+
+    .rule-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .description {
+      font-size: 1.3rem;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    .text {
+      font-size: 0.9rem;
+      width: 100%;
+    }
+
+    .sub {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .subtitle {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .competition-rules {
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    .text {
+      font-size: 0.8rem;
+    }
+
+    .subtitle {
+      font-size: 1.6rem;
+    }
+
+    .subdescription {
+      font-size: 0.9rem;
+    }
+  }
+</style>

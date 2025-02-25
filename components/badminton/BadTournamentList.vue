@@ -76,7 +76,7 @@
 h2 {
   flex: 0.8; /* 幅を少し狭める */
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #616161;
 }
@@ -84,8 +84,79 @@ h2 {
 p {
   flex: 1.5; /* h2と合わせて全体のバランスを縮小 */
   text-align: left;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #000000;
 }
+
+@media (max-width: 1200px) {
+  .tournament-container {
+    padding: 0 100px;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tournament-container {
+    padding: 0 30px;
+  }
+
+  .tournament-header h1 {
+    font-size: 1.6rem;
+    padding: 6px 14px;
+  }
+
+  .tournament-details {
+    gap: 8px;
+  }
+
+  .detail-item {
+    flex-direction: column; /* 縦並びにする */
+    align-items: flex-start;
+    padding: 15px 0;
+  }
+
+  h2 {
+    flex: none;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  p {
+    flex: none;
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .tournament-container {
+    padding: 0 15px;
+  }
+
+  .tournament-header h1 {
+    font-size: 1.45rem;
+    padding: 5px 12px;
+  }
+
+  .detail-item {
+    padding: 10px 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
 </style>

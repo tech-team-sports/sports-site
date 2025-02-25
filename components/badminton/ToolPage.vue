@@ -124,7 +124,7 @@
 <style scoped>
 .badminton-equipment {
   font-family: 'Arial', sans-serif; /* より読みやすいフォント */
-  padding: 50px 160px;
+  padding: 50px 150px;
 }
 
 h1 {
@@ -198,22 +198,17 @@ section {
   margin-bottom: 30px; /* セクション間の余白 */
 }
 
+@media (max-width: 1200px) {
+  .badminton-equipment {
+  padding: 40px;
+  margin-top: 40px;
+  }
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .badminton-equipment {
   padding: 30px;
   margin-top: 40px;
-  }
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  .badminton-equipment h2 {
-    font-size: 1.25rem;
-  }
-
-  .badminton-equipment h3 {
-    font-size: 1rem;
   }
 
   .tool {
@@ -228,9 +223,28 @@ section {
   }
 
   .tool img {
-    width: 90%;
+    width: 70%;
     height: auto;
     order: -1; /* 画像を上に配置 */
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .badminton-equipment {
+  padding: 30px;
+  margin-top: 40px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .badminton-equipment h2 {
+    font-size: 1.4rem;
+  }
+
+  .badminton-equipment h3 {
+    font-size: 1rem;
   }
 }
 
@@ -241,6 +255,10 @@ section {
 
   h1 {
     font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
   }
 }
 </style>
