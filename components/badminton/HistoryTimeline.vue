@@ -123,10 +123,10 @@ export default {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .timeline-nav {
@@ -205,10 +205,12 @@ h1 {
 
 .nav-left {
   margin-right: 20px;
+  margin-left: 10px;
 }
 
 .nav-right {
   margin-left: 20px;
+  margin-right: 10px;
 }
 
 /* タイムライン情報のスタイル */
@@ -256,6 +258,25 @@ p {
   border-radius: 12px;
 }
 
+@media (max-width: 1024px) {
+  .timeline {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .timeline-items {
+    gap: 30px; /* アイテムの間隔を狭く */
+    padding: 10px;
+  }
+
+  h2  {
+    margin-top: 80px;
+  }
+}
+
 @media (max-width: 768px) {
   /* タイムラインの全体的なレイアウト */
   .timeline {
@@ -263,7 +284,7 @@ p {
   }
 
   h1 {
-    font-size: 2.5rem; /* 見出しサイズを小さく */
+    font-size: 2.3rem; /* 見出しサイズを小さく */
     margin-top: 20px;
     margin-bottom: 15px;
   }
@@ -330,9 +351,38 @@ p {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .timeline-item {
+    font-size: 16px; /* アイテムの文字サイズを小さく */
+  }
+
   h1 {
-    font-size: 2rem; /* 見出しのフォントサイズをさらに小さく */
+    font-size: 1.9rem;
+  }
+
+  .nav-left button, .nav-right button {
+    width: 36px; /* ボタンサイズを小さく */
+    height: 36px;
+  }
+
+  .nav-left button::before,
+  .nav-right button::before {
+    width: 12px;
+    height: 12px;
+  }
+
+  .nav-left {
+    margin-right: 8px;
+  }
+
+  .nav-right {
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.7rem; /* 見出しのフォントサイズをさらに小さく */
   }
 
   .timeline-nav {
@@ -342,10 +392,6 @@ p {
 
   .timeline-items {
     gap: 10px; /* アイテム間隔をさらに狭く */
-  }
-
-  .timeline-item {
-    font-size: 18px; /* アイテム文字サイズを小さく */
   }
 
   .timeline-info {
@@ -367,6 +413,25 @@ p {
   .timeline-info img {
     width: 100%;
     height: 200px;
+  }
+
+  .nav-left button, .nav-right button {
+    width: 33px; /* ボタンサイズを小さく */
+    height: 33px;
+    font-size: 18px;
+  }
+
+  .nav-left button::before,
+  .nav-right button::before {
+    width: 12px;
+    height: 12px;
+  }
+  .nav-left {
+    margin-right: 3px;
+  }
+
+  .nav-right {
+    margin-left: 3px;
   }
 }
 
