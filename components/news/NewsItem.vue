@@ -1,7 +1,7 @@
 <template>
-    <li class="item">
+    <li class="item" >
         <img v-if="article.urlToImage" :src="article.urlToImage" :alt="article.title" />
-        <h3>{{ article.title }}</h3>
+        <h3 class="text-ellipsis">{{ article.title }}</h3>
         <!-- <p>{{ article.description }}</p> -->
         <h4>公開日: {{ new Date(article.publishedAt).toLocaleDateString() }}</h4>
         <a :href="article.url" target="_blank">Read more</a>
@@ -130,5 +130,14 @@ defineProps({
         display: flex;
         flex-direction: column;
     }
+}
+
+/* ニュースのテキスト２段 */
+.text-ellipsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 </style>

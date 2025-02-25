@@ -3,6 +3,8 @@
 /* Reset box-model and set borders */
 /* ============================================ */
 
+
+
 *,
 ::before,
 ::after {
@@ -36,6 +38,7 @@ html {
 
 body {
   margin: 0;
+
 }
 
 /**

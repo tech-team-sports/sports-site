@@ -16,7 +16,7 @@ import swiperOptions from "~/composables/useSlider";
           <img src="/assets/img/sliderimg/baseball.jpg" alt=" Image">
         </swiper-slide>
         <swiper-slide>
-          <img src="/assets/img/sliderimg/b_stadium.jpg" alt=" Image">
+          <img src="/assets/img/socce/play.jpg" alt=" Image">
         </swiper-slide>
         <swiper-slide>
           <img src="/assets/img/sliderimg/soccer_slider.jpg" alt=" Image">
