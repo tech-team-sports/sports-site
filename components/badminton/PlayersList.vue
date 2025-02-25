@@ -267,6 +267,10 @@ opacity: 0.6; /* ホバー時に薄くする */
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
   .players-list {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -305,6 +309,10 @@ opacity: 0.6; /* ホバー時に薄くする */
 }
 
 @media (max-width: 500px) {
+  h1 {
+    font-size: 1.85rem;
+  }
+
   .player-item {
     max-width: 300px;
     height: 280px;
