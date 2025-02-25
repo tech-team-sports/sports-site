@@ -6,24 +6,24 @@
       </div>
       <ul class="menu-list">
         <li class="menu">
-          <NuxtLink to="/">HOME</NuxtLink>
+          <NuxtLink to="/">ホーム</NuxtLink>
         </li>
         <li class="menu">
-          <a href="#">Sports<i class="dli-caret-down"></i></a>
+          <a href="#">スポーツ<i class="dli-caret-down"></i></a>
           <ul class="child_menu">
             <li>
-              <NuxtLink to="/baseball/baseTOP"><i class="iconbaseball"></i>Baseball</NuxtLink>
+              <NuxtLink to="/baseball/baseTOP"><i class="iconbaseball"></i>野球</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/soccer"><i class="iconsoccer"></i>Soccer</NuxtLink>
+              <NuxtLink to="/soccer"><i class="iconsoccer"></i>サッカー</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/Badminton/badTOP"><i class="iconbadminton"></i>Badminton</NuxtLink>
+              <NuxtLink to="/Badminton/badTOP"><i class="iconbadminton"></i>バドミントン</NuxtLink>
             </li>
           </ul>
         </li>
         <li class="menu">
-          <NuxtLink to="/contact">Contact</NuxtLink>
+          <NuxtLink to="/contact">お問い合わせ</NuxtLink>
         </li>
       </ul>
     </nav>

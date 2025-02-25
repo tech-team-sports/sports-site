@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h2>NEWS</h2>
+        <h2>ニュース</h2>
 
         <p v-if="loading">Loading...</p>
         <p v-if="errorMessage" class="error">{{ errorMessage }}</p>

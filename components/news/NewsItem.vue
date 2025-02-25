@@ -4,7 +4,7 @@
         <h3 class="text-ellipsis">{{ article.title }}</h3>
         <!-- <p>{{ article.description }}</p> -->
         <h4>公開日: {{ new Date(article.publishedAt).toLocaleDateString() }}</h4>
-        <a :href="article.url" target="_blank">Read more</a>
+        <a :href="article.url" target="_blank">もっと見る</a>
     </li>
 </template>
 
