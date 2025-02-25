@@ -10,7 +10,6 @@
             <span class="menu-title">Home</span>
             <ul class="submenu">
               <li><NuxtLink to="/">Top</NuxtLink></li>
-              <li><NuxtLink to="#">About</NuxtLink></li>
             </ul>
           </li>
           <li class="menu">
@@ -24,8 +23,7 @@
           <li class="menu">
             <span class="menu-title">Contact</span>
             <ul class="submenu">
-              <li><NuxtLink to="#">お問い合わせ</NuxtLink></li>
-              <li><NuxtLink to="#">開発メンバー</NuxtLink></li>
+              <li><NuxtLink to="/contact">お問い合わせ</NuxtLink></li>
             </ul>
           </li>
         </ul>
