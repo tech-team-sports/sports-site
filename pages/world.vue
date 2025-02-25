@@ -1,7 +1,9 @@
 <template>
-  <div class="animated-text"></div>
-  <NewsList query="FIFAワールドカップ" />
-  <linkReturn />
+  <div>
+    <div class="animated-text"></div>
+    <NewsList query="FIFAワールドカップ" />
+    <linkReturn />
+  </div>
 </template>
 
 <script setup>

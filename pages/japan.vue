@@ -1,7 +1,9 @@
 <template>
-  <div class="animated-text"></div>
-  <NewsList query="サッカー日本リーグ" />
-  <linkReturn />
+  <div>
+    <div class="animated-text"></div>
+    <NewsList query="サッカー日本リーグ" />
+    <linkReturn />
+</div>
 </template>
 
 <script setup>

@@ -1,7 +1,9 @@
 <template>
-  <div class="animated-text"></div>
-  <NewsList query="欧州CL" />
-  <linkReturn/>
+  <div>
+    <div class="animated-text"></div>
+    <NewsList query="欧州CL" />
+    <linkReturn/>
+  </div>
 </template>
 
 <script setup>
