@@ -109,14 +109,92 @@
     margin: 0 auto; /* 中央に配置 */
 }
 
-  @media (max-width: 800px) {
-    .technique-info h2 {
-      font-size: 1.6rem;
-    }
-  
-    .technique-info p {
-      font-size: 1rem;
-    }
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.5rem;
+    margin-top: 30px;
   }
+
+  .techniques-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .technique-info {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .technique-info h2 {
+    font-size: 1.8rem;
+    padding: 0.6rem 1rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-left: 20px;
+    padding: 15px;
+  }
+
+  .point {
+    font-size: 1rem;
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .techniques-section {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .technique-info h2 {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+
+  .point {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .techniques-section {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .technique-image {
+    max-width: 100%;
+  }
+
+  .technique-info h2 {
+    font-size: 1.3rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .point {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+}
+
   </style>
   
